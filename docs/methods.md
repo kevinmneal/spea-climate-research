@@ -18,10 +18,10 @@ Raster membership used pixel centres (`all_touched=False`), followed by complete
 
 The North/South design inherits group-filtered domains and occurrence assignments from its `all_1km` working design. Its published-map-guided geographic proxy has projection EPSG:5070 and signed distance
 
-\[
+```math
 s(x,y)=\big((x,y)-(-2049132.5303109284,1544994.498919337)\big)
 \cdot(-0.2614952118263048,0.9652047731916352).
-\]
+```
 
 Positive distance points north. The saved 10-km review half-band is an analyst review aid, not a measured contact-zone width or coordinate error. Individual reference anchors are not exported in this preparation. Replay uses the frozen species-cell assignments and masks; applying older footprint eligibility rules anew would create a different cohort. Neal et al. (2018) supplies the biological premise for treating the units separately, not a genetic identification of each occurrence.
 
@@ -29,9 +29,9 @@ Positive distance points north. The saved 10-km review half-band is an analyst r
 
 Intermontana, bombifrons and multiplicata retain five globally anchored lattice folds. Coordinates for their block calculations use `+proj=aea +lat_1=20 +lat_2=50 +lat_0=35 +lon_0=-105 +datum=WGS84 +units=m +no_defs`. With origin (0,0), the held fold is
 
-\[
+```math
 \left(\lfloor x/150000\rfloor+2\lfloor y/150000\rfloor\right)\bmod5.
-\]
+```
 
 Training and held geography retain 50-km clearance after source uncertainty and source-to-cell displacement. Unknown uncertainty uses the inherited 1-km training scenario; held cells belong to the common core eligible under the 5-km scenario. Known coordinate-support radii are not capped or set to zero. Background guards apply to whole native pixel footprints and account for cache boundaries; source-linked/event exclusions also remain in place. Native membership and record-support decisions are in the saved spatial arrays, not reconstructed from the displayed coarse map.
 
@@ -39,27 +39,27 @@ North/South retain three folds formed from whole occupied 50-km blocks ordered b
 
 Each inner split intersects outer training presences/domains with another saved fold's training membership. Its validation intersects outer training with that other fold's held membership; the inherited guards remain. Eligibility requires at least 20 training cells and three recorded validation blocks. Intermontana/bombifrons/multiplicata have four eligible inner splits per outer fold; North has [2,2,2], South [2,1,1]. Two southern candidate inner datasets with 17 training cells remain ineligible.
 
-Training backgrounds are integration quadrature over available physical area, including recorded cells. Every training presence is forced into quadrature with inclusion probability one. Other eligible native cells are sampled without replacement, up to eight per 25-km stratum in the five-fold units and sixteen in North/South. If a stratum has \(N_h\) eligible nonpresence cells and budget \(k\), each nonpresence cell has \(\pi_h=\min(k,N_h)/N_h\). Its quadrature weight is \(a_i/\pi_i\), using physical native area \(a_i\). Presence neighbourhoods are not removed from this integration. Source labels distinguish the recorded sample from the available-area sample; a background row is not a verified absence.
+Training backgrounds are integration quadrature over available physical area, including recorded cells. Every training presence is forced into quadrature with inclusion probability one. Other eligible native cells are sampled without replacement, up to eight per 25-km stratum in the five-fold units and sixteen in North/South. If a stratum has $`N_h`$ eligible nonpresence cells and budget $`k`$, each nonpresence cell has $`\pi_h=\min(k,N_h)/N_h`$. Its quadrature weight is $`a_i/\pi_i`$, using physical native area $`a_i`$. Presence neighbourhoods are not removed from this integration. Source labels distinguish the recorded sample from the available-area sample; a background row is not a verified absence.
 
 Exact saved quadrature rows, inclusion probabilities and weights take precedence over a new random draw. Genus outer draws used base 20260924 plus `100*original_species_index+fold`; original species order is hammondii/intermontana/bombifrons/multiplicata. Genus inner draws used that base plus `1000*index+10*outer+inner`. North/South outer quadrature is inherited from the earlier working comparison, whose quadrature base was 2026092749. Their inner quadrature base is 2026093079 plus `1000*NorthSouth_index+10*outer+inner`. A North/South model seed does not replace the inherited quadrature seed.
 
 ## Original 2/4/28-column representations
 
-Let \(T_m\) and \(P_m\) be the twelve physical monthly values, \(\bar T=\sum T_m/12\), \(A=\sum P_m\), \(\bar P=A/12\), \(t_m=T_m-\bar T\), and \(q_m=P_m/A\).
+Let $`T_m`$ and $`P_m`$ be the twelve physical monthly values, $`\bar T=\sum T_m/12`$, $`A=\sum P_m`$, $`\bar P=A/12`$, $`t_m=T_m-\bar T`$, and $`q_m=P_m/A`$.
 
 | Family | Exact columns | Dimension |
 |---|---|---:|
-| Annual | \(\bar T\); \(\log(1+A)\) | 2 |
-| Variability | Annual columns; \(\max T_m-\min T_m\); \(\sqrt{\sum(P_m-\bar P)^2/12}/\bar P\) | 4 |
-| Monthly | Variability columns; twelve \(t_m\); twelve \(q_m\), January–December | 28 |
+| Annual | $`\bar T`$; $`\log(1+A)`$ | 2 |
+| Variability | Annual columns; $`\max T_m-\min T_m`$; $`\sqrt{\sum(P_m-\bar P)^2/12}/\bar P`$ | 4 |
+| Monthly | Variability columns; twelve $`t_m`$; twelve $`q_m`$, January–December | 28 |
 
 The precipitation CV is a ratio with population denominator, not percentage BIO15. Monthly anomalies sum to zero and fractions sum to one; those redundant columns were retained. Calendar position and profile shape enter together. Latitude/longitude, environmental-cluster deduplication, PCA and UMAP are not ecological predictors or preprocessing steps here.
 
 ## Fitting, selection and effective damping
 
-CatBoost fits used weighted binary Logloss/BCE. With \(N\) training presences, positive rows each initially weighed one. Landscape quadrature weights were normalized to total \(N\), giving total object mass \(2N\). The same location can have a recorded-source row and an integration row with different source labels. Effective leaf damping was \(\lambda=rN\); native `l2_leaf_reg` was \(\lambda\) divided by mean object weight. An exactly profiled unpenalized intercept was not used.
+CatBoost fits used weighted binary Logloss/BCE. With $`N`$ training presences, positive rows each initially weighed one. Landscape quadrature weights were normalized to total $`N`$, giving total object mass $`2N`$. The same location can have a recorded-source row and an integration row with different source labels. Effective leaf damping was $`\lambda=rN`$; native `l2_leaf_reg` was $`\lambda`$ divided by mean object weight. An exactly profiled unpenalized intercept was not used.
 
-| Candidate, in tie order | Trees | Depth | Learning rate | Damping coefficient \(r\) |
+| Candidate, in tie order | Trees | Depth | Learning rate | Damping coefficient $`r`$ |
 |---|---:|---:|---:|---:|
 | Baseline | 300 | 4 | 0.05 | 0.005 |
 | Shallow | 150 | 2 | 0.03 | 0.03 |
@@ -74,11 +74,11 @@ Original genus model seed base is 2026093051 with original hammondii/intermontan
 
 ## Score and diagnostic weights
 
-For each held target, raw model margins \(\eta_j\) were normalized over every complete saved native target cell with physical area \(a_j\):
+For each held target, raw model margins $`\eta_j`$ were normalized over every complete saved native target cell with physical area $`a_j`$:
 
-\[
+```math
 \ell_i=\eta_i-\log\!\left(\frac{\sum_j a_j e^{\eta_j}}{\sum_j a_j}\right).
-\]
+```
 
 Zero is uniform recording density per physical area. The primary target selects a fold uniformly, an occupied 50-km block uniformly within that fold, then a recorded cell uniformly in that block. The secondary target selects a fold uniformly, then a recorded cell uniformly in that fold. Fold-specific block counts mean that blocks need not have equal weight across the whole study. Baseline training weights and evaluation weights have different roles. Each held target is normalized separately, so these scores assess allocation within held geography rather than total abundance between regions.
 
@@ -90,30 +90,30 @@ Within each reported run, inner choices were frozen before its outer evaluation.
 
 The later fixed shallow comparison crossed 19 BIOCLIM variables, BIOCLIM plus fourteen summaries (33), compact variability plus summaries (18), monthly (28), and monthly plus summaries (42). BIOCLIM amount variables 12/13/14/16/17/18/19 used `log1p`; BIO15 was unchanged. A shared 61-column cutoff union (19 + 28 + 14) was constructed from the original training rows before thinning. These feature families omit the original annual-only and variability-only controls.
 
-The fourteen added columns are below. Linear quantiles use NumPy's `method="linear"`; skewness is the population standardized third moment, zero for exactly constant input. Numerical rescaling by maximum absolute deviation does not change its mathematical definition. Set \(\theta_m=2\pi(m-1)/12\), with January at angle zero.
+The fourteen added columns are below. Linear quantiles use NumPy's `method="linear"`; skewness is the population standardized third moment, zero for exactly constant input. Numerical rescaling by maximum absolute deviation does not change its mathematical definition. Set $`\theta_m=2\pi(m-1)/12`$, with January at angle zero.
 
 | Added column | Definition / units |
 |---|---|
-| Temperature median offset | \(\operatorname{median}(T)-\bar T\), °C |
-| Temperature IQR | \(Q_{.75}(T)-Q_{.25}(T)\), °C |
+| Temperature median offset | $`\operatorname{median}(T)-\bar T`$, °C |
+| Temperature IQR | $`Q_{.75}(T)-Q_{.25}(T)`$, °C |
 | Temperature skewness | Population third standardized moment, dimensionless |
-| Precipitation median ratio | \(\operatorname{median}(P)/\bar P\) |
-| Precipitation IQR ratio | \((Q_{.75}(P)-Q_{.25}(P))/\bar P\) |
+| Precipitation median ratio | $`\operatorname{median}(P)/\bar P`$ |
+| Precipitation IQR ratio | $`(Q_{.75}(P)-Q_{.25}(P))/\bar P`$ |
 | Precipitation skewness | Population third standardized moment, dimensionless |
-| Precipitation entropy | \(-\sum q_m\log q_m/\log12\), with \(0\log0=0\) |
-| Wettest three-month share | Maximum consecutive circular sum of three \(q_m\) |
-| Driest three-month share | Minimum consecutive circular sum of three \(q_m\) |
-| Precipitation sine harmonic | \(\sum q_m\sin\theta_m\) |
-| Precipitation cosine harmonic | \(\sum q_m\cos\theta_m\) |
-| Temperature sine harmonic | \(\sum t_m\sin\theta_m/6\), °C |
-| Temperature cosine harmonic | \(\sum t_m\cos\theta_m/6\), °C |
-| Precipitation–temperature offset | \(\sum q_m t_m\), °C |
+| Precipitation entropy | $`-\sum q_m\log q_m/\log12`$, with $`0\log0=0`$ |
+| Wettest three-month share | Maximum consecutive circular sum of three $`q_m`$ |
+| Driest three-month share | Minimum consecutive circular sum of three $`q_m`$ |
+| Precipitation sine harmonic | $`\sum q_m\sin\theta_m`$ |
+| Precipitation cosine harmonic | $`\sum q_m\cos\theta_m`$ |
+| Temperature sine harmonic | $`\sum t_m\sin\theta_m/6`$, °C |
+| Temperature cosine harmonic | $`\sum t_m\cos\theta_m/6`$, °C |
+| Precipitation–temperature offset | $`\sum q_m t_m`$, °C |
 
 All are transformations of the same monthly normals. The five-family equal-cell/5-km/10-km comparison produced 315 fixed shallow fits. Its model seed was 2026100314 plus `100*species_index+fold`, with order intermontana/bombifrons/multiplicata/North/South. Training-only hard thinning used WGS84 geodesic cell-centre distance. Conflicts had strict distance less than the stated radius; equality was allowed. Each attempt repeatedly removed a point of maximum current neighbour degree, with seeded random ties. Ten attempts per radius used `2026100320+1000*species_index+20*fold+attempt`; the first maximum-cardinality set was frozen before fitting. This heuristic does not guarantee a globally largest set. Slots still required 20 training cells and three training blocks. The spThin manual supplies algorithm context; the R package was not executed. The later 2-km follow-up fitted only BIOCLIM/monthly, adding 42 fits.
 
 Hard thinning retained the unchanged quadrature, including discarded recorded locations, and the original held targets and guards. Effective damping scaled with retained training-cell count. No size-matched random-deletion control separates loss of sample size from change in geographical distribution. No radius was adopted because of its outer score.
 
-The separate 42-fit soft-weighting comparison retained every original presence. With WGS84 distance \(d_{ij}\), raw weights were \(u_i=1/(1+\sum_{j\ne i}\max(1-d_{ij}/10\text{ km},0))\), then \(w_i=Nu_i/\sum u_i\). Original positive mass, background mass, damping, cutoffs and targets remained matched. The inspected enmSdmX `weightByDist` formula was translated to Python; the R package was not run. Kish effective sample size describes weight concentration, not independent pond count. Neither taper nor hard thinning recovers unknown sampling effort. These initial interventions did not include matched annual/variability families. The later matched soft-weight comparison below supplies those controls for one fixed procedure; hard thinning remains outside it.
+The separate 42-fit soft-weighting comparison retained every original presence. With WGS84 distance $`d_{ij}`$, raw weights were $`u_i=1/(1+\sum_{j\ne i}\max(1-d_{ij}/10\text{ km},0))`$, then $`w_i=Nu_i/\sum u_i`$. Original positive mass, background mass, damping, cutoffs and targets remained matched. The inspected enmSdmX `weightByDist` formula was translated to Python; the R package was not run. Kish effective sample size describes weight concentration, not independent pond count. Neither taper nor hard thinning recovers unknown sampling effort. These initial interventions did not include matched annual/variability families. The later matched soft-weight comparison below supplies those controls for one fixed procedure; hard thinning remains outside it.
 
 ## Later matched representation and weighting comparison
 

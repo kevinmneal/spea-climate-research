@@ -212,15 +212,15 @@
       "source_path": "reports/spea_seasonal_manuscript_weighting_revision.md",
       "public_path": "docs/manuscript.md",
       "source_sha256": "14a297a97df9b7eb0409db8020bc1f1ae372440ef01136d985a959e04196a8fc",
-      "public_sha256": "26839f0e20a67f3fbdeacb761eeddde6854ae043acda2060f0b55e39cc083dfd",
-      "transformation": "Public status header, operational-unit wording, portable links, and editorial removal of internal workflow instructions; numerical results unchanged; figure numbering follows first appearance; public-only availability wording corrected"
+      "public_sha256": "c4d83634a0d1ee32368c17a009500a95fb610a6ee09bb2a595e5c5dadf046f67",
+      "transformation": "Public status header, operational-unit wording, portable links, and editorial removal of internal workflow instructions; numerical results unchanged; figure numbering follows first appearance; public-only availability wording corrected; GitHub-supported math delimiters"
     },
     {
       "source_path": "reports/spea_seasonal_methods_appendix.md",
       "public_path": "docs/methods.md",
       "source_sha256": "dc00814331dbee5e410b3adafe228d3c52cf4638a9812c5deec71fca6e8dd0d5",
-      "public_sha256": "1934102bd59c606b39242034c740df2cacd1124503149c35dbdbba34b5269558",
-      "transformation": "Public links and replay scope; later matched comparison documented; original numerical definitions retained"
+      "public_sha256": "c2f598b46dc981227da22c32055d4c18b5be7c1761a2a5559b45b25cf781bf87",
+      "transformation": "Public links and replay scope; later matched comparison documented; original numerical definitions retained; GitHub-supported math delimiters"
     },
     {
       "source_path": "src/spea/seasonal_model.py",
