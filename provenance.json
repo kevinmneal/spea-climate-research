@@ -219,7 +219,7 @@
       "source_path": "reports/spea_seasonal_methods_appendix.md",
       "public_path": "docs/methods.md",
       "source_sha256": "dc00814331dbee5e410b3adafe228d3c52cf4638a9812c5deec71fca6e8dd0d5",
-      "public_sha256": "c2f598b46dc981227da22c32055d4c18b5be7c1761a2a5559b45b25cf781bf87",
+      "public_sha256": "d23a87c071ea6ed1678ae08e26263ee489ad7b44b24c2192f154acdbe1d10afd",
       "transformation": "Public links and replay scope; later matched comparison documented; original numerical definitions retained; GitHub-supported math delimiters"
     },
     {

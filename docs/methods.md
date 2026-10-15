@@ -94,10 +94,10 @@ The fourteen added columns are below. Linear quantiles use NumPy's `method="line
 
 | Added column | Definition / units |
 |---|---|
-| Temperature median offset | $`\operatorname{median}(T)-\bar T`$, °C |
+| Temperature median offset | $`\text{median}(T)-\bar T`$, °C |
 | Temperature IQR | $`Q_{.75}(T)-Q_{.25}(T)`$, °C |
 | Temperature skewness | Population third standardized moment, dimensionless |
-| Precipitation median ratio | $`\operatorname{median}(P)/\bar P`$ |
+| Precipitation median ratio | $`\text{median}(P)/\bar P`$ |
 | Precipitation IQR ratio | $`(Q_{.75}(P)-Q_{.25}(P))/\bar P`$ |
 | Precipitation skewness | Population third standardized moment, dimensionless |
 | Precipitation entropy | $`-\sum q_m\log q_m/\log12`$, with $`0\log0=0`$ |
