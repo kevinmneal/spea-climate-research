@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
+replay_output*/
+replay_figure.png
+*.egg-info/

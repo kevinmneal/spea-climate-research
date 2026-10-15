@@ -1,0 +1,45 @@
+{
+  "python_project_requirement": ">=3.13,<3.14",
+  "frozen_source_snapshots": [
+    {
+      "run": "2026-09-30-genus-seasonal-comparison-v2",
+      "source_snapshot_path": "runs/2026-09-30-genus-seasonal-comparison-v2/source_snapshot.zip",
+      "source_snapshot_sha256": "cef3e7166befaeeb31f6d5225565f48cbd5cb42ee3796aa30ac09e777311403f",
+      "lock_member": "uv.lock",
+      "lock_sha256": "6ed6b12385641aeee65e214fed4f1fcdde120fe5dd61e95a2ba6262dbf1499b8",
+      "current_lock_byte_equal": true,
+      "locked_versions": {
+        "catboost": "1.2.10",
+        "matplotlib": "3.11.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.6",
+        "pyproj": "3.8.0",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "shapely": "2.1.2"
+      }
+    },
+    {
+      "run": "2026-09-30-hammondii-species-seasonal-comparison-v1",
+      "source_snapshot_path": "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/source_snapshot.zip",
+      "source_snapshot_sha256": "42fb57a18dbdb5ebfb6df4091a923139b24901208cb4c95b185b2a063fcee0c6",
+      "lock_member": "uv.lock",
+      "lock_sha256": "6ed6b12385641aeee65e214fed4f1fcdde120fe5dd61e95a2ba6262dbf1499b8",
+      "current_lock_byte_equal": true,
+      "locked_versions": {
+        "catboost": "1.2.10",
+        "matplotlib": "3.11.2",
+        "numpy": "2.5.3",
+        "pandas": "3.0.6",
+        "pyproj": "3.8.0",
+        "scikit-learn": "1.9.1",
+        "scipy": "1.18.1",
+        "shapely": "2.1.2"
+      }
+    }
+  ],
+  "version_evidence": "Saved dependency locks; not a recovered per-fit installed environment inventory",
+  "aggregate_replay_runtime": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "replay_standard_library_only": true,
+  "dependency_installation": false
+}

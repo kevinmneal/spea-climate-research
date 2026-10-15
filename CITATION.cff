@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the release or commit used. This is a developmental research snapshot, not a peer-reviewed article."
+type: software
+title: "Spea climate and biogeography: public research snapshot"
+authors:
+  - family-names: Neal
+    given-names: Kevin M.
+version: 0.1.0
+date-released: 2026-10-15
+repository-code: "https://github.com/kevinmneal/spea-climate-research"
+url: "https://github.com/kevinmneal/spea-climate-research"
+license: MIT
+abstract: "A curated developmental snapshot of climate-representation comparisons in Spea, with a working manuscript, aggregate score replay, selected numerical components and exploratory biogeographic context."
+keywords:
+  - Spea
+  - climate representation
+  - spatial validation
+  - biogeography
+  - reproducible research

@@ -1,0 +1,288 @@
+{
+  "snapshot": "v0.1.0",
+  "release_date": "2026-10-15",
+  "source_commit": "ed18825ef273987e66172970915bc21384baafdb",
+  "scope": "Curated export; source history, raw localities, model arrays and operational records are not included",
+  "numerical_results_changed": false,
+  "copied_or_adapted_files": [
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_folds.csv",
+      "public_path": "data/original/primary_folds.csv",
+      "source_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "public_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_summary.csv",
+      "public_path": "data/original/primary_summary.csv",
+      "source_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "public_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_contrasts.csv",
+      "public_path": "data/original/primary_contrasts.csv",
+      "source_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
+      "public_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/procedure_contrasts.csv",
+      "public_path": "data/original/procedure_contrasts.csv",
+      "source_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "public_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/support_by_fold.csv",
+      "public_path": "data/original/support_by_fold.csv",
+      "source_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "public_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/replay_spea_seasonal_tables.py",
+      "public_path": "scripts/replay_original_tables.py",
+      "source_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
+      "public_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-05-seasonal-bioclim-reference/fold_metrics.csv",
+      "public_path": "data/matched/fold_metrics.csv",
+      "source_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "public_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-05-seasonal-bioclim-reference/family_summary.csv",
+      "public_path": "data/matched/family_summary.csv",
+      "source_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "public_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_folds.csv",
+      "public_path": "data/matched/contrast_folds.csv",
+      "source_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "public_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_summary.csv",
+      "public_path": "data/matched/contrast_summary.csv",
+      "source_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "public_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/fold_components.csv",
+      "public_path": "data/decomposition/fold_components.csv",
+      "source_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
+      "public_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/mean_components.csv",
+      "public_path": "data/decomposition/mean_components.csv",
+      "source_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
+      "public_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/stratum_components.csv",
+      "public_path": "data/decomposition/stratum_components.csv",
+      "source_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
+      "public_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_folds.csv",
+      "public_path": "data/sensitivities/feature_folds.csv",
+      "source_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
+      "public_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_summary.csv",
+      "public_path": "data/sensitivities/feature_summary.csv",
+      "source_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
+      "public_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/sampling_summary.csv",
+      "public_path": "data/sensitivities/sampling_summary.csv",
+      "source_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
+      "public_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/soft_folds.csv",
+      "public_path": "data/sensitivities/soft_folds.csv",
+      "source_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
+      "public_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/soft_summary.csv",
+      "public_path": "data/sensitivities/soft_summary.csv",
+      "source_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
+      "public_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/south_procedure.csv",
+      "public_path": "data/sensitivities/south_procedure.csv",
+      "source_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
+      "public_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_fold_coverage.png",
+      "public_path": "figures/seasonal_fold_coverage.png",
+      "source_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
+      "public_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_within_unit_contrasts.png",
+      "public_path": "figures/seasonal_within_unit_contrasts.png",
+      "source_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
+      "public_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_sampling_sensitivities.png",
+      "public_path": "figures/feature_sampling_sensitivities.png",
+      "source_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
+      "public_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-seasonal-weighting-interaction/seasonal_weighting_interaction.png",
+      "public_path": "figures/seasonal_weighting_interaction.png",
+      "source_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
+      "public_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-05-seasonal-bioclim-reference/seasonal_bioclim_reference.png",
+      "public_path": "figures/seasonal_bioclim_reference.png",
+      "source_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+      "public_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/references.bib",
+      "public_path": "metadata/references.bib",
+      "source_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
+      "public_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/references.json",
+      "public_path": "metadata/references.json",
+      "source_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
+      "public_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/mask_specification.json",
+      "public_path": "metadata/mask_specification.json",
+      "source_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
+      "public_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/software_snapshot.json",
+      "public_path": "metadata/software_snapshot.json",
+      "source_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
+      "public_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "results/2026-10-04-spea-seasonal-preparation/method_specification.json",
+      "public_path": "metadata/method_specification.json",
+      "source_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "public_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "reports/spea_seasonal_manuscript_weighting_revision.md",
+      "public_path": "docs/manuscript.md",
+      "source_sha256": "14a297a97df9b7eb0409db8020bc1f1ae372440ef01136d985a959e04196a8fc",
+      "public_sha256": "26839f0e20a67f3fbdeacb761eeddde6854ae043acda2060f0b55e39cc083dfd",
+      "transformation": "Public status header, operational-unit wording, portable links, and editorial removal of internal workflow instructions; numerical results unchanged; figure numbering follows first appearance; public-only availability wording corrected"
+    },
+    {
+      "source_path": "reports/spea_seasonal_methods_appendix.md",
+      "public_path": "docs/methods.md",
+      "source_sha256": "dc00814331dbee5e410b3adafe228d3c52cf4638a9812c5deec71fca6e8dd0d5",
+      "public_sha256": "1934102bd59c606b39242034c740df2cacd1124503149c35dbdbba34b5269558",
+      "transformation": "Public links and replay scope; later matched comparison documented; original numerical definitions retained"
+    },
+    {
+      "source_path": "src/spea/seasonal_model.py",
+      "public_path": "src/spea_snapshot/seasonal_model.py",
+      "source_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+      "public_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "src/spea/spatial_weights.py",
+      "public_path": "src/spea_snapshot/spatial_weights.py",
+      "source_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+      "public_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "src/spea/spatial_thinning.py",
+      "public_path": "src/spea_snapshot/spatial_thinning.py",
+      "source_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+      "public_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+      "transformation": "Exact byte copy"
+    },
+    {
+      "source_path": "src/spea/climate_statistics.py",
+      "public_path": "src/spea_snapshot/climate_statistics.py",
+      "source_sha256": "ba914d41b7c7d4e3ef40421557fc9a3cafa48846bb50b27ac116d89679002211",
+      "public_sha256": "c7c21a4da8903c65fb5da8dc132bd3731d5b4f039d288178f4940bec8464f29a",
+      "transformation": "Replace the LOG_KEYS import with the identical set; all numerical functions unchanged"
+    },
+    {
+      "source_path": "tests/test_seasonal_model.py",
+      "public_path": "tests/components/test_seasonal_model.py",
+      "source_sha256": "b51a6bb97832ebebb5431b98ff964d67a89fa5bd9a7d58b7178c7c964fec3bb4",
+      "public_sha256": "8465218f51113365d50bca9f65f1dec18f1225c0e7518a26c9f155be49dba96d",
+      "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
+    },
+    {
+      "source_path": "tests/test_climate_statistics.py",
+      "public_path": "tests/components/test_climate_statistics.py",
+      "source_sha256": "a20b40cf43cd64f2429a01583ec5f362705e8bbd9cd8ca5728d7709599572bbd",
+      "public_sha256": "2457cad7f7ef71223c715633af5dd45ce0d58988e928ee87a72b16d02cecd7be",
+      "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
+    },
+    {
+      "source_path": "tests/test_spatial_weights.py",
+      "public_path": "tests/components/test_spatial_weights.py",
+      "source_sha256": "2f94343e4457045fcbb5b1e3bab0cf578f2256cd5c4a0e580742d7101fe89071",
+      "public_sha256": "cabf2429762ab662908f56bf56712e4724e5ffea9378b92b6875024b7ea9387f",
+      "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
+    },
+    {
+      "source_path": "tests/test_spatial_thinning.py",
+      "public_path": "tests/components/test_spatial_thinning.py",
+      "source_sha256": "7b132665602da61ed2b8aec52638bce046495aed85cb92a4aa2a994ac9058dd3",
+      "public_sha256": "7b3d606190bdc20f784aebe0b594adfe86b821c331a199930a080cec6df2f5d2",
+      "transformation": "Import namespace changed; omit one full-model objective integration test whose dependency is outside this snapshot; distance/graph tests retained"
+    }
+  ],
+  "release_code": {
+    "scripts/replay.py": "New standard-library reconstruction of previously saved matched scores; no new fit",
+    "scripts/plot_results.py": "New public overview drawn from existing aggregate fold metrics",
+    "figures/climate_representation.png": "New display of existing results; script supplied",
+    "tests/test_replay.py": "Release checks of saved aggregate arithmetic and rejection of corrupted/missing data"
+  }
+}
