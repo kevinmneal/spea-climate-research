@@ -138,16 +138,21 @@ def main():
     out.mkdir(parents=True)
     subprocess.run([sys.executable, str(ROOT / "scripts/replay_original_tables.py"),
                     "--input", str(data / "original"), "--output", str(out / "original")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts/replay_environmental_organization.py"),
+                    "--data", str(data / "environmental_organization"),
+                    "--output", str(out / "environmental_organization")], check=True)
     write_csv(out / "matched_family_means.csv", families)
     write_csv(out / "matched_fold_contrasts.csv", folds)
     write_csv(out / "matched_contrast_summary.csv", summaries)
     (out / "matched_primary_table.md").write_text(table(summaries), encoding="utf-8")
     hashes = {str(p.relative_to(data)): hashlib.sha256(p.read_bytes()).hexdigest()
-              for directory in ["original", "matched"] for p in sorted((data / directory).glob("*.csv"))}
+              for directory in ["original", "matched", "environmental_organization"]
+              for p in sorted((data / directory).iterdir()) if p.suffix in (".csv", ".json")}
     receipt = dict(status="completed_aggregate_replay", created_utc=datetime.now(timezone.utc).isoformat(),
                    python=sys.version.split()[0], original_slots=126, matched_slots=168,
                    matched_family_means=len(families), matched_fold_contrasts=len(folds),
                    matched_contrast_summaries=len(summaries), inputs=hashes, tolerance=1e-10,
+                   environmental_organization_statistics=897, environmental_envelopes=9,
                    new_fits=0, native_predictions_reproduced=False, source_records_rebuilt=False,
                    historical_or_genetic_claims_tested=False)
     (out / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")

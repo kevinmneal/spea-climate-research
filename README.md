@@ -2,9 +2,9 @@
 
 **How much does the way we describe climate change our predictions for spadefoot toads? And what can those predictions contribute to historical biogeography?**
 
-This is the public research companion for Kevin M. Neal's ongoing work on *Spea*. It contains a working manuscript, numerical results, figures and selected analysis code. **Version 0.1.0 is a developmental snapshot dated 15 October 2026**, with the central climate comparisons completed through 5 October. It has not received independent peer review. Future versions will record changes rather than silently replace the results below.
+This is the public research companion for Kevin M. Neal's ongoing work on *Spea*. It contains a working manuscript, numerical results, figures and selected analysis code. **Version 0.2.0 is a developmental snapshot dated 21 October 2026**, adding a bounded environmental-organization study completed on 20 October. The central climate comparisons remain those completed through 5 October. It has not received independent peer review. The [change log](CHANGELOG.md) records additions and corrections, and earlier release tags preserve their snapshots.
 
-[Working manuscript](docs/manuscript.md) · [Methods](docs/methods.md) · [Reproduce the tables](REPRODUCIBILITY.md) · [Biogeographic questions](docs/research_agenda.md)
+[Working manuscript](docs/manuscript.md) · [Methods](docs/methods.md) · [Reproduce the tables](REPRODUCIBILITY.md) · [Environmental organization](docs/environmental_organization.md) · [Biogeographic questions](docs/research_agenda.md)
 
 ## What we have found
 
@@ -30,13 +30,15 @@ cd spea-climate-research
 python3 scripts/replay.py --output replay_output
 ```
 
-This reconstructs the original selected/fixed tables and the later matched weighting/BIOCLIM tables, and checks them against the saved summaries. Start with `replay_output/matched_primary_table.md` and `replay_output/original/table2.md`.
+This reconstructs the original selected/fixed tables, the later matched weighting/BIOCLIM tables, and the environmental-organization statistics and control envelopes. It checks them against the saved summaries. Start with `replay_output/matched_primary_table.md`, `replay_output/original/table2.md` and `replay_output/environmental_organization/observed_table.md`.
 
 **This is aggregate reproduction.** The public snapshot does not rebuild occurrences, fit the models, or recompute their native-grid predictions. [The reproducibility statement](REPRODUCIBILITY.md) specifies exactly what is and is not supplied. The optional [scientific components](src/README.md) include the actual monthly transformations, fourteen added summaries, thinning and spatial weights, with tests and a clearly synthetic example.
 
 ## Broader research direction
 
 The wider project investigates candidate geographical structure in *S. intermontana*, contemporary environmental contrasts, and constraints on late-glacial and postglacial histories. Completed local cost comparisons and a provincial response comparison have produced useful negative or mixed results. Historical climate compatibility and sparse independent population coverage constrain stronger conclusions.
+
+A [bounded October follow-up](docs/environmental_organization.md) asked whether recorded environments in *S. intermontana* support a reproducible two-component description beyond sampled geography and specified climatic associations. Across three prespecified representative selections, the two-component approximation predicted held climates less well than the one-component reference. The primary result fell within the shared- and gradual-association simulation envelopes; one sensitivity exceeded both upper envelopes but did not recur. This screen supplies no stable new division. Because conditioning on sampled blocks removes most broad rainfall-timing variation, regional ecological differences remain unresolved.
 
 The [research agenda](docs/research_agenda.md) separates those exploratory results from the climate manuscript and identifies the biological evidence needed next. No new lineage, species boundary, dispersal rate or colonization date is established here.
 
@@ -46,13 +48,14 @@ The [research agenda](docs/research_agenda.md) separates those exploratory resul
 |---|---|
 | [Manuscript](docs/manuscript.md) | Full comparative argument, results, qualifications and references |
 | [Methods](docs/methods.md) | Observation units, backgrounds, folds, predictors, fitting and score definitions |
-| [Aggregate data](data/README.md) | Every retained fold in the original and matched comparisons, plus sensitivity and decomposition tables |
+| [Aggregate data](data/README.md) | Original/matched seasonal folds, environmental-organization statistics and envelopes, plus sensitivity and decomposition tables |
+| [Environmental organization](docs/environmental_organization.md) | Separate exploratory study with its negative result, sensitivity discrepancy and conditional-inference limit |
 | [Reproducibility](REPRODUCIBILITY.md) | Commands, verification scope and missing inputs for full native reproduction |
 | [Scientific components](src/README.md) | Selected original numerical code and its tests |
 | [Provenance](provenance.json) | Source checkpoint, original file hashes and disclosed export adaptations |
 | [Change log](CHANGELOG.md) | Versioned changes and corrections |
 
-The full working archive remains private. This repository has its own history and contains a deliberate selection of original project material, without raw localities, specimen casework, downloaded papers or large model assets. The coarse study map groups held records in 25-km tiles; it is not a locality release.
+The full working archive remains private. This repository has its own history and contains a deliberate selection of original project material, without raw localities, specimen casework, downloaded papers or large model assets. The seasonal study map uses 25-km display tiles; the environmental-organization map uses inherited 50-km block centers. Neither is a release of exact localities.
 
 ## Attribution and reuse
 

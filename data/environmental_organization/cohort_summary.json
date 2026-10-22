@@ -1,0 +1,12 @@
+{
+  "original_cells": 709,
+  "original_blocks": 195,
+  "supported_cells": 703,
+  "supported_blocks": 193,
+  "primary_cells": 498,
+  "primary_blocks": 159,
+  "outside_mask_cells": 6,
+  "supported_precision_exclusions": 205,
+  "available_native_cells": 741507,
+  "primary_available_native_cells": 613266
+}

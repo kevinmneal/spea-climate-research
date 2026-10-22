@@ -17,7 +17,7 @@ jobs:
           python-version: '3.13'
       - run: python scripts/check_snapshot.py
       - run: python scripts/replay.py --output replay_output
-      - run: python -m unittest discover -s tests -p 'test_replay.py'
+      - run: python -m unittest discover -s tests -p 'test_replay*.py'
   selected-components:
     runs-on: ubuntu-latest
     steps:

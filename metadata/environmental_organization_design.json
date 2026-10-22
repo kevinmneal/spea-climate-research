@@ -1,0 +1,84 @@
+{
+  "analysis_date": "2026-10-20",
+  "status": "completed_exploratory_conditional_diagnostic",
+  "input_config_sha256": "5a269728658388225de269d33568db3696c635ac96eb94629242bf31f714dc39",
+  "question": "Does recorded environmental organization exceed that reproduced by sampled geographic blocks and specified shared or smoothly varying climatic associations?",
+  "features": [
+    "mean_temperature_c",
+    "log1p_annual_precipitation_mm",
+    "temperature_range_c",
+    "precipitation_cv",
+    "precipitation_harmonic_cos",
+    "precipitation_harmonic_sin"
+  ],
+  "feature_contract": {
+    "climate": "Existing CHELSA 2.1 1981-2010 native monthly physical arrays.",
+    "annual": "Reuse seasonal_analogues.climate_components: mean monthly tas, log1p(sum monthly pr), max(tas)-min(tas), population SD(pr)/mean(pr).",
+    "harmonics": "Sum monthly precipitation fractions times cos/sin(2*pi*m/12), with January m=0. These retain first-harmonic magnitude and direction; no phase-only normalization or monthly rotations.",
+    "scaling": "Equal occupied-block mass, physical-area weights within each block. Climate scales use availability only; held-fold mixture scaling uses training-block availability only.",
+    "limits": "Six summaries do not exhaust the monthly curves, event weather, hydroperiod or habitat. No feature/PCA/rotation tournament."
+  },
+  "cohort": {
+    "primary": "Unchanged primary M AND radius_unknown5km_m <= 5000 AND unknown_radius_contributors == 0.",
+    "broader_sensitivity": "One-cell-per-block organization summaries on the 703 in-M center locations, using the same six features and mixture settings, without a second null-fitting/simulation exercise. Positional supports are not repaired by using their centers.",
+    "interpretation": "Known <=5-km uncertainty still permits center-extraction error and block-boundary crossings. No claim of exact pond placement."
+  },
+  "generators": {
+    "uniform": "Physical native area within each primary occupied block.",
+    "shared": "Within-block area times exp(f(z)): six linear and all 21 quadratic climate terms, including cross-products.",
+    "smooth": "Same 27 shared terms plus each of six linear climate terms times standardized x and y of the 50-km block center (12 additional terms). Curvature shared; linear climate coefficients vary gradually in two dimensions.",
+    "conditioning": "Each occupied block has equal fitting mass; each observed cell within it has equal empirical mass. Each simulated representative dataset has one sampled native cell per same block. Between-block recording density is conditioned away, not estimated.",
+    "normalizers": "All native primary-M cells in the corresponding block. No sampled quadrature.",
+    "basis_scale": "Center every basis column within block using native physical area, then scale by ONE pooled training-availability within-block RMS per column. Never scale each block separately.",
+    "ridge": "Mean-block negative conditional log density plus squared coefficient norm / (2 * number of training blocks). Fixed; no tuning.",
+    "optimization": {
+      "method": "L-BFGS-B",
+      "maximum_iterations": 600,
+      "gradient_tolerance": 1e-07,
+      "accepted_gradient_inf": 2e-06
+    },
+    "rank_audit": "Save unpenalized within-block Gram eigenvalues, numerical rank and conditioning; ridge convergence does not establish parameter identifiability.",
+    "fit_count": 12,
+    "adequacy": "Compare shared/smooth conditional log density relative to within-block area using all eligible primary cells in the five inherited development folds. Save each fold and equal-held-block aggregate. These reused folds are not independent validation."
+  },
+  "organization_statistic": {
+    "description": "Held-block predictive log-density gain of two-component over one-component Gaussian approximation; positive gain alone is not ecological differentiation.",
+    "components": [
+      1,
+      2
+    ],
+    "covariance_type": "tied",
+    "reg_covar": 0.05,
+    "n_init": 5,
+    "max_iter": 500,
+    "tol": 1e-05,
+    "representative_selections": 3,
+    "selection": "One uniformly selected observed cell per 50-km block, using three fixed seeds without reading its climate. First selection primary; other two are prespecified sensitivities.",
+    "folds": "Preserve original train_native/test_native membership of each selected representative. This preserves inherited occurrence eligibility and guards for observed records. Simulated native locations vary within those blocks while role/source/precision slots are fixed; simulated geographic guards are therefore conditional block approximations, not newly validated pointwise guards.",
+    "aggregation": "Sum held log-density differences over all five folds and divide by held representative count; a block is held at most once. Also save every fold.",
+    "minimum_training_representatives": 20,
+    "minimum_held_representatives": 5,
+    "small_component_flag": "Fitted weight times training count < 5; report, do not search another covariance or component count.",
+    "failures": "Fail on unconverged/nonfinite fits or insufficient fold size. Preserve partial results; no silent omission or alternate learner.",
+    "interpretation": "A two-component approximation screen, not estimation of group number. Continuous skewed or curved distributions can benefit from a mixture."
+  },
+  "simulations": {
+    "replicates_per_generator": 99,
+    "draw": "For each fixed generator and draw, sample one native cell independently within every primary occupied block according to its area-weighted probability. Apply the complete identical held-fold mixture procedure for all three representative-role layouts.",
+    "comparisons": "Save the primary observed statistic and each sensitivity against its corresponding generator envelope, including empirical ranks and 5/50/95 percentiles.",
+    "calibration": "Fitted-model predictive diagnostic, not a calibrated p-value: fitted parameters are plugged in, remaining spatial dependence and observer effort are unresolved. Draws are simulations, not biological replicates."
+  },
+  "claim_ceiling": "Organization in recorded climates relative to these specified conditional generators and this six-variable mixture statistic. No discrete ecological population, adaptation, ancestry or species-count claim.",
+  "block_grid": {
+    "size_m": 50000,
+    "crs": "+proj=aea +lat_1=20 +lat_2=50 +lat_0=35 +lon_0=-105 +datum=WGS84 +units=m +no_defs"
+  },
+  "installed_analysis_versions": {
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "public_replay": "Reconstructs saved aggregate arithmetic only; no native inputs, fits, simulations or model parameters are reconstructed.",
+  "variance_replay": "Checks six saved within-block fractions and percentage conversion; does not reconstruct the underlying native climate variances."
+}

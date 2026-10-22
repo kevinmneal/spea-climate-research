@@ -1,0 +1,7 @@
+feature,within_block_variance_fraction,within_block_variance_percent
+mean_temperature_c,0.349657586500896,34.965758650089604
+log1p_annual_precipitation_mm,0.2688315519583268,26.883155195832682
+temperature_range_c,0.0834267242555823,8.34267242555823
+precipitation_cv,0.06585585491110246,6.585585491110246
+precipitation_harmonic_cos,0.04331336427654554,4.331336427654555
+precipitation_harmonic_sin,0.04088639637041991,4.088639637041991

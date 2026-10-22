@@ -5,12 +5,12 @@ title: "Spea climate and biogeography: public research snapshot"
 authors:
   - family-names: Neal
     given-names: Kevin M.
-version: 0.1.0
-date-released: 2026-10-15
+version: 0.2.0
+date-released: 2026-10-21
 repository-code: "https://github.com/kevinmneal/spea-climate-research"
 url: "https://github.com/kevinmneal/spea-climate-research"
 license: MIT
-abstract: "A curated developmental snapshot of climate-representation comparisons in Spea, with a working manuscript, aggregate score replay, selected numerical components and exploratory biogeographic context."
+abstract: "A curated developmental snapshot of climate-representation comparisons and a bounded environmental-organization screen in Spea, with a working manuscript, aggregate score replay, selected numerical components and exploratory biogeographic context."
 keywords:
   - Spea
   - climate representation

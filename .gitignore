@@ -3,5 +3,6 @@ __pycache__/
 .venv/
 .DS_Store
 replay_output*/
+environmental_replay_output*/
 replay_figure.png
 *.egg-info/

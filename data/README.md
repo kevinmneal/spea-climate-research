@@ -1,8 +1,8 @@
 # Aggregate results
 
-All supplied rows summarize recorded cells or fitted models. They contain no individual occurrence coordinates or reconstructable native-cell lists. CSV source bytes are preserved, including historical column names and run identifiers. Public document wording does not rename those keys.
+All supplied rows summarize recorded cells or fitted models. They contain no individual occurrence coordinates or reconstructable native-cell lists. Seasonal CSV source bytes are preserved, including historical column names and run identifiers. The new environmental-organization export preserves existing aggregate rows and documents its additional fold aggregation. Public document wording does not rename historical keys.
 
-## Units and metrics
+## Seasonal units and metrics
 
 | Key | Meaning |
 |---|---|
@@ -45,3 +45,9 @@ All contrast names specify left minus right. Summary `_min` and `_max` are fold 
 [`decomposition/`](decomposition) contains aggregate fold, stratum and mean components for intermontana's matched monthly-minus-variability contrast. The two partitions describe cooler/warmer precipitation association and inside/outside the monthly training-quadrature marginal ranges. Allocation and within-stratum contributions sum to total score change under the original evaluation weights.
 
 These tables support the manuscript's accounting discussion; no individual cell or held-block coordinates are included. The main replay does not regenerate the partition from native predictions. A marginal-range flag does not establish joint environmental support, and an accounting identity is not a causal explanation of seasonal biology.
+
+## Environmental organization
+
+[`environmental_organization/`](environmental_organization/README.md) contains the completed screen's 4,485 mixture fold rows, 897 organization statistics, nine control envelopes, ten association fold aggregates, two association summaries, six saved variance fractions and cohort counts. The main replay reconstructs the statistic/envelope/association arithmetic. Its gains are aggregated across held representatives or blocks, rather than giving folds equal weight. Read the module's definitions before comparing these scores with the seasonal tables.
+
+All three precise-cohort observed selections, all three broader-center sensitivities and every simulated/layout result are retained, including the sensitivity that exceeds both fitted upper envelopes. No association block identifiers or native climate-cell identities are exported. The six variance fractions cannot be recomputed from these aggregates alone.

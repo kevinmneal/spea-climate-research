@@ -1,6 +1,6 @@
 {
-  "snapshot": "v0.1.0",
-  "release_date": "2026-10-15",
+  "snapshot": "v0.2.0",
+  "release_date": "2026-10-21",
   "source_commit": "ed18825ef273987e66172970915bc21384baafdb",
   "scope": "Curated export; source history, raw localities, model arrays and operational records are not included",
   "numerical_results_changed": false,
@@ -277,12 +277,123 @@
       "source_sha256": "7b132665602da61ed2b8aec52638bce046495aed85cb92a4aa2a994ac9058dd3",
       "public_sha256": "7b3d606190bdc20f784aebe0b594adfe86b821c331a199930a080cec6df2f5d2",
       "transformation": "Import namespace changed; omit one full-model objective integration test whose dependency is outside this snapshot; distance/graph tests retained"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/organization_statistics.csv",
+      "public_path": "data/environmental_organization/organization_statistics.csv",
+      "source_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
+      "public_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
+      "transformation": "Exact byte copy of aggregate results; no location identifiers"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/mixture_fold_scores.csv",
+      "public_path": "data/environmental_organization/mixture_fold_scores.csv",
+      "source_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
+      "public_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
+      "transformation": "Exact byte copy of aggregate results; no location identifiers"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/envelope_summary.csv",
+      "public_path": "data/environmental_organization/envelope_summary.csv",
+      "source_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
+      "public_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
+      "transformation": "Exact byte copy of aggregate results; no location identifiers"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/feature_variance.csv",
+      "public_path": "data/environmental_organization/feature_variance.csv",
+      "source_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
+      "public_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
+      "transformation": "Exact byte copy of aggregate results; no location identifiers"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/association_held_blocks.csv",
+      "public_path": "data/environmental_organization/association_fold_scores.csv",
+      "source_sha256": "730fd270fd4df8ee6e351a7f6e1405d7555ed6bcaca40174900a78a7982ab192",
+      "public_sha256": "664dd8a7d19b3b54f194e49ae1aadfe6d35a099309391065f1f6ad2069ea53bc",
+      "transformation": "Group by fold and model; average block scores equally and sum cell counts. Omit block IDs."
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/summary.json",
+      "public_path": "data/environmental_organization/association_summary.csv",
+      "source_sha256": "a732a1cf80a8c3478311ea17b83fe5f9d030f94838a4663e59174b2fedce1d71",
+      "public_sha256": "4de00e6f4972e0f27288c0c6b09b0d35d4da41a45bc7865b41fa93ad7d5060b6",
+      "transformation": "Export conditional_aggregate model means and held counts without changes"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/summary.json",
+      "public_path": "data/environmental_organization/cohort_summary.json",
+      "source_sha256": "a732a1cf80a8c3478311ea17b83fe5f9d030f94838a4663e59174b2fedce1d71",
+      "public_sha256": "87df9c8e06e43ddacbba046b8285b0d5d002fd5eddccb127627e9490d8d1795d",
+      "transformation": "Select aggregate cohort/support counts; omit internal source labels and all record identities"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/config.json",
+      "public_path": "metadata/environmental_organization_design.json",
+      "source_sha256": "033c1bf1db8ba16c941ca328f1cbd43359c48ac5f85f8fbc652ab18ef0fc0314",
+      "public_sha256": "e08db1961a132b28ee69a0185e1c319aa4cbc67fe50ddb87275d34eb4fa15014",
+      "transformation": "Select scientific design fields; add actual inherited grid, recorded installed versions and explicit public replay boundary"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/environmental_organization.png",
+      "public_path": "figures/environmental_organization.png",
+      "source_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
+      "public_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
+      "transformation": "Exact copy of corrected, visually inspected coarse figure"
+    },
+    {
+      "source_path": "results/2026-10-20-intermontana-environmental-organization/environmental_organization.svg",
+      "public_path": "figures/environmental_organization.svg",
+      "source_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
+      "public_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
+      "transformation": "Exact copy of corrected, visually inspected coarse figure"
+    },
+    {
+      "source_path": "reports/intermontana_environmental_organization.md",
+      "public_path": "docs/environmental_organization.md",
+      "source_sha256": "0d082c38366e41916ed0df2e166be514f1db2cbbd2a30814df03239b434cf31c",
+      "public_sha256": "f167feadebca41a1e5f504be78c78b1995cbfced2378872f79c31f716cd5c8c4",
+      "transformation": "Public adaptation with portable links, all observed sensitivities and explicit aggregate-replay boundary; scientific values unchanged"
+    },
+    {
+      "source_path": "reports/ecological_synthesis_and_public_update_2026-10-21.md",
+      "public_path": "docs/research_agenda.md",
+      "source_sha256": "f9352af1b85991b4dd8f2dcdbbd41d99820dda1302505a32cec2170318ce3c2f",
+      "public_sha256": "66699cba9e7da67ee679be38dc5270cf2a25ffed31f8e96b4683e64e1413c5ac",
+      "transformation": "Update existing agenda using the synthesis and completed screen; retain earlier geographical findings and distinguish ecological from ancestry evidence needs"
     }
   ],
   "release_code": {
-    "scripts/replay.py": "New standard-library reconstruction of previously saved matched scores; no new fit",
+    "scripts/replay.py": "Integrates the original, matched-seasonal and environmental-organization aggregate replays; no scientific fitting",
     "scripts/plot_results.py": "New public overview drawn from existing aggregate fold metrics",
     "figures/climate_representation.png": "New display of existing results; script supplied",
-    "tests/test_replay.py": "Release checks of saved aggregate arithmetic and rejection of corrupted/missing data"
+    "tests/test_replay.py": "Release checks of saved aggregate arithmetic and rejection of corrupted/missing data",
+    "scripts/replay_environmental_organization.py": "Standard-library reconstruction of saved organization, envelope and association arithmetic; validates complete evidence slots and internal consistency",
+    "tests/test_replay_environmental_organization.py": "Eight checks of known saved outcomes, linear quantiles, block weighting and rejection of incomplete or corrupted evidence"
+  },
+  "previous_public_commit": "1678bcc8c3a73f60ee4db5701580adde647f47a5",
+  "source_commit_scope": "The source_commit field identifies the initial seasonal snapshot. Later analysis provenance is separately identified below by exact source-file and run hashes.",
+  "numerical_results_note": "Previously published seasonal numerical results are unchanged. This release adds saved outputs from the separate completed 20 October environmental-organization screen; public preparation reruns no scientific fits.",
+  "environmental_organization_source": {
+    "source_run": "2026-10-20-intermontana-environmental-organization-v1",
+    "source_worktree_base_commit": "bdb5b69c6a8db35c12b9aeed1880a1352ca5ac8a",
+    "source_changes_uncommitted_at_export": true,
+    "source_run_receipt_sha256": "94054bd3baf9d1deb7a182a66b453ab95e0702dc76ce9393e2a26c2cf03b2121",
+    "source_snapshot_sha256": "cea5ee268766f8c485a627976ac649e7dbbb7b4dfa25ec2692f05133ebbb3de3",
+    "frozen_config_sha256": "5a269728658388225de269d33568db3696c635ac96eb94629242bf31f714dc39",
+    "projection_clarification_sha256": "e178361f5f8fa4e847cadb0e82cab2fd6ac6b51a259a01126349d35f40a01a47",
+    "native_verification": {
+      "status": "passed",
+      "checks_passed": 1405,
+      "checks_failed": 0,
+      "receipt_sha256": "0721aab92cc8d9ad2b0be6949d04d60ea76bfda6403af43d8fa1c98a28b92de9",
+      "reproduced_by_public_ci": false
+    },
+    "additional_source_hashes": {
+      "reports/seasonal_analogue_pilot.md": "480b4c1903eaa45799138f9335e2f1d8dd96a3f1a3b1f640c0bafd286771e3f9",
+      "src/spea/genus_spatial.py": "6f5aeafeffe117a07a1382412767a9098269da17c4533fe63e53796a1d42165a",
+      "scripts/plot_intermontana_environmental_organization.py": "38b5502113f9478cf5d68a951d9a98466d4db39852c72e90f8221fbb146956a4"
+    },
+    "scope": "Aggregate exports and corrected coarse figure only. Native input identities, model arrays and private casework are not distributed."
   }
 }
