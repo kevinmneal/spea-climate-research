@@ -2,7 +2,7 @@
 
 Kevin M. Neal · Working manuscript · 29 October 2026 · Public companion v0.3.0
 
-Read the [PDF](Spea_Comparative_Manuscript.pdf), comment in the [Word document](Spea_Comparative_Manuscript.docx), or inspect the [complete Markdown source](spea_comparative_manuscript.md). The document includes the main text and references, three main figures, supporting methods and tables, and the coarse evaluation-geography figure.
+Read the [PDF](Spea_Comparative_Manuscript.pdf) or edit the [complete Markdown source](spea_comparative_manuscript.md). The document includes the main text and references, three main figures, supporting methods and tables, and the coarse evaluation-geography figure.
 
 ## Scientific scope
 
@@ -24,13 +24,13 @@ With the optional dependencies in `requirements-components.txt`, rebuild the thr
 python3 manuscript/replay/build_main_figures.py --output-dir replay_output/manuscript_figures
 ```
 
-With `python-docx` installed, rebuild the editable document without overwriting the delivered copy:
+With `python-docx` installed, prepare a local intermediate for PDF rendering:
 
 ```sh
 python3 manuscript/assembly/build_document.py
 ```
 
-The builder writes into `manuscript/rebuilt/`. Rendering to PDF requires a compatible Word/LibreOffice renderer. Different renderers or fonts can change pagination. [The release verification](verification/public_release_validation.json) records what was actually checked. Earlier native audit receipts are dated historical evidence, not checks newly executed by public CI.
+The builder writes a DOCX into ignored `manuscript/rebuilt/` as a local build intermediate; generated Word files are not distributed on the current branch. Rendering to PDF requires a compatible Word/LibreOffice renderer. Different renderers or fonts can change pagination. [The release verification](verification/public_release_validation.json) records what was actually checked. Earlier native audit receipts are dated historical evidence, not checks newly executed by public CI.
 
 The [native code](../native/README.md), [reproducibility guide](../REPRODUCIBILITY.md) and [source/access inventory](../SOURCES_AND_ACCESS.md) describe the original fitting implementation and missing archived inputs. Aggregate replay does not refit models, rebuild Figure S1's native geography, or independently validate observations or ecological inference. Exact records, native masks/arrays, model artifacts and third-party source papers are not bundled here.
 

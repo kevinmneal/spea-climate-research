@@ -10,3 +10,6 @@ replay_figure.png
 # Public manuscript rebuilds and local native inspection environments.
 manuscript/rebuilt/
 native/.venv-inspection/
+
+# Generated document intermediates stay local.
+/manuscript/*.docx

@@ -1,7 +1,7 @@
 {
-  "snapshot": "v0.3.0",
+  "snapshot": "post-v0.3.0 packaging cleanup",
   "release_date": "2026-10-29",
-  "previous_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+  "previous_public_commit": "2baee56182c8a5edc6da3455a1d3ecf677724c13",
   "source_checkpoint": "4b172a740b57934609a35c4ce3e5d5cd0c70be1f",
   "source_checkpoint_scope": "Reviewed integrated manuscript and source code identities. The private research archive contains additional local work that is not exported.",
   "scope": "Integrated working manuscript, original native implementation and fixed configurations, public source/access inventory, aggregate results and portable checks. Exact locality tables, raw survey histories, full native inputs and operational/private-review records are omitted.",
@@ -82,19 +82,21 @@
     },
     {
       "public_path": ".gitignore",
-      "public_sha256": "916f4abf8b9139700495044edb375c54f9d39b37b101559e49869c1e4d42e433",
-      "bytes": 238,
+      "public_sha256": "59100fa8294efcf65f12224db8f6610d63d7ae93666e8c8b1692446df79845f3",
+      "bytes": 305,
       "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
       "source_sha256": "9ef800f861fd727e7541492833923d5bf0bb49c52d17465b580981a77646815a",
-      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "916f4abf8b9139700495044edb375c54f9d39b37b101559e49869c1e4d42e433"
     },
     {
       "public_path": "CHANGELOG.md",
-      "public_sha256": "23ade6f34d84dcf96385387cd98d456cd0073fba84b82ef58a95c1c66b56ac57",
-      "bytes": 5106,
+      "public_sha256": "c098e3d6f95dd35952b5de0e275968c7c86fc74554953f7cd5bba553aba06c12",
+      "bytes": 5424,
       "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
       "source_sha256": "da0f55ea4f5cb9c44049122e2874865c8bc0103788d78e430671e6e741d75f75",
-      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "23ade6f34d84dcf96385387cd98d456cd0073fba84b82ef58a95c1c66b56ac57"
     },
     {
       "public_path": "CITATION.cff",
@@ -122,19 +124,21 @@
     },
     {
       "public_path": "README.md",
-      "public_sha256": "98a47a38c2663fb8a6391c7f6b973701d0e97046787ff8580c6ca09f5ffe4bcf",
-      "bytes": 5933,
+      "public_sha256": "1acbb1ae48f55548b90017572d2dd0c031cd529fd5238a7c2640c5e6cf7cb6ec",
+      "bytes": 5863,
       "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
       "source_sha256": "2d037bcef8df22f7021c91dabe34429a66e784fcea19a3d214d616ec700b3982",
-      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "98a47a38c2663fb8a6391c7f6b973701d0e97046787ff8580c6ca09f5ffe4bcf"
     },
     {
       "public_path": "REPRODUCIBILITY.md",
-      "public_sha256": "371785a06878af1019981b4a210415930c8fe02604c9300e829a55881ba8c588",
-      "bytes": 8639,
+      "public_sha256": "f852a8e7df23c49d7f32f8aba691a9e00df349c20982a84e66409b2ccafe4e9d",
+      "bytes": 8687,
       "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
       "source_sha256": "57ae03d042cdd60179a1ffb7bcd7f672cefdd73160b456765afc53ebd7851eba",
-      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "371785a06878af1019981b4a210415930c8fe02604c9300e829a55881ba8c588"
     },
     {
       "public_path": "SOURCES_AND_ACCESS.md",
@@ -144,9 +148,10 @@
     },
     {
       "public_path": "VERSION_HISTORY.md",
-      "public_sha256": "edd655bc0bf88e7c0ede4188c2908f1f9595ffc8116b7a6bd6619521854df1f0",
-      "bytes": 1886,
-      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+      "public_sha256": "59c1dd5aac3aea0f14db88578e9c91406945c721020635963ba1868e86991faa",
+      "bytes": 2167,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "edd655bc0bf88e7c0ede4188c2908f1f9595ffc8116b7a6bd6619521854df1f0"
     },
     {
       "public_path": "data/README.md",
@@ -374,11 +379,12 @@
     },
     {
       "public_path": "docs/manuscript.md",
-      "public_sha256": "62891e22d2c80aa495c79385af5043407b4e8008dcb487699ae5fbe785136531",
-      "bytes": 908,
+      "public_sha256": "396eecf7f13c952633c2a5f961b3fc654ee54364ea99117f4ab6be1db237abf2",
+      "bytes": 832,
       "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
       "source_sha256": "c4d83634a0d1ee32368c17a009500a95fb610a6ee09bb2a595e5c5dadf046f67",
-      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "62891e22d2c80aa495c79385af5043407b4e8008dcb487699ae5fbe785136531"
     },
     {
       "public_path": "docs/methods.md",
@@ -470,19 +476,12 @@
     },
     {
       "public_path": "manuscript/README.md",
-      "public_sha256": "35110717e80d790b8c834cb2f8c2da1e70370081bacccc17895aa3bfec48716f",
-      "bytes": 3763,
+      "public_sha256": "7e7de0b05a976c0e68275e1434c63a5d7fed742b27d7ca223365e63c004f20f5",
+      "bytes": 3780,
       "source_path": "manuscript/README.md",
       "source_sha256": "c5f164c59454385b0f60852370923512c97cb2eb5cc1f9bbd725bc9ca6e9c8e6",
-      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
-    },
-    {
-      "public_path": "manuscript/Spea_Comparative_Manuscript.docx",
-      "public_sha256": "98d2b286dff7a713f751585049c07a297aa219661a6604fd9ddcf79498a1140d",
-      "bytes": 1258870,
-      "source_path": "manuscript/Spea_Comparative_Manuscript.docx",
-      "source_sha256": "66cf54507ffebc4420b553770e8e0c954686a1878e44a9d1591cfc922d3746d3",
-      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "35110717e80d790b8c834cb2f8c2da1e70370081bacccc17895aa3bfec48716f"
     },
     {
       "public_path": "manuscript/Spea_Comparative_Manuscript.pdf",
@@ -974,9 +973,10 @@
     },
     {
       "public_path": "manuscript/verification/public_release_validation.json",
-      "public_sha256": "8db729bed2f7ae6f1f5e8cc2ec76cfb0d1e289a3c219bffbe75cfec38ea1647e",
-      "bytes": 2701,
-      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+      "public_sha256": "7f22cf9251a426c7da94430e8da44706cbbd2bce580686773fb4ff215ec4fabe",
+      "bytes": 3027,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories; remove distributed Word artifact references, preserving local PDF build instructions",
+      "prior_public_sha256": "8db729bed2f7ae6f1f5e8cc2ec76cfb0d1e289a3c219bffbe75cfec38ea1647e"
     },
     {
       "public_path": "metadata/README.md",
@@ -2022,5 +2022,10 @@
       "scope": "Aggregate exports and corrected coarse figure only. Native input identities, model arrays and private casework are not distributed."
     }
   },
-  "historical_provenance_note": "The nested preceding provenance describes the earlier version, including its file hashes and chronology. Current file identities are in files and CHECKSUMS.sha256. Earlier release tags are preserved."
+  "historical_provenance_note": "The nested preceding provenance describes the earlier version, including its file hashes and chronology. Current file identities are in files and CHECKSUMS.sha256. Earlier release tags are preserved.",
+  "packaging_cleanup": {
+    "note": "A packaging cleanup after v0.3.0 removes the generated Word file from the current branch and release attachments. PDF, Markdown, scientific code and results are unchanged. The original release tag remains intact; the optional PDF builder still produces a local Word intermediate.",
+    "removed_public_file": "manuscript/Spea_Comparative_Manuscript.docx",
+    "retained_original_sha256": "98d2b286dff7a713f751585049c07a297aa219661a6604fd9ddcf79498a1140d"
+  }
 }

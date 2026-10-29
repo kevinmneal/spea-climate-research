@@ -1,5 +1,9 @@
 # Change log
 
+## After v0.3.0 — 29 October 2026
+
+A packaging cleanup after v0.3.0 removes the generated Word file from the current branch and release attachments. PDF, Markdown, scientific code and results are unchanged. The original release tag remains intact; the optional PDF builder still produces a local Word intermediate.
+
 ## 0.3.0 — 29 October 2026
 
 Makes *Recorded climatic differences and geographic prediction across Spea* the active manuscript, combining the completed North/South controlled response, matched climate-representation/weighting and distinct occurrence/survey water comparisons. Publishes PDF, editable Word, complete text/supporting information, all three main figure builders and a 3,664-check aggregate replay. Numerical findings are taken from completed analyses; release preparation adds no fits, predictions, occurrence admissions or new hypothesis tests.

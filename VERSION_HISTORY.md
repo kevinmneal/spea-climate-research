@@ -9,3 +9,5 @@
 The integrated manuscript incorporates and qualifies the earlier seasonal results. Supersession is a change of manuscript framing and scope, not a retraction. The earlier text remains reproducibly addressable through its release tags; no old tag was moved or deleted. The separate environmental-organization note and existing aggregate replays remain available on the main branch.
 
 The broader intermontana case study remains background synthesis in the research archive, not a concurrent second preprint. None of these GitHub releases implies a journal publication, bioRxiv submission or independent peer review. Cite the release or commit you used; see [the change log](CHANGELOG.md) for specific changes.
+
+A packaging cleanup after v0.3.0 removes the generated Word file from the current branch and release attachments. PDF, Markdown, scientific code and results are unchanged. The original release tag remains intact; the optional PDF builder still produces a local Word intermediate.

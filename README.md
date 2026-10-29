@@ -2,7 +2,7 @@
 
 **Recorded climatic differences and geographic prediction across Spea** is a working manuscript by Kevin M. Neal, with its evidence and analysis code. Public companion **v0.3.0, 29 October 2026**, brings the completed North/South, climate-representation and mapped-water comparisons into one paper. It supersedes the earlier seasonal manuscript; [release tags preserve that text](VERSION_HISTORY.md).
 
-[Read the paper (PDF)](manuscript/Spea_Comparative_Manuscript.pdf) · [Editable Word document](manuscript/Spea_Comparative_Manuscript.docx) · [Full text](manuscript/spea_comparative_manuscript.md) · [Evidence index](manuscript/evidence_index.md)
+[Read the paper (PDF)](manuscript/Spea_Comparative_Manuscript.pdf) · [Full text](manuscript/spea_comparative_manuscript.md) · [Evidence index](manuscript/evidence_index.md)
 
 ## What the paper finds
 
@@ -36,7 +36,7 @@ The [native implementation](native/README.md) exposes original fitters, transfor
 
 | Material | Contents |
 | --- | --- |
-| [Manuscript package](manuscript/README.md) | PDF, Word, source, supporting information and all main figure inputs |
+| [Manuscript package](manuscript/README.md) | PDF, Markdown source, supporting information and all main figure inputs |
 | [Reproducibility](REPRODUCIBILITY.md) | Runnable aggregate checks; figure and document rebuilding; native limits |
 | [Native code](native/README.md) | Original fitting and transformation implementation, fixed configs and input inventory |
 | [Sources and access](SOURCES_AND_ACCESS.md) | Source versions, queries, file identities, retrieval routes and omitted inputs |

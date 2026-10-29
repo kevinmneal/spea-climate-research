@@ -8,7 +8,7 @@ Version 0.3.0 provides the integrated manuscript's saved numerical comparisons, 
 | --- | --- | --- |
 | Integrated manuscript arithmetic | Standard-library replay of 3,664 checks | Saved structured-response, pooling, matched seasonal, procedure-history, water and support identities |
 | Three main figures | NumPy/Matplotlib builder from packaged tables | Displays the saved comparisons; adds no fit or uncertainty estimate |
-| Editable manuscript | python-docx builder from Markdown and figures | Recreates document content and layout instructions; PDF rendering is separate |
+| PDF preparation | python-docx builder from Markdown and figures | Generates a local intermediate; PDF rendering is separate |
 | Older seasonal and environmental arithmetic | Existing standard-library replay and tests | Preserved v0.1.0/v0.2.0 table and screen calculations |
 | Selected numerical components | Analytic/synthetic tests and example | Implemented transformations and sampling rules on controlled inputs |
 | Native fitters and settings | Supplied for inspection; syntax/import/help checks performed | Original implementation and project dependencies; not a successful native refit |
@@ -30,7 +30,7 @@ Scores use natural logarithms, whose units are **nats**. The descriptive score n
 
 The earlier 2,510-check native-source audit is retained as a dated receipt. The public replay does not rerun it. Likewise, saved model/array hashes identify native assets; they do not make those assets available or verify their contents anew.
 
-## Rebuild figures and the editable document
+## Rebuild figures and prepare the PDF
 
 Use an isolated Python 3.13 environment for optional figure/component dependencies:
 
@@ -42,14 +42,14 @@ python3 -m venv .venv
 
 The builder reconstructs Figures 1–3 from packaged aggregate scores. It preserves the different water estimands, adverse results, all retained folds and North/South labels. It adds no fits, predictions, confidence intervals or new observations. Figure S1 is supplied as an inspected image; rebuilding it needs omitted native masks, support/split arrays and coordinate-bearing display inputs.
 
-To rebuild the Word document:
+To prepare a local intermediate for PDF rendering:
 
 ```sh
 .venv/bin/python -m pip install -r requirements-document.txt
 .venv/bin/python manuscript/assembly/build_document.py
 ```
 
-The output is `manuscript/rebuilt/Spea_Comparative_Manuscript.docx`. Transfer author edits from Word back into the Markdown source before rebuilding. Word, LibreOffice or another compatible renderer is required to make a PDF; typography and pagination can vary with fonts and renderer. The delivered PDF was rendered and visually checked. [Public release validation](manuscript/verification/public_release_validation.json) states the actual document and image checks.
+The output is `manuscript/rebuilt/Spea_Comparative_Manuscript.docx`, an ignored local build intermediate. PDF and Markdown are the distributed manuscript formats. Make text revisions in the Markdown source. Word, LibreOffice or another compatible renderer is required to make a PDF; typography and pagination can vary with fonts and renderer. The delivered PDF was rendered and visually checked. [Public release validation](manuscript/verification/public_release_validation.json) states the actual document and image checks.
 
 ## Preserve the earlier replays
 
