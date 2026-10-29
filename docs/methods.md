@@ -1,5 +1,7 @@
 # Methods and numerical definitions
 
+**Version scope:** these are the preserved detailed methods for the seasonal component. The active integrated paper's full Methods and supporting information are in [the current manuscript](../manuscript/spea_comparative_manuscript.md). Use [the native code](../native/README.md) and [source/access inventory](../SOURCES_AND_ACCESS.md) for the released implementation and missing inputs. Earlier numerical procedures remain distinct.
+
 Public snapshot v0.1.0. Definitions for the original comparison and subsequent sensitivities; the later matched comparison is specified below.
 
 ## Observation and climate support

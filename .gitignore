@@ -6,3 +6,7 @@ replay_output*/
 environmental_replay_output*/
 replay_figure.png
 *.egg-info/
+
+# Public manuscript rebuilds and local native inspection environments.
+manuscript/rebuilt/
+native/.venv-inspection/

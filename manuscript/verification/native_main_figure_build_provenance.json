@@ -1,0 +1,89 @@
+{
+  "status": "completed_and_visually_inspected",
+  "scope": "Three main manuscript figures using saved aggregate scores and saved means only; no fitting, predictions, new uncertainty estimates, or native-data loads.",
+  "script_sha256": "97e96fb7c81511db3ce9adcc100db5b6146da327945177303f87448e8c481985",
+  "input_sha256": {
+    "results/2026-10-02-south-survey-water/paired_gains.csv": "df001714d7766930e4ad54bc2965b1000a55e9d85db0dd8e5ad340ad2b1939fd",
+    "results/2026-10-02-south-water-benchmark/paired_gains.csv": "af54060d4dc8d747cfbbc035b4b194d8bad78c69c748a80d15a15e2752930714",
+    "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/seasonal_main_figure_fold_contrasts_long.csv": "3824a831e0ee236ffd1481a1a9a701a91bee30ed7448aef8cc3d1e25b7345418",
+    "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/support_primary_structured_targets.csv": "c51cb2c23c807fec4cd78b70c3418aa57ffb367dc1940f44455020d4a58fa896",
+    "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/support_seasonal_all_metric_contrasts.csv": "81bf6c45e783f927ceb9aa931c3a8d05466dbc0a9a51060381321002f751bd01",
+    "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table1_controlled_responses.csv": "7bf0b8ab8972060465fc2f75dc0bca8d42287790852f9df0ba15322938a359fe",
+    "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table3a_presence_water_density.csv": "4b8259fc527bd352be1a61dedbac5588974d99b15e478ab9eb51e42c54a263ed",
+    "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table3b_survey_water_history.csv": "0a35a10317ea189dc0db98dcc14ea3fca11f34a8156d1a42583b24dc74219d57"
+  },
+  "output_sha256": {
+    "figure1_controlled_responses.png": "b3dcbc8ea6bb9907f7442b6a19c61cba516199f6c2a56a022ebd8ac806f8c832",
+    "figure1_controlled_responses.svg": "67e4d273af9933fd9fbf4ace3f233f978163d315b2478111ca7a169ffba2cb60",
+    "figure2_seasonal_representations.png": "00bedc9237cd9b0bcc519314b68a73a2cdb28f6e5f935f75737bbf8abcfb98e7",
+    "figure2_seasonal_representations.svg": "94633a0122c9bc8db22944cb5df09ec7253a7bf0f459faeec47285ad59f808e4",
+    "figure3_mapped_water.png": "88e030828a2dd102567bf6297c16341e104b3edca29761ce84eea38aeb0017ee",
+    "figure3_mapped_water.svg": "4fdcb420aaf749fb5b5b7f64c9bd29fdbad50f591156574c5ea0c7c402ff507e"
+  },
+  "dimensions": {
+    "figure1_controlled_responses": {
+      "width_inches": 6.5,
+      "height_inches": 4.05,
+      "png_dpi": 300,
+      "minimum_text_points": 9
+    },
+    "figure2_seasonal_representations": {
+      "width_inches": 6.5,
+      "height_inches": 6.8,
+      "png_dpi": 300,
+      "minimum_text_points": 9
+    },
+    "figure3_mapped_water": {
+      "width_inches": 6.5,
+      "height_inches": 4.2,
+      "png_dpi": 300,
+      "minimum_text_points": 9
+    }
+  },
+  "rendered_figures_this_execution": [
+    "figure2_seasonal_representations"
+  ],
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3"
+  },
+  "evidence_audit_preservation": {
+    "manifest_sha256_before_and_after": "725cf350f055143743357c499ab94dfb51cafbdb9683b512f6c33194fa26adab",
+    "sealed_files_checked_before_and_after": 19,
+    "all_unchanged": true
+  },
+  "definitions": {
+    "figure1": "Primary 591-cell convex reference only. S: shared response; L: shared plus North/South response; C: shared plus gradual geographic response; CL: gradual plus North/South response. Every structure includes the geographic main effect. All six group-region held scores and saved equally weighted means; paired CL-C increments have their own x scale. Regions 1-3 correspond to saved folds 0-2.",
+    "figure2": "All 168 fold/contrast/evaluation observations from the audited 84 fold contrasts: five units, equal and soft 10-km training weights, monthly minus variability and monthly minus non-nested full BIOCLIM, primary occupied-block and secondary occupied-cell evaluation. Diamonds are SAVED equal-fold means. Fold pairing lines are visual links, not intervals. Same x scale within each evaluation row; different scales between rows.",
+    "figure3": "Left: water-minus-climate relative recording-density scores for fixed quadratic and shallow CatBoost controls in five source blocks; block 3 has only three records. Right: water-minus-terrestrial complete surveyed-history log-probability per cell, five source blocks; block 5 has five cells. Open symbols mark the sparse blocks. Diamonds are saved equal-block means. The two panels use different score definitions and x scales and must not be pooled."
+  },
+  "plotted_counts": {
+    "figure1_absolute_scores": 24,
+    "figure1_absolute_means": 4,
+    "figure1_paired_gains": 6,
+    "figure1_gain_mean": 1,
+    "figure2_fold_points": 168,
+    "figure2_saved_mean_points": 40,
+    "figure3_occurrence_block_points": 10,
+    "figure3_survey_block_points": 5,
+    "figure3_saved_mean_points": 3
+  },
+  "confidence_intervals": false,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "automated_layout_check": "All visible text at least 9 points, no text outside 6.5-inch canvas. Figures saved without tight-cropping so physical dimensions remain exact.",
+  "visual_inspection": {
+    "inspected_utc": "2026-10-29T19:10:51.473699+00:00",
+    "viewer": "view_image",
+    "figures": {
+      "figure1_controlled_responses": "All 24 held scores, four means and six CL-C increments are visible. Structure labels, region symbols and separate panel scales are legible. Reduced gain-axis ticks remove label collision. No clipping or intervals.",
+      "figure2_seasonal_representations": "Label-only revision visually inspected: North/South labels replace prior taxonomic wording. Matched-fold connectors, all values, axes, means, colors and dimensions retained. No clipping.",
+      "figure3_mapped_water": "Separate density and history scales/units are explicit; both learner means and survey mean visible. Sparse blocks marked with open symbols and sample sizes. No clipping or intervals."
+    }
+  },
+  "label_revision": {
+    "scope": "Figure 2 North/South display labels only; Figure 1 and Figure 3 remain byte-identical to prior completed versions.",
+    "prior_figures_and_receipts": "before_label_revision/",
+    "revised_utc": "2026-10-29T19:10:51.473699+00:00"
+  }
+}

@@ -1,0 +1,14 @@
+# Versions used for public-release inspection, help commands and synthetic tests.
+# Not a recovered historical fit environment. Original pyproject.toml/uv.lock are
+# identity baselines only; do not install the broad original project for inspection.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+catboost==1.2.10
+affine==3.0.1
+pyproj==3.8.0
+requests==2.34.2
+urllib3==2.8.0
+matplotlib==3.11.2
+pytest==9.1.1

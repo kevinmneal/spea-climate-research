@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-03T00:18:00.121796+00:00",
+  "model_run": "runs/2026-10-02-south-survey-water-v1",
+  "frozen_config": "config/south_survey_water_v1.json",
+  "config_sha256": "3616339c319bb45de5e65a8e4495b0cfc54217445d26a0e45ac70e6d0b59e55b",
+  "input_hashes": {
+    "data/raw/recovery_usgs/site_occupancy_data.csv": "2923e2e610cf9c09d20190a9dbd6f8832facc7a17209f7ff5523fc278beeccaf",
+    "data/raw/recovery_usgs/so_detection_covariates.csv": "5ce7fe0c0b6f1864286f8819d9ed032ff672eb4d274bb6ec8066e5b37f3411c9",
+    "data/raw/recovery_usgs/spea_hammondii_southern_SDM.xml": "e38d7b1cbe06b1c625336ced4c6f6427f8daa1c41d97845ab4fdd29e44e720de",
+    "catalog/recovery_usgs_assets.json": "507b0537866852d30510ec35b61476272b0a52f588f7bf22ec0a4d5290acab20",
+    "runs/2026-10-02-south-survey-process-review-v1/source_code/SDM_functions.R": "4aa91fbd037da31b3e463bf9f2025868d75ee5601b06c819ff27b39652e16b2f",
+    "runs/2026-10-02-south-survey-process-review-v1/source_code/prep_data.R": "7edf9e5e5cf9ce0e884c6b118544ff5f7d0a3b0825b07fe0ca7b0161140ac71a",
+    "src/spea/survey_history.py": "0fe40f8351c248765a1964333f6caba31b1f0d25fe79a917d2201c7fb8835427",
+    "src/spea/survey_water.py": "74cb0e174ab594df7ebbe39eef35aa7e8e9eb6d5217c51d598396552bab2ec7e",
+    "scripts/run_south_survey_water.py": "1672ce0dca985b88b4f7937f1b853c3f2752b58d113088d5eaf6cd592c04aebf",
+    "tests/test_survey_water.py": "ccd7738ade1ec47919f7c2dcb03fcd4017338a527275f3d220b0b428cd56355d",
+    "uv.lock": "6ed6b12385641aeee65e214fed4f1fcdde120fe5dd61e95a2ba6262dbf1499b8"
+  },
+  "source_ids": [
+    "S35",
+    "S36",
+    "S94"
+  ],
+  "independent_verification": "runs/2026-10-02-south-survey-water-review-v1/verification.json",
+  "verifier_sha256": "f40060fc9ce3beaf457a75bbb4d91c106be2f19d07cd72c1fdd7d74af41caf8a",
+  "tests_passed": 21,
+  "model_fits": 12,
+  "optimizer_calls": 24,
+  "refits_for_verification": 0,
+  "scientific_output": "aggregate_only_no_coordinates_or_cell_ids",
+  "visual_inspection": {
+    "visually_inspected": true,
+    "inspected_utc": "2026-10-03T00:19:54.586570+00:00",
+    "figure_sha256": "66e3fbb0e11ae142b862cde60246bbe23132fedc0b07aa05a1d6efe27b4f4bbf",
+    "viewer": "view_image",
+    "observations": "Both panels, all five block labels and gain values, axes, legend and footnote are legible; no clipping or overlap. Negative gains and sparse/zero-detection blocks match the saved tables.",
+    "layout_revisions": 0
+  },
+  "summary_script_sha256": "33fa8d83adad308b6ca63ad8733cd7fff039d0fdd4ed809ba8167836aa542a1b"
+}

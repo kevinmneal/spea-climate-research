@@ -1,0 +1,114 @@
+{
+  "status": "completed_and_visually_inspected",
+  "created_utc": "2026-10-29T19:10:29.684836+00:00",
+  "input_sha256": {
+    "config/spea_seasonal_manuscript_v1.json": "22a4f7b431c97f603da983b80dd8805241930a191aa7a6305832ef06b94f5f75",
+    "results/2026-10-04-spea-seasonal-manuscript/support_by_fold.csv": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+    "results/2026-10-04-spea-seasonal-manuscript/seasonal_support_provenance.json": "a04138c23676f5c296789aac0760ae1a1e5dabfe05df29fd5813b6ca03e3f585",
+    "scripts/plot_spea_seasonal_support.py": "c05d5d162018d69df10db15cc89ebb4f7c3be2dbb34ae795d8ab64d16551d862",
+    "runs/2026-09-30-five-species-seasonal-figures-v1/held_cell_contrasts.csv.gz": "332c743335f6a4537ff38954c079f15aa0344ec228f9a1334026cd8dccb68c4c",
+    "runs/2026-09-27-genus-model-inputs-v3/feature_registry.json": "4f1429e0f7efc8ea3a40228a212fe83296dac312be50f44ea70e3f078bf834a5",
+    "runs/2026-09-24-cartographic-context-v1/admin1_boundaries.geojson": "aad75a02310906052959af99785ef2a86f246674bb784612b4ceaad92bd7293b",
+    "runs/2026-09-24-cartographic-context-v1/country_boundaries.geojson": "45bc4a2372956bb190d4aca86826fe80ef78919a5ff55cb694320749f34cb438",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/intermontana_fold0.npz": "aac80d409c93dcf58bbd9afe812c95348aac7543fca1c652c32dccfdc3ced6fb",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/intermontana_fold1.npz": "4a4c4873304526ad1e3ac105c54e6a1123e6356f64e11f63804e1f7de3f0f8d4",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/intermontana_fold2.npz": "f47320730f51b0758074ebd7eb9ae3155533b3b30a29a5c5c2f973f5728f1389",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/intermontana_fold3.npz": "048180ae0a17105b147112412379b6e1c427d4141a3ed0916cd61953c32a27fd",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/intermontana_fold4.npz": "75b4a4d0abac74f32be1c98d1defc46d21f2671a4524d40af61bb24132d23bec",
+    "runs/2026-09-27-genus-model-inputs-v3/intermontana_primary_native.npy": "71efb5aa46d55eb67c4233baa58e67a83d106e31a96e0f833b8ebc8d962765c0",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/bombifrons_fold0.npz": "084fed33dbbead43b253487c3261de73e7b4d3b8eab18c862dc596089994e18c",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/bombifrons_fold1.npz": "e3e8846c0fda3b22f89cef1265c7d792428bd50f0b7d30a9b4c987b7d34fe913",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/bombifrons_fold2.npz": "b438f43a6eb2103098134665a68acb25748e9cdac7ebb043c1b2443bbd362187",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/bombifrons_fold3.npz": "7b15c5f2a0edfdb66666dc6ebf572d972fa3a06b4026b6744b25d15b6e3deaf8",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/bombifrons_fold4.npz": "ee780d884baec40df736ab17f82247be164c90b309e0ab907125abf265d673e1",
+    "runs/2026-09-27-genus-model-inputs-v3/bombifrons_primary_native.npy": "e4b00b7a724966c57072e7bb9acd9ccdea75b6e03ceffa1151abdfe8fc7bf9c3",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/multiplicata_fold0.npz": "215e9717029dedb8d7f2f3d0a88c1593815986cb42f258441f02faf1acdff371",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/multiplicata_fold1.npz": "a3dedea33b0a609a86859d5bccaa2fe0dae62d4bcc51944da943a665260793da",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/multiplicata_fold2.npz": "86f174a0c1d5754bdeb31b43c6b746dac03a3ae997b03291bb28b743fa8a3796",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/multiplicata_fold3.npz": "8af71d82828ea20df52df3a2c98488668a34c2e3a3fc8d1defbf101f7b80ee9e",
+    "runs/2026-09-30-genus-seasonal-comparison-v2/splits/multiplicata_fold4.npz": "d7288b3bf9a59b0d07694d44a03a83813281b483a1aa72c97709fee40cea68cc",
+    "runs/2026-09-27-genus-model-inputs-v3/multiplicata_primary_native.npy": "4aadd19eb0685106d11c7cda76a67e0f821529be203026d6989e6b32ac4b00dd",
+    "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/splits/hammondii_north_fold0.npz": "d22ba813a9d5af6ecbb8d12d0860403b253b3d5d1feebc12416bc28539d2a997",
+    "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/splits/hammondii_north_fold1.npz": "7cb43822e2f0a6b82cf3ea1062c575e953a18226b42c33825cd5f9fa5a25f271",
+    "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/splits/hammondii_north_fold2.npz": "936288a1b54393361939af3a211a5477e321cbc687c1c8bc82d53945380b9d17",
+    "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/splits/spea_south_fold0.npz": "8962de0db5284f20331791ff63fb3140615e44e0b130289022a4d74195c8f8d0",
+    "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/splits/spea_south_fold1.npz": "5405d27730b2b8aec40ac2debf98aed8bc70e894ec85f33b336bd3566a87b035",
+    "runs/2026-09-30-hammondii-species-seasonal-comparison-v1/splits/spea_south_fold2.npz": "49a07923a27cfcf663bc01fa4f2d3aace6009108442d679d649685bbebd19107"
+  },
+  "maps": [
+    {
+      "species": "intermontana",
+      "available_role": "saved primary native available domain",
+      "displayed_held_cells": 505,
+      "source_target_cells": 1941239,
+      "target_cells_in_multiple_folds": 0,
+      "display_m": 25000,
+      "coarse_fold_rule": "largest held native physical area in each display tile; no native fold reassignment"
+    },
+    {
+      "species": "bombifrons",
+      "available_role": "saved primary native available domain",
+      "displayed_held_cells": 1199,
+      "source_target_cells": 5363306,
+      "target_cells_in_multiple_folds": 0,
+      "display_m": 25000,
+      "coarse_fold_rule": "largest held native physical area in each display tile; no native fold reassignment"
+    },
+    {
+      "species": "multiplicata",
+      "available_role": "saved primary native available domain",
+      "displayed_held_cells": 1619,
+      "source_target_cells": 2863236,
+      "target_cells_in_multiple_folds": 0,
+      "display_m": 25000,
+      "coarse_fold_rule": "largest held native physical area in each display tile; no native fold reassignment"
+    },
+    {
+      "species": "hammondii_north",
+      "available_role": "union of saved training and held native domains",
+      "displayed_held_cells": 138,
+      "source_target_cells": 241304,
+      "target_cells_in_multiple_folds": 0,
+      "display_m": 25000,
+      "coarse_fold_rule": "largest held native physical area in each display tile; no native fold reassignment"
+    },
+    {
+      "species": "spea_south",
+      "available_role": "union of saved training and held native domains",
+      "displayed_held_cells": 453,
+      "source_target_cells": 107215,
+      "target_cells_in_multiple_folds": 0,
+      "display_m": 25000,
+      "coarse_fold_rule": "largest held native physical area in each display tile; no native fold reassignment"
+    }
+  ],
+  "script_sha256": "58b6f3b247ee4ff08dbdf1b11b8c1831372aa3e99a57361210904cbd1fcc4004",
+  "output_sha256": {
+    "figure_s1_evaluation_coverage.svg": "35717783201d9f0de3dbff1dae36e3dcdccb2d4e8765bdbc80f6de884af64f7e",
+    "figure_s1_evaluation_coverage.png": "85f91ef41507db3f5563313c1f686b6b6a85259c97151bde6adb230e05fc3abf"
+  },
+  "width_inches": 7,
+  "height_inches": 7,
+  "png_dpi": 300,
+  "minimum_font_points": 10,
+  "five_map_panels_verified": true,
+  "displayed_total_3914_verified": true,
+  "exact_original_map_metadata_match": true,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_masks": 0,
+  "new_spatial_folds": 0,
+  "raw_coordinate_exports": 0,
+  "source_plotter_run": false,
+  "display_definition": "Identical saved support inputs, 25-km dominant-area fold display and count-preserving grouped recorded cells, as scripts/plot_spea_seasonal_support.py; only figure arrangement, sizing, labels and legend placement change. No raw points exported. Panels use their original different geographic extents.",
+  "visual_inspection": {
+    "inspected_utc": "2026-10-29T19:10:51.473699+00:00",
+    "viewer": "view_image",
+    "observations": "Labels in panels D/E now read North/South. All map panels, saved supports, displayed counts, geometry, colors and legend retained; no clipping."
+  },
+  "label_revision": {
+    "scope": "Panel D/E display labels only",
+    "prior_figures_and_receipts": "before_label_revision/",
+    "revised_utc": "2026-10-29T19:10:51.473699+00:00"
+  }
+}

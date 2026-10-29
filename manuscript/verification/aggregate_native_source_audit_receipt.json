@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "arithmetic_and_saved_source_comparisons": 2510,
+  "comparison_tolerance_absolute_and_relative": 1e-12,
+  "source_structured_rows": 384,
+  "seasonal_family_arm_fold_rows": 168,
+  "seasonal_family_means_checked": 40,
+  "seasonal_contrast_means_extrema_counts_checked": 40,
+  "main_figure_fold_contrasts": 84,
+  "main_figure_metric_specific_rows": 168,
+  "nonlinear_rows": 48,
+  "saved_selected_species_folds_preserved": 21,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "new_native_model_replays": 0,
+  "raw_environmental_or_occurrence_arrays_loaded": false,
+  "check_labels_sha256": "91f3cd839dd5a1dd6bbd7b5219a79d9308266938ee1209ac6ac82eaa504b2bc3",
+  "reproduction": "python3 runs/2026-10-29-integrated-manuscript-v1/evidence_audit/audit_saved_tables.py"
+}

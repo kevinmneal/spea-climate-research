@@ -1,0 +1,111 @@
+{
+  "status": "frozen_after_source_audit_and_tests_before_any_survey_water_fit",
+  "created_utc": "2026-10-03T00:11:38.869844+00:00",
+  "authorization": "Kevin accepted the supplied-survey water/terrestrial/effort follow-up and said: Ok what is next? Keep it going.",
+  "survey_table": "data/raw/recovery_usgs/site_occupancy_data.csv",
+  "effort_table": "data/raw/recovery_usgs/so_detection_covariates.csv",
+  "metadata": "data/raw/recovery_usgs/spea_hammondii_southern_SDM.xml",
+  "source_ids": [
+    "S35",
+    "S36",
+    "S94"
+  ],
+  "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016
+  ],
+  "terrestrial_features": [
+    "grass.shrub.1000",
+    "sand.1000",
+    "slope.1000",
+    "elev.1000"
+  ],
+  "water_features": [
+    "vp.pond.dist",
+    "ephem.dist"
+  ],
+  "observation_features": [
+    "trapping_days",
+    "water_year_precipitation_mm"
+  ],
+  "arms": {
+    "terrestrial": false,
+    "terrestrial_water": true
+  },
+  "blocks": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "ridge_precision": 1.0,
+  "maximum_fits": 12,
+  "maximum_optimizer_calls": 24,
+  "maximum_cpu_seconds": 120,
+  "maximum_gradient_inf": 0.0001,
+  "starts": [
+    {
+      "psi": 0.25,
+      "p": 0.15
+    },
+    {
+      "psi": 0.75,
+      "p": 0.05
+    }
+  ],
+  "optimizer_options": {
+    "maxiter": 600,
+    "ftol": 1e-12,
+    "gtol": 1e-07,
+    "maxls": 40
+  },
+  "selection": "All376 exact-ID-linked cells,8272 years;2133 surveyed years and150 detections. Mask6139 no-trapping outcomes; no imputation or synthetic absences. The fixed1000m terrestrial scale is complete for all cells. Source n.det and broader any-method SPHA are unused as outcomes.",
+  "formula": "z_i~Bernoulli(psi_i), logit(psi_i)=habitat_i*beta; observed y_it|z_i=1~Bernoulli(p_it), logit(p_it)=intercept+standardized raw trapping days+standardized raw annual rain; z_i=0 implies no encounters. Positive history likelihood=psi_i*product Bernoulli(y_it;p_it); zero history likelihood=(1-psi_i)+psi_i*product(1-p_it).",
+  "interpretation": "A static latent state and conditionally independent annual encounters are strong working assumptions across1995-2016. psi is not independently validated occupancy or physiology; p combines availability and detection. This source-only comparison is not a replication of integrated PB-SO fits.",
+  "features": "Training-cell standardization of terrestrial predictors; add quadratic terms centered/scaled on training cells. Water arm adds only log1p(km) distance terms, standardized on training cells. Observation predictors are standardized on surveyed training years only. No climate-grid mapping, coordinates or environmental matching is inferred.",
+  "penalty": "Sum of cell-history negative log likelihood plus0.5*sum of squared slopes; both intercepts unpenalized. Fixed ridge precision1 stabilizes sparse blocks. No selection of penalty, scale, family or variables from held outcomes. Two deterministic starts per model; select lowest converged training objective. Curvature and start agreement are descriptive diagnostics, not uncertainty intervals.",
+  "evaluation": "Five supplied-block holdouts; primary paired mean joint history log-score difference within each block and equal-block mean. Also report pooled-cell mean and source-block coverage. Secondary any-encounter log score under actual supplied effort/rain and positive-history pattern decomposition. Block3 has77 cells/no detections and remains scored. Block5 has5 cells/2 detected; descriptive omissions of blocks3 and5 show influence without changing primary. No geometric-gap claim; source spatial separation remains unverified.",
+  "full_fits": "Two all-data fits solely descriptive, labeled training diagnostic, excluded from held scores.",
+  "limitations": "Survey arrays are targeted, not a probability sample of California. Mapped water may correlate with site selection or omitted habitat. Long closure, yearly dependence, mixed covariate dates, variable exposure and missing coordinates limit interpretation. No occupancy calibration, causal water effect, distribution correction, Baja transfer, LGM projection or new pool inventory.",
+  "versions": {
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+  },
+  "input_hashes": {
+    "data/raw/recovery_usgs/site_occupancy_data.csv": "2923e2e610cf9c09d20190a9dbd6f8832facc7a17209f7ff5523fc278beeccaf",
+    "data/raw/recovery_usgs/so_detection_covariates.csv": "5ce7fe0c0b6f1864286f8819d9ed032ff672eb4d274bb6ec8066e5b37f3411c9",
+    "data/raw/recovery_usgs/spea_hammondii_southern_SDM.xml": "e38d7b1cbe06b1c625336ced4c6f6427f8daa1c41d97845ab4fdd29e44e720de",
+    "catalog/recovery_usgs_assets.json": "507b0537866852d30510ec35b61476272b0a52f588f7bf22ec0a4d5290acab20",
+    "runs/2026-10-02-south-survey-process-review-v1/source_code/SDM_functions.R": "4aa91fbd037da31b3e463bf9f2025868d75ee5601b06c819ff27b39652e16b2f",
+    "runs/2026-10-02-south-survey-process-review-v1/source_code/prep_data.R": "7edf9e5e5cf9ce0e884c6b118544ff5f7d0a3b0825b07fe0ca7b0161140ac71a",
+    "src/spea/survey_history.py": "0fe40f8351c248765a1964333f6caba31b1f0d25fe79a917d2201c7fb8835427",
+    "src/spea/survey_water.py": "74cb0e174ab594df7ebbe39eef35aa7e8e9eb6d5217c51d598396552bab2ec7e",
+    "scripts/run_south_survey_water.py": "1672ce0dca985b88b4f7937f1b853c3f2752b58d113088d5eaf6cd592c04aebf",
+    "tests/test_survey_water.py": "ccd7738ade1ec47919f7c2dcb03fcd4017338a527275f3d220b0b428cd56355d",
+    "uv.lock": "6ed6b12385641aeee65e214fed4f1fcdde120fe5dd61e95a2ba6262dbf1499b8"
+  }
+}

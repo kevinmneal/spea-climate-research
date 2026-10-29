@@ -1,0 +1,8 @@
+# Native execution may generate record-level or location-bearing assets.
+data/
+runs/
+results/
+.venv-inspection/
+__pycache__/
+.pytest_cache/
+*.pyc

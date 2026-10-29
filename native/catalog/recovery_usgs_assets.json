@@ -1,0 +1,304 @@
+{
+  "task": "bounded USGS historical locality recovery audit",
+  "status": "complete_no_records_promoted_no_models",
+  "created_at_utc": "2026-09-21T03:38:37.051117+00:00",
+  "release": {
+    "doi": "10.5066/P9O7MC7M",
+    "sciencebase_item": "679916e7d34ea8c18376e9a5",
+    "publication_date": "2025-02-25",
+    "webpage_date": "2025-02-26",
+    "lastUpdated": "2025-02-26T20:27:19Z",
+    "explicit_version_number": null,
+    "note": "No numbered data-release edition appears in fetched metadata; do not conflate with code version 1.0.",
+    "license_uri": "http://www.usa.gov/publicdomain/label/1.0/",
+    "access_constraints": "No access constraints.",
+    "use_constraints": "No use constraints.",
+    "coordinate_accuracy": "No formal positional accuracy tests; per-record uncertainty absent."
+  },
+  "related_publication": {
+    "doi": "10.1016/j.gecco.2021.e01944",
+    "year": 2022,
+    "relationship": "Explicit Related_Primary_Publication and FGDC larger-work citation"
+  },
+  "related_code": {
+    "doi": "10.5066/P9YYKW1H",
+    "version": "1.0",
+    "commit": "d84c6fe0972a0d26a42e418b7396a47795e789cc",
+    "released_at": "2025-03-10T21:04:37.599Z",
+    "license": "CC0-1.0",
+    "readme_neal_alias_crosswalk_present": false
+  },
+  "download_estimate": {
+    "before_table_download_metadata_bytes": 100984,
+    "selected_three_table_bytes": 416269,
+    "maximum_authorized_total_bytes": 20000000,
+    "actual_source_body_bytes": 1197147,
+    "downloaded_source_assets": 13,
+    "scope": "No projection grid, quadrature table, raster, archive or executable model scripts fetched."
+  },
+  "assets": [
+    {
+      "asset_id": "recovery_usgs:sciencebase_item.json",
+      "path": "data/raw/recovery_usgs/sciencebase_item.json",
+      "source_url": "https://www.sciencebase.gov/catalog/item/679916e7d34ea8c18376e9a5?format=json",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:29:44.732785+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 21590,
+      "sha256": "b24b76e83793d06d422a149cc7a4a569f9dc1812d20f4f01ab40626664e0ac0b",
+      "http_response_headers": "data/raw/recovery_usgs/sciencebase_item.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "2025-02-25 data release; ScienceBase lastUpdated 2025-02-26T20:27:19Z"
+    },
+    {
+      "asset_id": "recovery_usgs:usgs_publication_70241495.html",
+      "path": "data/raw/recovery_usgs/usgs_publication_70241495.html",
+      "source_url": "https://pubs.usgs.gov/publication/70241495",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:32:58.341302+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 61463,
+      "sha256": "5437655d4704b165a8c6e98e5fd3b65f7837d3858d7ce25c703c96ce75d05023",
+      "http_response_headers": "data/raw/recovery_usgs/usgs_publication_70241495.html.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "page snapshot"
+    },
+    {
+      "asset_id": "recovery_usgs:data_usgs_catalog.html",
+      "path": "data/raw/recovery_usgs/data_usgs_catalog.html",
+      "source_url": "https://data.usgs.gov/datacatalog/data/USGS%3A679916e7d34ea8c18376e9a5",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:32:58.075683+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 505670,
+      "sha256": "ed421d5f5839441ccaa33f81a112b16a606fe653091c19f6f47b67bf179879fc",
+      "http_response_headers": "data/raw/recovery_usgs/data_usgs_catalog.html.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "page snapshot"
+    },
+    {
+      "asset_id": "recovery_usgs:rose2022_code_landing.html",
+      "path": "data/raw/recovery_usgs/rose2022_code_landing.html",
+      "source_url": "https://doi.org/10.5066/P9YYKW1H",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:33:42.612243+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 33843,
+      "sha256": "7afc02131781fb1203ad152e9f44fa52b88d18c07ecd88812110bab9bfb966c6",
+      "http_response_headers": "data/raw/recovery_usgs/rose2022_code_doi.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "code 1.0, commit d84c6fe0972a0d26a42e418b7396a47795e789cc"
+    },
+    {
+      "asset_id": "recovery_usgs:rose2022_code_release.json",
+      "path": "data/raw/recovery_usgs/rose2022_code_release.json",
+      "source_url": "https://code.usgs.gov/api/v4/projects/11655/releases/1.0",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:34:33.718424+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 28349,
+      "sha256": "0090cb53ae72487f1d838a1d067ebbefa61eb8fe7fcfaaffc38b7da861aea482",
+      "http_response_headers": "data/raw/recovery_usgs/rose2022_code_release.json.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "code 1.0, commit d84c6fe0972a0d26a42e418b7396a47795e789cc"
+    },
+    {
+      "asset_id": "recovery_usgs:rose2022_code_tree.json",
+      "path": "data/raw/recovery_usgs/rose2022_code_tree.json",
+      "source_url": "https://code.usgs.gov/api/v4/projects/11655/repository/tree?ref=1.0&per_page=100",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:34:33.653701+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 995,
+      "sha256": "fe9178639f314868461660b91567c85ad49fb4001f027d26011b401c3a2f58e1",
+      "http_response_headers": "data/raw/recovery_usgs/rose2022_code_tree.json.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "code 1.0, commit d84c6fe0972a0d26a42e418b7396a47795e789cc"
+    },
+    {
+      "asset_id": "recovery_usgs:usgs_code_README.md",
+      "path": "data/raw/recovery_usgs/usgs_code_README.md",
+      "source_url": "https://code.usgs.gov/api/v4/projects/11655/repository/files/README.md/raw?ref=d84c6fe0972a0d26a42e418b7396a47795e789cc",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:35:03.133914+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 24819,
+      "sha256": "aac75d7965adb023ec82fae96eeceed8c206c919d0482c045f0c4eb8a3243da3",
+      "http_response_headers": "data/raw/recovery_usgs/usgs_code_README.md.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "CC0-1.0 / US public domain",
+      "source_version": "code 1.0, commit d84c6fe0972a0d26a42e418b7396a47795e789cc"
+    },
+    {
+      "asset_id": "recovery_usgs:usgs_code_LICENSE.md",
+      "path": "data/raw/recovery_usgs/usgs_code_LICENSE.md",
+      "source_url": "https://code.usgs.gov/api/v4/projects/11655/repository/files/LICENSE.md/raw?ref=d84c6fe0972a0d26a42e418b7396a47795e789cc",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:35:03.039718+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 1650,
+      "sha256": "8f7f9f0a052bd4b9883e2a6ad88ef52fde0fecf05e75abae674c4c7a072e3043",
+      "http_response_headers": "data/raw/recovery_usgs/usgs_code_LICENSE.md.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "CC0-1.0 / US public domain",
+      "source_version": "code 1.0, commit d84c6fe0972a0d26a42e418b7396a47795e789cc"
+    },
+    {
+      "asset_id": "recovery_usgs:usgs_code_code.json",
+      "path": "data/raw/recovery_usgs/usgs_code_code.json",
+      "source_url": "https://code.usgs.gov/api/v4/projects/11655/repository/files/code.json/raw?ref=d84c6fe0972a0d26a42e418b7396a47795e789cc",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:35:02.990440+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 1515,
+      "sha256": "32e687e3750bce10863872a239d740fb087048b5c122066b997e5a6cab311cfb",
+      "http_response_headers": "data/raw/recovery_usgs/usgs_code_code.json.headers.txt",
+      "official_md5": null,
+      "official_md5_verified": false,
+      "license": "CC0-1.0 / US public domain",
+      "source_version": "code 1.0, commit d84c6fe0972a0d26a42e418b7396a47795e789cc"
+    },
+    {
+      "asset_id": "recovery_usgs:presence_only_records.csv",
+      "path": "data/raw/recovery_usgs/presence_only_records.csv",
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__17%2Fea%2F19%2F17ea192204101b889aa39060715d1a662c6347cd",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:31:23.914598+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 132678,
+      "sha256": "7f5a7dd78d528e12d8ef121a8257392eb8ce83c2b7d78311f52a87e012c78306",
+      "http_response_headers": "data/raw/recovery_usgs/presence_only_records.csv.headers.txt",
+      "official_md5": "25d767b88c5c2e1e1df945f452650c04",
+      "official_md5_verified": true,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "2025-02-25 data release; ScienceBase lastUpdated 2025-02-26T20:27:19Z"
+    },
+    {
+      "asset_id": "recovery_usgs:site_occupancy_data.csv",
+      "path": "data/raw/recovery_usgs/site_occupancy_data.csv",
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__9c%2F18%2F80%2F9c188073a8bfd35a0c818c21548be44c46eaeec2",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:31:24.351671+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 115713,
+      "sha256": "2923e2e610cf9c09d20190a9dbd6f8832facc7a17209f7ff5523fc278beeccaf",
+      "http_response_headers": "data/raw/recovery_usgs/site_occupancy_data.csv.headers.txt",
+      "official_md5": "fc5c4eeceb4568f2e6f809bbbedca016",
+      "official_md5_verified": true,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "2025-02-25 data release; ScienceBase lastUpdated 2025-02-26T20:27:19Z"
+    },
+    {
+      "asset_id": "recovery_usgs:so_detection_covariates.csv",
+      "path": "data/raw/recovery_usgs/so_detection_covariates.csv",
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__6c%2Fe1%2Fec%2F6ce1ec7afd5871db08a755e610784da0d9276b6a",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:31:25.156287+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 167878,
+      "sha256": "5ce7fe0c0b6f1864286f8819d9ed032ff672eb4d274bb6ec8066e5b37f3411c9",
+      "http_response_headers": "data/raw/recovery_usgs/so_detection_covariates.csv.headers.txt",
+      "official_md5": "38777f9de4e1804718d16016b20082de",
+      "official_md5_verified": true,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "2025-02-25 data release; ScienceBase lastUpdated 2025-02-26T20:27:19Z"
+    },
+    {
+      "asset_id": "recovery_usgs:spea_hammondii_southern_SDM.xml",
+      "path": "data/raw/recovery_usgs/spea_hammondii_southern_SDM.xml",
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__08%2F53%2F37%2F085337edd7dd21a8739d56cfb3862369cdc3f403",
+      "acquisition_method": "public_https_curl_tls_verified",
+      "retrieved_at_utc": "2026-09-21T03:30:06.728737+00:00",
+      "retrieval_timestamp_basis": "local file write completion",
+      "bytes": 100984,
+      "sha256": "e38d7b1cbe06b1c625336ced4c6f6427f8daa1c41d97845ab4fdd29e44e720de",
+      "http_response_headers": "data/raw/recovery_usgs/fgdc.headers.txt",
+      "official_md5": "a193aec6888eed2a38c801995547c9c6",
+      "official_md5_verified": true,
+      "license": "public-domain-label-1.0 (USGS data catalog); see source-specific rights",
+      "source_version": "2025-02-25 data release; ScienceBase lastUpdated 2025-02-26T20:27:19Z"
+    }
+  ],
+  "skipped_assets": [
+    {
+      "name": "environmental_covariates_for_model_projection.csv",
+      "bytes": 5978115,
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__9e%2F8c%2Fa1%2F9e8ca139962786ba756f94fd465fa0383fc99936",
+      "reason": "Not needed for bounded locality/provenance audit"
+    },
+    {
+      "name": "quadrature_points_1km.csv",
+      "bytes": 9239918,
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__b4%2F97%2Fe9%2Fb497e99091930e4244cb1b4f28fb2289b3f01e58",
+      "reason": "Not needed for bounded locality/provenance audit"
+    },
+    {
+      "name": "southern_western_spadefoot_PPM.tif",
+      "bytes": 162811,
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__11%2F46%2Fee%2F1146ee2d42633280272636b6bbf97040cc0a52ba",
+      "reason": "Not needed for bounded locality/provenance audit"
+    },
+    {
+      "name": "southern_western_spadefoot_PPM.tif-ColorRamp.SLD",
+      "bytes": 2120,
+      "source_url": "https://www.sciencebase.gov/catalog/file/get/679916e7d34ea8c18376e9a5?f=__disk__a0%2Fa0%2F30%2Fa0a030753185f74c74f9f0ad3ffa9b187ac8ff0a",
+      "reason": "Not needed for bounded locality/provenance audit"
+    }
+  ],
+  "retrieval_failures": [
+    {
+      "source": "ScienceBase JSON in default sandbox",
+      "status": "DNS unavailable",
+      "resolution": "public retrieval succeeded using authorized escalation"
+    },
+    {
+      "source": "https://www.sciencedirect.com/science/article/pii/S2351989421004947",
+      "status": "HTTP 403 direct retrieval",
+      "resolution": "Primary publisher methods inspected via web search indexed text; no local full-paper HTML/PDF claimed"
+    },
+    {
+      "source": "https://www.usgs.gov/data/occurrence-data-western-spadefoot-spea-hammondii-southern-california-1995-2020-and-projected",
+      "status": "HTTP 403 direct retrieval",
+      "resolution": "Page inspected by web; DOI, dates, rights, table data and publication link independently preserved from ScienceBase/FGDC/catalog"
+    }
+  ],
+  "derived_files": [
+    {
+      "path": "data/raw/recovery_usgs/inspect_release.py",
+      "sha256": "ac2629c14a1bf1468034edbd1ba2d7b7703b06ad0e640f7440236028a7dca2b7",
+      "role": "local derived audit, not original USGS source bytes"
+    },
+    {
+      "path": "data/raw/recovery_usgs/inspection.json",
+      "sha256": "f2762726d0e1afedd35025741d7d8f7b6b2f86bf3df31ab48bb10b07b2d32ea5",
+      "role": "local derived audit, not original USGS source bytes"
+    }
+  ],
+  "commands": [
+    ".venv/bin/python data/raw/recovery_usgs/inspect_release.py",
+    "Public sources fetched with system curl --location --fail --silent --show-error --connect-timeout 15 --max-time 45 --max-filesize 2000000 --dump-header HEADER --output PATH URL; metadata code files capped 200000 bytes. URLs and output/header paths above."
+  ],
+  "checks": {
+    "four_official_size_and_md5_checks_passed": true,
+    "all_offline_audit_assertions_passed": true,
+    "raw_source_coordinates_changed": false,
+    "restricted_coordinates_reconstructed": false,
+    "models_fitted": 0,
+    "offline_inspection_replay_exact": true,
+    "source_and_derived_sha256_checks_passed": 15
+  }
+}

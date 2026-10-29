@@ -1,399 +1,2026 @@
 {
-  "snapshot": "v0.2.0",
-  "release_date": "2026-10-21",
-  "source_commit": "ed18825ef273987e66172970915bc21384baafdb",
-  "scope": "Curated export; source history, raw localities, model arrays and operational records are not included",
-  "numerical_results_changed": false,
-  "copied_or_adapted_files": [
+  "snapshot": "v0.3.0",
+  "release_date": "2026-10-29",
+  "previous_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+  "source_checkpoint": "4b172a740b57934609a35c4ce3e5d5cd0c70be1f",
+  "source_checkpoint_scope": "Reviewed integrated manuscript and source code identities. The private research archive contains additional local work that is not exported.",
+  "scope": "Integrated working manuscript, original native implementation and fixed configurations, public source/access inventory, aggregate results and portable checks. Exact locality tables, raw survey histories, full native inputs and operational/private-review records are omitted.",
+  "scientific_numerical_inputs_changed": false,
+  "new_empirical_fits": 0,
+  "new_predictions": 0,
+  "unchanged_manuscript_data_and_figures": [
+    "manuscript/source_data/canonical_source_identity_receipts.json",
+    "manuscript/source_data/expanded_selected_folds.csv",
+    "manuscript/source_data/expanded_species_summary.csv",
+    "manuscript/source_data/occurrence_water_block_metrics.csv",
+    "manuscript/source_data/occurrence_water_paired_gains.csv",
+    "manuscript/source_data/occurrence_water_provenance.json",
+    "manuscript/source_data/occurrence_water_summary.json",
+    "manuscript/source_data/original_evidence_designs.csv",
+    "manuscript/source_data/pooling_transfer_means.csv",
+    "manuscript/source_data/pooling_transfer_paired_gains.csv",
+    "manuscript/source_data/pooling_transfer_scores.csv",
+    "manuscript/source_data/recorded_available_climate.csv",
+    "manuscript/source_data/seasonal_all_contrast_summaries.csv",
+    "manuscript/source_data/seasonal_all_family_means.csv",
+    "manuscript/source_data/seasonal_all_fold_contrasts.csv",
+    "manuscript/source_data/seasonal_all_fold_metrics.csv",
+    "manuscript/source_data/seasonal_coverage_map_provenance.json",
+    "manuscript/source_data/seasonal_family_lineage.csv",
+    "manuscript/source_data/seasonal_fixed_shallow_config.json",
+    "manuscript/source_data/seasonal_main_figure_fold_contrasts_long.csv",
+    "manuscript/source_data/seasonal_method_specification.json",
+    "manuscript/source_data/seasonal_original_procedure_contrasts.csv",
+    "manuscript/source_data/seasonal_original_procedure_folds.csv",
+    "manuscript/source_data/seasonal_original_procedure_means.csv",
+    "manuscript/source_data/seasonal_original_provenance.json",
+    "manuscript/source_data/seasonal_source_alignment.csv",
+    "manuscript/source_data/seasonal_support_by_fold.csv",
+    "manuscript/source_data/source_manifest.json",
+    "manuscript/source_data/structured_all_means.csv",
+    "manuscript/source_data/structured_all_paired_gains.csv",
+    "manuscript/source_data/structured_all_scores.csv",
+    "manuscript/source_data/support_nonlinear_development_history.csv",
+    "manuscript/source_data/support_primary_structured_targets.csv",
+    "manuscript/source_data/support_seasonal_all_metric_contrasts.csv",
+    "manuscript/source_data/survey_water_block_metrics.csv",
+    "manuscript/source_data/survey_water_coverage.csv",
+    "manuscript/source_data/survey_water_paired_gains.csv",
+    "manuscript/source_data/survey_water_provenance.json",
+    "manuscript/source_data/survey_water_summary.json",
+    "manuscript/source_data/table1_controlled_responses.csv",
+    "manuscript/source_data/table2_matched_representations.csv",
+    "manuscript/source_data/table3a_presence_water_density.csv",
+    "manuscript/source_data/table3b_survey_water_history.csv",
+    "manuscript/figures/figure_1_north_south.png",
+    "manuscript/figures/figure_1_north_south.svg",
+    "manuscript/figures/figure_2_climate_representations.png",
+    "manuscript/figures/figure_2_climate_representations.svg",
+    "manuscript/figures/figure_3_mapped_water.png",
+    "manuscript/figures/figure_3_mapped_water.svg",
+    "manuscript/figures/figure_s1_evaluation_geography.png",
+    "manuscript/figures/figure_s1_evaluation_geography.svg"
+  ],
+  "native_original_file_count": 51,
+  "original_source_identity_note": "Original and exported hashes are distinct for adapted prose, builders, receipts and rendered documents. Native hashes identify source bytes; missing native data are not newly verified or made available by those hashes.",
+  "files": [
     {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_folds.csv",
-      "public_path": "data/original/primary_folds.csv",
-      "source_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
-      "public_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
-      "transformation": "Exact byte copy"
+      "public_path": ".gitattributes",
+      "public_sha256": "c2ff3ed442b11e2bf6b333654c4f7b345d7515b58f288f4fedae24d9dd6eed67",
+      "bytes": 25,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c2ff3ed442b11e2bf6b333654c4f7b345d7515b58f288f4fedae24d9dd6eed67",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_summary.csv",
-      "public_path": "data/original/primary_summary.csv",
-      "source_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
-      "public_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
-      "transformation": "Exact byte copy"
+      "public_path": ".github/workflows/reproduce.yml",
+      "public_sha256": "8b196ed0fba9edd6bf7f16ff824e815c3979f3b5b763d632763940e2d9a09b6f",
+      "bytes": 1345,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c563c54a560a50965b990833d6d39b447dbc6107f7de335209f463b67ee1b08f",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_contrasts.csv",
-      "public_path": "data/original/primary_contrasts.csv",
-      "source_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
-      "public_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
-      "transformation": "Exact byte copy"
+      "public_path": ".gitignore",
+      "public_sha256": "916f4abf8b9139700495044edb375c54f9d39b37b101559e49869c1e4d42e433",
+      "bytes": 238,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "9ef800f861fd727e7541492833923d5bf0bb49c52d17465b580981a77646815a",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/procedure_contrasts.csv",
-      "public_path": "data/original/procedure_contrasts.csv",
-      "source_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
-      "public_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
-      "transformation": "Exact byte copy"
+      "public_path": "CHANGELOG.md",
+      "public_sha256": "23ade6f34d84dcf96385387cd98d456cd0073fba84b82ef58a95c1c66b56ac57",
+      "bytes": 5106,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "da0f55ea4f5cb9c44049122e2874865c8bc0103788d78e430671e6e741d75f75",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/support_by_fold.csv",
-      "public_path": "data/original/support_by_fold.csv",
-      "source_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
-      "public_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
-      "transformation": "Exact byte copy"
+      "public_path": "CITATION.cff",
+      "public_sha256": "9a927c11ec2c01d2fafa39179df5d124d5e8bdc73092a5e23bcd49e66b4b1218",
+      "bytes": 846,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "dbac872e2bb7dcf13dd9222f83f402de99b712471939a0629421374953e6d867",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/replay_spea_seasonal_tables.py",
-      "public_path": "scripts/replay_original_tables.py",
-      "source_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
-      "public_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
-      "transformation": "Exact byte copy"
+      "public_path": "LICENSE",
+      "public_sha256": "b514a4415ad8defd6532f9e292e932d13e9fe80853b605b580400876d418debe",
+      "bytes": 1070,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "b514a4415ad8defd6532f9e292e932d13e9fe80853b605b580400876d418debe",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-05-seasonal-bioclim-reference/fold_metrics.csv",
-      "public_path": "data/matched/fold_metrics.csv",
-      "source_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
-      "public_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
-      "transformation": "Exact byte copy"
+      "public_path": "NOTICE.md",
+      "public_sha256": "426fc602a4f2e100e98bf87fe32613a66668bc966dd4b9b1f9c234346fb9c51c",
+      "bytes": 1722,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "0e8c2437ff855c0f9270114124e9ece364d7e8b0cedd5c48f114eebe91402401",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-05-seasonal-bioclim-reference/family_summary.csv",
-      "public_path": "data/matched/family_summary.csv",
-      "source_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
-      "public_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
-      "transformation": "Exact byte copy"
+      "public_path": "README.md",
+      "public_sha256": "98a47a38c2663fb8a6391c7f6b973701d0e97046787ff8580c6ca09f5ffe4bcf",
+      "bytes": 5933,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "2d037bcef8df22f7021c91dabe34429a66e784fcea19a3d214d616ec700b3982",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_folds.csv",
-      "public_path": "data/matched/contrast_folds.csv",
-      "source_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
-      "public_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
-      "transformation": "Exact byte copy"
+      "public_path": "REPRODUCIBILITY.md",
+      "public_sha256": "371785a06878af1019981b4a210415930c8fe02604c9300e829a55881ba8c588",
+      "bytes": 8639,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "57ae03d042cdd60179a1ffb7bcd7f672cefdd73160b456765afc53ebd7851eba",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
     },
     {
-      "source_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_summary.csv",
-      "public_path": "data/matched/contrast_summary.csv",
-      "source_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
-      "public_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
-      "transformation": "Exact byte copy"
+      "public_path": "SOURCES_AND_ACCESS.md",
+      "public_sha256": "bdf9f131a56fd0ba90afc05aa3aa170085fb276f623f84d0ee15df5144ed75be",
+      "bytes": 17728,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
     },
     {
-      "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/fold_components.csv",
+      "public_path": "VERSION_HISTORY.md",
+      "public_sha256": "edd655bc0bf88e7c0ede4188c2908f1f9595ffc8116b7a6bd6619521854df1f0",
+      "bytes": 1886,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "data/README.md",
+      "public_sha256": "b866ff0cf8e88670ee25e5c311d7843c6c469e963ace35a3a7d9bfaac96250ea",
+      "bytes": 6317,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "8758f14761f10e08a10005bb1881cf31f333c33089a9e7d32f2416b601a0123b",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+    },
+    {
       "public_path": "data/decomposition/fold_components.csv",
-      "source_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
       "public_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
-      "transformation": "Exact byte copy"
+      "bytes": 3375,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/mean_components.csv",
       "public_path": "data/decomposition/mean_components.csv",
-      "source_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
       "public_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
-      "transformation": "Exact byte copy"
+      "bytes": 557,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/stratum_components.csv",
       "public_path": "data/decomposition/stratum_components.csv",
-      "source_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
       "public_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
-      "transformation": "Exact byte copy"
+      "bytes": 13347,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_folds.csv",
-      "public_path": "data/sensitivities/feature_folds.csv",
-      "source_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
-      "public_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
-      "transformation": "Exact byte copy"
+      "public_path": "data/environmental_organization/README.md",
+      "public_sha256": "f44e968ec48d0dba5edfb2edd366728ecfbfea913769b861d69b6e44078c9db3",
+      "bytes": 3876,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "f44e968ec48d0dba5edfb2edd366728ecfbfea913769b861d69b6e44078c9db3",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_summary.csv",
-      "public_path": "data/sensitivities/feature_summary.csv",
-      "source_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
-      "public_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/sampling_summary.csv",
-      "public_path": "data/sensitivities/sampling_summary.csv",
-      "source_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
-      "public_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/soft_folds.csv",
-      "public_path": "data/sensitivities/soft_folds.csv",
-      "source_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
-      "public_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/soft_summary.csv",
-      "public_path": "data/sensitivities/soft_summary.csv",
-      "source_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
-      "public_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/south_procedure.csv",
-      "public_path": "data/sensitivities/south_procedure.csv",
-      "source_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
-      "public_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_fold_coverage.png",
-      "public_path": "figures/seasonal_fold_coverage.png",
-      "source_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
-      "public_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_within_unit_contrasts.png",
-      "public_path": "figures/seasonal_within_unit_contrasts.png",
-      "source_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
-      "public_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_sampling_sensitivities.png",
-      "public_path": "figures/feature_sampling_sensitivities.png",
-      "source_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
-      "public_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-seasonal-weighting-interaction/seasonal_weighting_interaction.png",
-      "public_path": "figures/seasonal_weighting_interaction.png",
-      "source_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
-      "public_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-05-seasonal-bioclim-reference/seasonal_bioclim_reference.png",
-      "public_path": "figures/seasonal_bioclim_reference.png",
-      "source_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
-      "public_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/references.bib",
-      "public_path": "metadata/references.bib",
-      "source_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
-      "public_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/references.json",
-      "public_path": "metadata/references.json",
-      "source_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
-      "public_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/mask_specification.json",
-      "public_path": "metadata/mask_specification.json",
-      "source_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
-      "public_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/software_snapshot.json",
-      "public_path": "metadata/software_snapshot.json",
-      "source_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
-      "public_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "results/2026-10-04-spea-seasonal-preparation/method_specification.json",
-      "public_path": "metadata/method_specification.json",
-      "source_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
-      "public_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "reports/spea_seasonal_manuscript_weighting_revision.md",
-      "public_path": "docs/manuscript.md",
-      "source_sha256": "14a297a97df9b7eb0409db8020bc1f1ae372440ef01136d985a959e04196a8fc",
-      "public_sha256": "c4d83634a0d1ee32368c17a009500a95fb610a6ee09bb2a595e5c5dadf046f67",
-      "transformation": "Public status header, operational-unit wording, portable links, and editorial removal of internal workflow instructions; numerical results unchanged; figure numbering follows first appearance; public-only availability wording corrected; GitHub-supported math delimiters"
-    },
-    {
-      "source_path": "reports/spea_seasonal_methods_appendix.md",
-      "public_path": "docs/methods.md",
-      "source_sha256": "dc00814331dbee5e410b3adafe228d3c52cf4638a9812c5deec71fca6e8dd0d5",
-      "public_sha256": "d23a87c071ea6ed1678ae08e26263ee489ad7b44b24c2192f154acdbe1d10afd",
-      "transformation": "Public links and replay scope; later matched comparison documented; original numerical definitions retained; GitHub-supported math delimiters"
-    },
-    {
-      "source_path": "src/spea/seasonal_model.py",
-      "public_path": "src/spea_snapshot/seasonal_model.py",
-      "source_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
-      "public_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "src/spea/spatial_weights.py",
-      "public_path": "src/spea_snapshot/spatial_weights.py",
-      "source_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
-      "public_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "src/spea/spatial_thinning.py",
-      "public_path": "src/spea_snapshot/spatial_thinning.py",
-      "source_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
-      "public_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
-      "transformation": "Exact byte copy"
-    },
-    {
-      "source_path": "src/spea/climate_statistics.py",
-      "public_path": "src/spea_snapshot/climate_statistics.py",
-      "source_sha256": "ba914d41b7c7d4e3ef40421557fc9a3cafa48846bb50b27ac116d89679002211",
-      "public_sha256": "c7c21a4da8903c65fb5da8dc132bd3731d5b4f039d288178f4940bec8464f29a",
-      "transformation": "Replace the LOG_KEYS import with the identical set; all numerical functions unchanged"
-    },
-    {
-      "source_path": "tests/test_seasonal_model.py",
-      "public_path": "tests/components/test_seasonal_model.py",
-      "source_sha256": "b51a6bb97832ebebb5431b98ff964d67a89fa5bd9a7d58b7178c7c964fec3bb4",
-      "public_sha256": "8465218f51113365d50bca9f65f1dec18f1225c0e7518a26c9f155be49dba96d",
-      "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
-    },
-    {
-      "source_path": "tests/test_climate_statistics.py",
-      "public_path": "tests/components/test_climate_statistics.py",
-      "source_sha256": "a20b40cf43cd64f2429a01583ec5f362705e8bbd9cd8ca5728d7709599572bbd",
-      "public_sha256": "2457cad7f7ef71223c715633af5dd45ce0d58988e928ee87a72b16d02cecd7be",
-      "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
-    },
-    {
-      "source_path": "tests/test_spatial_weights.py",
-      "public_path": "tests/components/test_spatial_weights.py",
-      "source_sha256": "2f94343e4457045fcbb5b1e3bab0cf578f2256cd5c4a0e580742d7101fe89071",
-      "public_sha256": "cabf2429762ab662908f56bf56712e4724e5ffea9378b92b6875024b7ea9387f",
-      "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
-    },
-    {
-      "source_path": "tests/test_spatial_thinning.py",
-      "public_path": "tests/components/test_spatial_thinning.py",
-      "source_sha256": "7b132665602da61ed2b8aec52638bce046495aed85cb92a4aa2a994ac9058dd3",
-      "public_sha256": "7b3d606190bdc20f784aebe0b594adfe86b821c331a199930a080cec6df2f5d2",
-      "transformation": "Import namespace changed; omit one full-model objective integration test whose dependency is outside this snapshot; distance/graph tests retained"
-    },
-    {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/organization_statistics.csv",
-      "public_path": "data/environmental_organization/organization_statistics.csv",
-      "source_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
-      "public_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
-      "transformation": "Exact byte copy of aggregate results; no location identifiers"
-    },
-    {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/mixture_fold_scores.csv",
-      "public_path": "data/environmental_organization/mixture_fold_scores.csv",
-      "source_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
-      "public_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
-      "transformation": "Exact byte copy of aggregate results; no location identifiers"
-    },
-    {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/envelope_summary.csv",
-      "public_path": "data/environmental_organization/envelope_summary.csv",
-      "source_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
-      "public_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
-      "transformation": "Exact byte copy of aggregate results; no location identifiers"
-    },
-    {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/feature_variance.csv",
-      "public_path": "data/environmental_organization/feature_variance.csv",
-      "source_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
-      "public_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
-      "transformation": "Exact byte copy of aggregate results; no location identifiers"
-    },
-    {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/association_held_blocks.csv",
       "public_path": "data/environmental_organization/association_fold_scores.csv",
-      "source_sha256": "730fd270fd4df8ee6e351a7f6e1405d7555ed6bcaca40174900a78a7982ab192",
       "public_sha256": "664dd8a7d19b3b54f194e49ae1aadfe6d35a099309391065f1f6ad2069ea53bc",
-      "transformation": "Group by fold and model; average block scores equally and sum cell counts. Omit block IDs."
+      "bytes": 412,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "664dd8a7d19b3b54f194e49ae1aadfe6d35a099309391065f1f6ad2069ea53bc",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/summary.json",
       "public_path": "data/environmental_organization/association_summary.csv",
-      "source_sha256": "a732a1cf80a8c3478311ea17b83fe5f9d030f94838a4663e59174b2fedce1d71",
       "public_sha256": "4de00e6f4972e0f27288c0c6b09b0d35d4da41a45bc7865b41fa93ad7d5060b6",
-      "transformation": "Export conditional_aggregate model means and held counts without changes"
+      "bytes": 124,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "4de00e6f4972e0f27288c0c6b09b0d35d4da41a45bc7865b41fa93ad7d5060b6",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/summary.json",
       "public_path": "data/environmental_organization/cohort_summary.json",
-      "source_sha256": "a732a1cf80a8c3478311ea17b83fe5f9d030f94838a4663e59174b2fedce1d71",
       "public_sha256": "87df9c8e06e43ddacbba046b8285b0d5d002fd5eddccb127627e9490d8d1795d",
-      "transformation": "Select aggregate cohort/support counts; omit internal source labels and all record identities"
+      "bytes": 304,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "87df9c8e06e43ddacbba046b8285b0d5d002fd5eddccb127627e9490d8d1795d",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/config.json",
-      "public_path": "metadata/environmental_organization_design.json",
-      "source_sha256": "033c1bf1db8ba16c941ca328f1cbd43359c48ac5f85f8fbc652ab18ef0fc0314",
-      "public_sha256": "e08db1961a132b28ee69a0185e1c319aa4cbc67fe50ddb87275d34eb4fa15014",
-      "transformation": "Select scientific design fields; add actual inherited grid, recorded installed versions and explicit public replay boundary"
+      "public_path": "data/environmental_organization/envelope_summary.csv",
+      "public_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
+      "bytes": 1083,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/environmental_organization.png",
-      "public_path": "figures/environmental_organization.png",
-      "source_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
-      "public_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
-      "transformation": "Exact copy of corrected, visually inspected coarse figure"
+      "public_path": "data/environmental_organization/feature_variance.csv",
+      "public_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
+      "bytes": 434,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "results/2026-10-20-intermontana-environmental-organization/environmental_organization.svg",
-      "public_path": "figures/environmental_organization.svg",
-      "source_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
-      "public_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
-      "transformation": "Exact copy of corrected, visually inspected coarse figure"
+      "public_path": "data/environmental_organization/mixture_fold_scores.csv",
+      "public_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
+      "bytes": 606008,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "reports/intermontana_environmental_organization.md",
+      "public_path": "data/environmental_organization/organization_statistics.csv",
+      "public_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
+      "bytes": 42372,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/matched/contrast_folds.csv",
+      "public_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "bytes": 22607,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/matched/contrast_summary.csv",
+      "public_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "bytes": 12763,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/matched/family_summary.csv",
+      "public_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "bytes": 4574,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/matched/fold_metrics.csv",
+      "public_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "bytes": 87067,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/original/primary_contrasts.csv",
+      "public_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
+      "bytes": 34200,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/original/primary_folds.csv",
+      "public_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "bytes": 67620,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/original/primary_summary.csv",
+      "public_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "bytes": 7802,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/original/procedure_contrasts.csv",
+      "public_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "bytes": 2814,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/original/support_by_fold.csv",
+      "public_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "bytes": 2400,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/sensitivities/feature_folds.csv",
+      "public_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
+      "bytes": 43303,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/sensitivities/feature_summary.csv",
+      "public_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
+      "bytes": 14270,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/sensitivities/sampling_summary.csv",
+      "public_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
+      "bytes": 3514,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/sensitivities/soft_folds.csv",
+      "public_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
+      "bytes": 16248,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/sensitivities/soft_summary.csv",
+      "public_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
+      "bytes": 3388,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "data/sensitivities/south_procedure.csv",
+      "public_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
+      "bytes": 465,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
       "public_path": "docs/environmental_organization.md",
-      "source_sha256": "0d082c38366e41916ed0df2e166be514f1db2cbbd2a30814df03239b434cf31c",
       "public_sha256": "f167feadebca41a1e5f504be78c78b1995cbfced2378872f79c31f716cd5c8c4",
-      "transformation": "Public adaptation with portable links, all observed sensitivities and explicit aggregate-replay boundary; scientific values unchanged"
+      "bytes": 10964,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "f167feadebca41a1e5f504be78c78b1995cbfced2378872f79c31f716cd5c8c4",
+      "transformation": "Unchanged from v0.2.0"
     },
     {
-      "source_path": "reports/ecological_synthesis_and_public_update_2026-10-21.md",
+      "public_path": "docs/manuscript.md",
+      "public_sha256": "62891e22d2c80aa495c79385af5043407b4e8008dcb487699ae5fbe785136531",
+      "bytes": 908,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c4d83634a0d1ee32368c17a009500a95fb610a6ee09bb2a595e5c5dadf046f67",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+    },
+    {
+      "public_path": "docs/methods.md",
+      "public_sha256": "3f966ddddd19dc19450b8d2b82e9de8d9511499345aa45edb78ad964ff4b7726",
+      "bytes": 19695,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "d23a87c071ea6ed1678ae08e26263ee489ad7b44b24c2192f154acdbe1d10afd",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+    },
+    {
       "public_path": "docs/research_agenda.md",
-      "source_sha256": "f9352af1b85991b4dd8f2dcdbbd41d99820dda1302505a32cec2170318ce3c2f",
-      "public_sha256": "66699cba9e7da67ee679be38dc5270cf2a25ffed31f8e96b4683e64e1413c5ac",
-      "transformation": "Update existing agenda using the synthesis and completed screen; retain earlier geographical findings and distinguish ecological from ancestry evidence needs"
+      "public_sha256": "53f700e7885cc21f03713e0168ff3540a5c1d155576e81a301a011a32cf1e8f8",
+      "bytes": 7461,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "66699cba9e7da67ee679be38dc5270cf2a25ffed31f8e96b4683e64e1413c5ac",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+    },
+    {
+      "public_path": "examples/synthetic_components.py",
+      "public_sha256": "0b861c27e70be978e51ca11945543cc2c041743ed122e7f3689fed0822d21211",
+      "bytes": 1463,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "0b861c27e70be978e51ca11945543cc2c041743ed122e7f3689fed0822d21211",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/climate_representation.png",
+      "public_sha256": "d01fae2b838dc7c99484ad9c1bf5df2a1f0a166c6bfeddb930cea0685d4f0c05",
+      "bytes": 122759,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "d01fae2b838dc7c99484ad9c1bf5df2a1f0a166c6bfeddb930cea0685d4f0c05",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/environmental_organization.png",
+      "public_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
+      "bytes": 297293,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/environmental_organization.svg",
+      "public_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
+      "bytes": 716077,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/feature_sampling_sensitivities.png",
+      "public_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
+      "bytes": 195797,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/seasonal_bioclim_reference.png",
+      "public_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+      "bytes": 329979,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/seasonal_fold_coverage.png",
+      "public_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
+      "bytes": 658623,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/seasonal_weighting_interaction.png",
+      "public_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
+      "bytes": 149234,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "figures/seasonal_within_unit_contrasts.png",
+      "public_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
+      "bytes": 242539,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "manuscript/README.md",
+      "public_sha256": "35110717e80d790b8c834cb2f8c2da1e70370081bacccc17895aa3bfec48716f",
+      "bytes": 3763,
+      "source_path": "manuscript/README.md",
+      "source_sha256": "c5f164c59454385b0f60852370923512c97cb2eb5cc1f9bbd725bc9ca6e9c8e6",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/Spea_Comparative_Manuscript.docx",
+      "public_sha256": "98d2b286dff7a713f751585049c07a297aa219661a6604fd9ddcf79498a1140d",
+      "bytes": 1258870,
+      "source_path": "manuscript/Spea_Comparative_Manuscript.docx",
+      "source_sha256": "66cf54507ffebc4420b553770e8e0c954686a1878e44a9d1591cfc922d3746d3",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/Spea_Comparative_Manuscript.pdf",
+      "public_sha256": "4ff39dbb1b06ca530714674f269ef74bad6ed93610ece8c9789e6cec3e21ec6b",
+      "bytes": 1229446,
+      "source_path": "manuscript/Spea_Comparative_Manuscript.pdf",
+      "source_sha256": "061c8444cc6b53fa2a62a4e92fc889affbb4e37ca436816969b587e5a4f6edba",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/assembly/build_document.py",
+      "public_sha256": "276528cb197efb377ad68ab44ba47b2289621728583f42eeef993ba35312f8d6",
+      "bytes": 11378,
+      "source_path": "manuscript/assembly/build_document.py",
+      "source_sha256": "260ea60343440c34df8c1296007a4a28cb063f41fd936657813a8364b42fefbf",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/evidence_index.md",
+      "public_sha256": "51becb399e51f9942639db18a5bab01db8e23efaaca59349a4a99932b5f9a8fe",
+      "bytes": 13090,
+      "source_path": "manuscript/evidence_index.md",
+      "source_sha256": "97d692f2876b926c6d5fda4d669b8d786f8c66912acebae8e380b41668051aff",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/figures/figure_1_north_south.png",
+      "public_sha256": "b3dcbc8ea6bb9907f7442b6a19c61cba516199f6c2a56a022ebd8ac806f8c832",
+      "bytes": 112569,
+      "source_path": "manuscript/figures/figure_1_north_south.png",
+      "source_sha256": "b3dcbc8ea6bb9907f7442b6a19c61cba516199f6c2a56a022ebd8ac806f8c832",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_1_north_south.svg",
+      "public_sha256": "67e4d273af9933fd9fbf4ace3f233f978163d315b2478111ca7a169ffba2cb60",
+      "bytes": 27131,
+      "source_path": "manuscript/figures/figure_1_north_south.svg",
+      "source_sha256": "67e4d273af9933fd9fbf4ace3f233f978163d315b2478111ca7a169ffba2cb60",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_2_climate_representations.png",
+      "public_sha256": "00bedc9237cd9b0bcc519314b68a73a2cdb28f6e5f935f75737bbf8abcfb98e7",
+      "bytes": 233065,
+      "source_path": "manuscript/figures/figure_2_climate_representations.png",
+      "source_sha256": "00bedc9237cd9b0bcc519314b68a73a2cdb28f6e5f935f75737bbf8abcfb98e7",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_2_climate_representations.svg",
+      "public_sha256": "94633a0122c9bc8db22944cb5df09ec7253a7bf0f459faeec47285ad59f808e4",
+      "bytes": 90150,
+      "source_path": "manuscript/figures/figure_2_climate_representations.svg",
+      "source_sha256": "94633a0122c9bc8db22944cb5df09ec7253a7bf0f459faeec47285ad59f808e4",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_3_mapped_water.png",
+      "public_sha256": "88e030828a2dd102567bf6297c16341e104b3edca29761ce84eea38aeb0017ee",
+      "bytes": 119898,
+      "source_path": "manuscript/figures/figure_3_mapped_water.png",
+      "source_sha256": "88e030828a2dd102567bf6297c16341e104b3edca29761ce84eea38aeb0017ee",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_3_mapped_water.svg",
+      "public_sha256": "4fdcb420aaf749fb5b5b7f64c9bd29fdbad50f591156574c5ea0c7c402ff507e",
+      "bytes": 24037,
+      "source_path": "manuscript/figures/figure_3_mapped_water.svg",
+      "source_sha256": "4fdcb420aaf749fb5b5b7f64c9bd29fdbad50f591156574c5ea0c7c402ff507e",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_s1_evaluation_geography.png",
+      "public_sha256": "85f91ef41507db3f5563313c1f686b6b6a85259c97151bde6adb230e05fc3abf",
+      "bytes": 796725,
+      "source_path": "manuscript/figures/figure_s1_evaluation_geography.png",
+      "source_sha256": "85f91ef41507db3f5563313c1f686b6b6a85259c97151bde6adb230e05fc3abf",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/figures/figure_s1_evaluation_geography.svg",
+      "public_sha256": "35717783201d9f0de3dbff1dae36e3dcdccb2d4e8765bdbc80f6de884af64f7e",
+      "bytes": 2852827,
+      "source_path": "manuscript/figures/figure_s1_evaluation_geography.svg",
+      "source_sha256": "35717783201d9f0de3dbff1dae36e3dcdccb2d4e8765bdbc80f6de884af64f7e",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/replay/build_main_figures.py",
+      "public_sha256": "a51db181c54cc84a2e0efe18fb01383affd7ef7be48919ab39dfabf2b546b9c6",
+      "bytes": 16578,
+      "source_path": "manuscript/replay/build_main_figures.py",
+      "source_sha256": "a51db181c54cc84a2e0efe18fb01383affd7ef7be48919ab39dfabf2b546b9c6",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/replay/replay_aggregates.py",
+      "public_sha256": "da7ffe181945c5fb0721fce9481832868ba93f5f7b5f68e9808bc9649aa8e686",
+      "bytes": 10986,
+      "source_path": "manuscript/replay/replay_aggregates.py",
+      "source_sha256": "978542dfb884eafccf3e74978093301ad374f046bb08f48c04951a8da92dad62",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/source_data/canonical_source_identity_receipts.json",
+      "public_sha256": "1a6ae632b296128dda425736adb48602c9b9c6dcf10e5be737567e1986c9585e",
+      "bytes": 111100,
+      "source_path": "manuscript/source_data/canonical_source_identity_receipts.json",
+      "source_sha256": "1a6ae632b296128dda425736adb48602c9b9c6dcf10e5be737567e1986c9585e",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/expanded_selected_folds.csv",
+      "public_sha256": "b4c45ad310580c0e32f72e943f982d4716181c15c74b935c933b7ea56611625c",
+      "bytes": 11140,
+      "source_path": "manuscript/source_data/expanded_selected_folds.csv",
+      "source_sha256": "b4c45ad310580c0e32f72e943f982d4716181c15c74b935c933b7ea56611625c",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/expanded_species_summary.csv",
+      "public_sha256": "89b523abf4d350fcee05129dcaed1ec144b3f7992ac85234b0157febd65d5f7d",
+      "bytes": 1458,
+      "source_path": "manuscript/source_data/expanded_species_summary.csv",
+      "source_sha256": "89b523abf4d350fcee05129dcaed1ec144b3f7992ac85234b0157febd65d5f7d",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/occurrence_water_block_metrics.csv",
+      "public_sha256": "7deb4fe599c9a680d11595f268b3103efc5ff270c01b08fee741b152aba74575",
+      "bytes": 3451,
+      "source_path": "manuscript/source_data/occurrence_water_block_metrics.csv",
+      "source_sha256": "7deb4fe599c9a680d11595f268b3103efc5ff270c01b08fee741b152aba74575",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/occurrence_water_paired_gains.csv",
+      "public_sha256": "af54060d4dc8d747cfbbc035b4b194d8bad78c69c748a80d15a15e2752930714",
+      "bytes": 1125,
+      "source_path": "manuscript/source_data/occurrence_water_paired_gains.csv",
+      "source_sha256": "af54060d4dc8d747cfbbc035b4b194d8bad78c69c748a80d15a15e2752930714",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/occurrence_water_provenance.json",
+      "public_sha256": "8207885f1a5b964106e5d95c8a94f00634284a2c33b43c70a0758f35838c0cf8",
+      "bytes": 1602,
+      "source_path": "manuscript/source_data/occurrence_water_provenance.json",
+      "source_sha256": "8207885f1a5b964106e5d95c8a94f00634284a2c33b43c70a0758f35838c0cf8",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/occurrence_water_summary.json",
+      "public_sha256": "4b61f9e655172844c8655d98ed63eaa1bfe1ab4e3dc55c79581831e79a47b184",
+      "bytes": 2570,
+      "source_path": "manuscript/source_data/occurrence_water_summary.json",
+      "source_sha256": "4b61f9e655172844c8655d98ed63eaa1bfe1ab4e3dc55c79581831e79a47b184",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/original_evidence_designs.csv",
+      "public_sha256": "48110af03a1ecf56e7c70657bc076f15b2e758105eadb25c9b2e7acdccb4357a",
+      "bytes": 9845,
+      "source_path": "manuscript/source_data/original_evidence_designs.csv",
+      "source_sha256": "48110af03a1ecf56e7c70657bc076f15b2e758105eadb25c9b2e7acdccb4357a",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/pooling_transfer_means.csv",
+      "public_sha256": "32229fb5ac078380afb41c196d62ba7efd9f49c4c4db95e03a8c4124bd0ecd29",
+      "bytes": 3808,
+      "source_path": "manuscript/source_data/pooling_transfer_means.csv",
+      "source_sha256": "32229fb5ac078380afb41c196d62ba7efd9f49c4c4db95e03a8c4124bd0ecd29",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/pooling_transfer_paired_gains.csv",
+      "public_sha256": "fd4eaf2e5e5f6220debb328450458c779493ef387d2833d81aa30ae1e325f14e",
+      "bytes": 17077,
+      "source_path": "manuscript/source_data/pooling_transfer_paired_gains.csv",
+      "source_sha256": "fd4eaf2e5e5f6220debb328450458c779493ef387d2833d81aa30ae1e325f14e",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/pooling_transfer_scores.csv",
+      "public_sha256": "fc41cc516999b385de903034a67f4dd039ed963476e571511a1ed96aa2eacdb7",
+      "bytes": 31409,
+      "source_path": "manuscript/source_data/pooling_transfer_scores.csv",
+      "source_sha256": "fc41cc516999b385de903034a67f4dd039ed963476e571511a1ed96aa2eacdb7",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/recorded_available_climate.csv",
+      "public_sha256": "9c0b2ff8ea65fb366582eabed0d1e721f2072f8d472ee7a1fdaebabc98fde1b5",
+      "bytes": 2871,
+      "source_path": "manuscript/source_data/recorded_available_climate.csv",
+      "source_sha256": "9c0b2ff8ea65fb366582eabed0d1e721f2072f8d472ee7a1fdaebabc98fde1b5",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_all_contrast_summaries.csv",
+      "public_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "bytes": 12763,
+      "source_path": "manuscript/source_data/seasonal_all_contrast_summaries.csv",
+      "source_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_all_family_means.csv",
+      "public_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "bytes": 4574,
+      "source_path": "manuscript/source_data/seasonal_all_family_means.csv",
+      "source_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_all_fold_contrasts.csv",
+      "public_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "bytes": 22607,
+      "source_path": "manuscript/source_data/seasonal_all_fold_contrasts.csv",
+      "source_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_all_fold_metrics.csv",
+      "public_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "bytes": 87067,
+      "source_path": "manuscript/source_data/seasonal_all_fold_metrics.csv",
+      "source_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_coverage_map_provenance.json",
+      "public_sha256": "a04138c23676f5c296789aac0760ae1a1e5dabfe05df29fd5813b6ca03e3f585",
+      "bytes": 7513,
+      "source_path": "manuscript/source_data/seasonal_coverage_map_provenance.json",
+      "source_sha256": "a04138c23676f5c296789aac0760ae1a1e5dabfe05df29fd5813b6ca03e3f585",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_family_lineage.csv",
+      "public_sha256": "bfe8a2bd550d6bbe9f94371f04f664ed3ead58b2976359ab634d9b8f81e07430",
+      "bytes": 6457,
+      "source_path": "manuscript/source_data/seasonal_family_lineage.csv",
+      "source_sha256": "bfe8a2bd550d6bbe9f94371f04f664ed3ead58b2976359ab634d9b8f81e07430",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_fixed_shallow_config.json",
+      "public_sha256": "ad793e4db5b9447a6091648480da86b9ada91f5a3a85cb6bc5d2aabdddcb47dc",
+      "bytes": 3170,
+      "source_path": "manuscript/source_data/seasonal_fixed_shallow_config.json",
+      "source_sha256": "ad793e4db5b9447a6091648480da86b9ada91f5a3a85cb6bc5d2aabdddcb47dc",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_main_figure_fold_contrasts_long.csv",
+      "public_sha256": "3824a831e0ee236ffd1481a1a9a701a91bee30ed7448aef8cc3d1e25b7345418",
+      "bytes": 14783,
+      "source_path": "manuscript/source_data/seasonal_main_figure_fold_contrasts_long.csv",
+      "source_sha256": "3824a831e0ee236ffd1481a1a9a701a91bee30ed7448aef8cc3d1e25b7345418",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_method_specification.json",
+      "public_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "bytes": 4458,
+      "source_path": "manuscript/source_data/seasonal_method_specification.json",
+      "source_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_original_procedure_contrasts.csv",
+      "public_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "bytes": 2814,
+      "source_path": "manuscript/source_data/seasonal_original_procedure_contrasts.csv",
+      "source_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_original_procedure_folds.csv",
+      "public_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "bytes": 67620,
+      "source_path": "manuscript/source_data/seasonal_original_procedure_folds.csv",
+      "source_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_original_procedure_means.csv",
+      "public_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "bytes": 7802,
+      "source_path": "manuscript/source_data/seasonal_original_procedure_means.csv",
+      "source_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_original_provenance.json",
+      "public_sha256": "cc91460500fea6a7b8320ce438ecb010c95ce90cfecdbb1af6b3477fdf096695",
+      "bytes": 4051,
+      "source_path": "manuscript/source_data/seasonal_original_provenance.json",
+      "source_sha256": "cc91460500fea6a7b8320ce438ecb010c95ce90cfecdbb1af6b3477fdf096695",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_source_alignment.csv",
+      "public_sha256": "9e3795e3a50437ece1e7c6be5b6c43053abcadf136fb0290e133186a57551796",
+      "bytes": 9859,
+      "source_path": "manuscript/source_data/seasonal_source_alignment.csv",
+      "source_sha256": "9e3795e3a50437ece1e7c6be5b6c43053abcadf136fb0290e133186a57551796",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/seasonal_support_by_fold.csv",
+      "public_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "bytes": 2400,
+      "source_path": "manuscript/source_data/seasonal_support_by_fold.csv",
+      "source_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/source_manifest.json",
+      "public_sha256": "786f0c09668891bf5f9b6460eabe0140eded19bff4177b9fd7a27ac20685574a",
+      "bytes": 11397,
+      "source_path": "manuscript/source_data/source_manifest.json",
+      "source_sha256": "786f0c09668891bf5f9b6460eabe0140eded19bff4177b9fd7a27ac20685574a",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/structured_all_means.csv",
+      "public_sha256": "166bccc351cee5acff535f37536635c492b355eb21256b7450435fbc93fac59d",
+      "bytes": 4649,
+      "source_path": "manuscript/source_data/structured_all_means.csv",
+      "source_sha256": "166bccc351cee5acff535f37536635c492b355eb21256b7450435fbc93fac59d",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/structured_all_paired_gains.csv",
+      "public_sha256": "dacf2476a264a880564e938a9273f5801aa9aede1b49e2792ed8311a2930a741",
+      "bytes": 53922,
+      "source_path": "manuscript/source_data/structured_all_paired_gains.csv",
+      "source_sha256": "dacf2476a264a880564e938a9273f5801aa9aede1b49e2792ed8311a2930a741",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/structured_all_scores.csv",
+      "public_sha256": "27925c16ece2c10e27028dd0395fbd87ebbb28a241aebdd2e93346184e94604c",
+      "bytes": 41847,
+      "source_path": "manuscript/source_data/structured_all_scores.csv",
+      "source_sha256": "27925c16ece2c10e27028dd0395fbd87ebbb28a241aebdd2e93346184e94604c",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/support_nonlinear_development_history.csv",
+      "public_sha256": "da45026009060e380b6edd0dd567f48378500f3ec3d8fdf5056d40ceafae1b76",
+      "bytes": 1339,
+      "source_path": "manuscript/source_data/support_nonlinear_development_history.csv",
+      "source_sha256": "da45026009060e380b6edd0dd567f48378500f3ec3d8fdf5056d40ceafae1b76",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/support_primary_structured_targets.csv",
+      "public_sha256": "c51cb2c23c807fec4cd78b70c3418aa57ffb367dc1940f44455020d4a58fa896",
+      "bytes": 805,
+      "source_path": "manuscript/source_data/support_primary_structured_targets.csv",
+      "source_sha256": "c51cb2c23c807fec4cd78b70c3418aa57ffb367dc1940f44455020d4a58fa896",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/support_seasonal_all_metric_contrasts.csv",
+      "public_sha256": "81bf6c45e783f927ceb9aa931c3a8d05466dbc0a9a51060381321002f751bd01",
+      "bytes": 12804,
+      "source_path": "manuscript/source_data/support_seasonal_all_metric_contrasts.csv",
+      "source_sha256": "81bf6c45e783f927ceb9aa931c3a8d05466dbc0a9a51060381321002f751bd01",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/survey_water_block_metrics.csv",
+      "public_sha256": "3cde4ea00c73421ed8b22526a358bb84abb2d284bf151c4e5b6add1b6ba28284",
+      "bytes": 1264,
+      "source_path": "manuscript/source_data/survey_water_block_metrics.csv",
+      "source_sha256": "3cde4ea00c73421ed8b22526a358bb84abb2d284bf151c4e5b6add1b6ba28284",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/survey_water_coverage.csv",
+      "public_sha256": "03d9f34139c664321415a11d6162104aad9255724232bd09b1ca76c4fc6cef8e",
+      "bytes": 129,
+      "source_path": "manuscript/source_data/survey_water_coverage.csv",
+      "source_sha256": "03d9f34139c664321415a11d6162104aad9255724232bd09b1ca76c4fc6cef8e",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/survey_water_paired_gains.csv",
+      "public_sha256": "df001714d7766930e4ad54bc2965b1000a55e9d85db0dd8e5ad340ad2b1939fd",
+      "bytes": 435,
+      "source_path": "manuscript/source_data/survey_water_paired_gains.csv",
+      "source_sha256": "df001714d7766930e4ad54bc2965b1000a55e9d85db0dd8e5ad340ad2b1939fd",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/survey_water_provenance.json",
+      "public_sha256": "4a4343b30ae254011a471a676d4e986ad35cc1c39e652163a438f1a09a5795bf",
+      "bytes": 2532,
+      "source_path": "manuscript/source_data/survey_water_provenance.json",
+      "source_sha256": "4a4343b30ae254011a471a676d4e986ad35cc1c39e652163a438f1a09a5795bf",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/survey_water_summary.json",
+      "public_sha256": "c9c14334012b688442fa376882a4e51f8f8736af263047f65f332aace7bc988a",
+      "bytes": 1445,
+      "source_path": "manuscript/source_data/survey_water_summary.json",
+      "source_sha256": "c9c14334012b688442fa376882a4e51f8f8736af263047f65f332aace7bc988a",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/table1_controlled_responses.csv",
+      "public_sha256": "7bf0b8ab8972060465fc2f75dc0bca8d42287790852f9df0ba15322938a359fe",
+      "bytes": 734,
+      "source_path": "manuscript/source_data/table1_controlled_responses.csv",
+      "source_sha256": "7bf0b8ab8972060465fc2f75dc0bca8d42287790852f9df0ba15322938a359fe",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/table2_matched_representations.csv",
+      "public_sha256": "bf6825622e54514a2e352ec4a6696b50ee33a5d257b22e20c5e03cbbea05eaa4",
+      "bytes": 2541,
+      "source_path": "manuscript/source_data/table2_matched_representations.csv",
+      "source_sha256": "bf6825622e54514a2e352ec4a6696b50ee33a5d257b22e20c5e03cbbea05eaa4",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/table3a_presence_water_density.csv",
+      "public_sha256": "4b8259fc527bd352be1a61dedbac5588974d99b15e478ab9eb51e42c54a263ed",
+      "bytes": 287,
+      "source_path": "manuscript/source_data/table3a_presence_water_density.csv",
+      "source_sha256": "4b8259fc527bd352be1a61dedbac5588974d99b15e478ab9eb51e42c54a263ed",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/source_data/table3b_survey_water_history.csv",
+      "public_sha256": "0a35a10317ea189dc0db98dcc14ea3fca11f34a8156d1a42583b24dc74219d57",
+      "bytes": 300,
+      "source_path": "manuscript/source_data/table3b_survey_water_history.csv",
+      "source_sha256": "0a35a10317ea189dc0db98dcc14ea3fca11f34a8156d1a42583b24dc74219d57",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/spea_comparative_manuscript.md",
+      "public_sha256": "80977cf0858f715d246f6f6cec1a877f7f9d94399a687f28b21c3ccb234150be",
+      "bytes": 49775,
+      "source_path": "manuscript/spea_comparative_manuscript.md",
+      "source_sha256": "faf4fbedf2eff4b19b5a0d0495ac525ddc3298c35513c238ed47d1c8a583cc80",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/verification/aggregate_native_source_audit_receipt.json",
+      "public_sha256": "57ef82b9f6f0544c0aef21b042d06f14babc014ad20b11d189a65ebe4c354de6",
+      "bytes": 782,
+      "source_path": "manuscript/verification/aggregate_native_source_audit_receipt.json",
+      "source_sha256": "57ef82b9f6f0544c0aef21b042d06f14babc014ad20b11d189a65ebe4c354de6",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/verification/aggregate_replay_receipt.json",
+      "public_sha256": "01ef0ed9f34fe840350c1901dd5979766ec5d21f5b1c0adc11db231f30face6a",
+      "bytes": 2235,
+      "source_path": "manuscript/verification/aggregate_replay_receipt.json",
+      "source_sha256": "88f7789db44b222416cba14352df1aed4f2fe650c7b4a60256925a30213114e1",
+      "transformation": "Public edition: status, availability, nats definition, metadata, portable output defaults or release receipt; no numerical inputs changed"
+    },
+    {
+      "public_path": "manuscript/verification/coverage_build_provenance.json",
+      "public_sha256": "a434ce218e41e86ab4a660d3f1df645306aff4a3396b705d685074041f92b0a8",
+      "bytes": 8209,
+      "source_path": "manuscript/verification/coverage_build_provenance.json",
+      "source_sha256": "a434ce218e41e86ab4a660d3f1df645306aff4a3396b705d685074041f92b0a8",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/verification/native_main_figure_build_provenance.json",
+      "public_sha256": "f79bd50d303d373da9df70d4682361bb7be0355b3d03d29c91b45461996faaeb",
+      "bytes": 6168,
+      "source_path": "manuscript/verification/native_main_figure_build_provenance.json",
+      "source_sha256": "f79bd50d303d373da9df70d4682361bb7be0355b3d03d29c91b45461996faaeb",
+      "transformation": "Exact copy from reviewed source checkpoint"
+    },
+    {
+      "public_path": "manuscript/verification/public_release_validation.json",
+      "public_sha256": "8db729bed2f7ae6f1f5e8cc2ec76cfb0d1e289a3c219bffbe75cfec38ea1647e",
+      "bytes": 2701,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "metadata/README.md",
+      "public_sha256": "b35424b8fb936e5abbfbba0e8f068fff6b94666814f9f5f85570ef2c166150ed",
+      "bytes": 1843,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "7e84832d353b9cd6c5d1e3ce4100ec9960f7bce0af319ba6aadbfd277d359116",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+    },
+    {
+      "public_path": "metadata/environmental_organization_design.json",
+      "public_sha256": "e08db1961a132b28ee69a0185e1c319aa4cbc67fe50ddb87275d34eb4fa15014",
+      "bytes": 6983,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "e08db1961a132b28ee69a0185e1c319aa4cbc67fe50ddb87275d34eb4fa15014",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "metadata/mask_specification.json",
+      "public_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
+      "bytes": 11260,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "metadata/method_specification.json",
+      "public_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "bytes": 4458,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "metadata/public_sources.json",
+      "public_sha256": "f9583543ae020eb222a867ab21bf75a2eb01b788dd500df9c09d4069f424f687",
+      "bytes": 424230,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "metadata/references.bib",
+      "public_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
+      "bytes": 6129,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "metadata/references.json",
+      "public_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
+      "bytes": 8691,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "metadata/software_snapshot.json",
+      "public_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
+      "bytes": 1793,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "native/.gitignore",
+      "public_sha256": "7c435567dec0f24b02fc44001b5665343a4161f9309d5452abbedab2226a86c6",
+      "bytes": 146,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "native/README.md",
+      "public_sha256": "f4a334e4f3ee281ee2f227add8e11cf2580ac1d8410edb01900c6e483d60389c",
+      "bytes": 12056,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "native/catalog/recovery_usgs_assets.json",
+      "public_sha256": "507b0537866852d30510ec35b61476272b0a52f588f7bf22ec0a4d5290acab20",
+      "bytes": 16390,
+      "source_path": "catalog/recovery_usgs_assets.json",
+      "source_sha256": "507b0537866852d30510ec35b61476272b0a52f588f7bf22ec0a4d5290acab20",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/catalog/review_gates.json",
+      "public_sha256": "e09a6402f577866789fda6f6f994d7f7bda70b8167e99b74d89ec70291ca466c",
+      "bytes": 7717,
+      "source_path": "catalog/review_gates.json",
+      "source_sha256": "e09a6402f577866789fda6f6f994d7f7bda70b8167e99b74d89ec70291ca466c",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/code_selection.json",
+      "public_sha256": "daac55bee5248276b877b29db01a2058fd322645cd4c338e45e90d2ea0b6fc56",
+      "bytes": 450454,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "native/config/climate_statistics_comparison_v1.json",
+      "public_sha256": "fff2d5cbc8ae3f61d242d1598cf4fa7f39cbecc2b53e55b4a602bc0e623658ed",
+      "bytes": 8064,
+      "source_path": "config/climate_statistics_comparison_v1.json",
+      "source_sha256": "fff2d5cbc8ae3f61d242d1598cf4fa7f39cbecc2b53e55b4a602bc0e623658ed",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/genus_seasonal_comparison.json",
+      "public_sha256": "84ce844c79bc2197875d2d832a8c155c31aa5b6371482d2b2f6228fbf2990d31",
+      "bytes": 5006,
+      "source_path": "config/genus_seasonal_comparison.json",
+      "source_sha256": "84ce844c79bc2197875d2d832a8c155c31aa5b6371482d2b2f6228fbf2990d31",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/hammondii_reciprocal_transfer.json",
+      "public_sha256": "71c23e6820bc3ff0101b700e33fdaaee9351be91cfc685cb44e2c7ab030f00e9",
+      "bytes": 5290,
+      "source_path": "config/hammondii_reciprocal_transfer.json",
+      "source_sha256": "71c23e6820bc3ff0101b700e33fdaaee9351be91cfc685cb44e2c7ab030f00e9",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/hammondii_species_seasonal_comparison.json",
+      "public_sha256": "59060eb4bbf4c6262e9279c9660af1ec77a16f04b97d6686ec2cb3aa3016b244",
+      "bytes": 6880,
+      "source_path": "config/hammondii_species_seasonal_comparison.json",
+      "source_sha256": "59060eb4bbf4c6262e9279c9660af1ec77a16f04b97d6686ec2cb3aa3016b244",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/hammondii_working_comparison.json",
+      "public_sha256": "19783fa81d97421f5536893162ed418da61bb083286c5046e589fc2722f926b0",
+      "bytes": 4256,
+      "source_path": "config/hammondii_working_comparison.json",
+      "source_sha256": "19783fa81d97421f5536893162ed418da61bb083286c5046e589fc2722f926b0",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/seasonal_bioclim_reference_synthesis_v1.json",
+      "public_sha256": "1840066dcf69b90164beef970b28ee820b28bedf1206e1bf2afed14b14e4d7b0",
+      "bytes": 2942,
+      "source_path": "config/seasonal_bioclim_reference_synthesis_v1.json",
+      "source_sha256": "1840066dcf69b90164beef970b28ee820b28bedf1206e1bf2afed14b14e4d7b0",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/seasonal_weighting_interaction_v1.json",
+      "public_sha256": "394fabb24db1e65e0e3edc09e83f28545219753d76e8db4594715b2bf57acc99",
+      "bytes": 3346,
+      "source_path": "config/seasonal_weighting_interaction_v1.json",
+      "source_sha256": "394fabb24db1e65e0e3edc09e83f28545219753d76e8db4594715b2bf57acc99",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/soft_spatial_weighting_v1.json",
+      "public_sha256": "c51bc7650ad0ae45ec096dc022a007c536cf9698bb3a417998f663c38fb806b0",
+      "bytes": 3281,
+      "source_path": "config/soft_spatial_weighting_v1.json",
+      "source_sha256": "c51bc7650ad0ae45ec096dc022a007c536cf9698bb3a417998f663c38fb806b0",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/south_survey_water_v1.json",
+      "public_sha256": "3616339c319bb45de5e65a8e4495b0cfc54217445d26a0e45ac70e6d0b59e55b",
+      "bytes": 5833,
+      "source_path": "config/south_survey_water_v1.json",
+      "source_sha256": "3616339c319bb45de5e65a8e4495b0cfc54217445d26a0e45ac70e6d0b59e55b",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/config/south_water_benchmark_v1.json",
+      "public_sha256": "84981c3c6f6f82d3e282686832b8f005b4ba5fed158ff1a76bc8e34b494b4ec6",
+      "bytes": 6673,
+      "source_path": "config/south_water_benchmark_v1.json",
+      "source_sha256": "84981c3c6f6f82d3e282686832b8f005b4ba5fed158ff1a76bc8e34b494b4ec6",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/pyproject.toml",
+      "public_sha256": "56c9a73b10fc5f93235378247bc889050d686b5e31a2b6712bf694edfa4633d7",
+      "bytes": 714,
+      "source_path": "pyproject.toml",
+      "source_sha256": "56c9a73b10fc5f93235378247bc889050d686b5e31a2b6712bf694edfa4633d7",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/requirements-native-inspection.txt",
+      "public_sha256": "b9b9cd16f7da4da54fe94d333c0f6eda1f630b7ccd0f7a65807596a1392799bd",
+      "bytes": 420,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "native/scripts/prepare_climate_statistics_sampling.py",
+      "public_sha256": "5dc57b0a133d9785299992548099ce9b92a432e5f3fa5d4350748e181524a230",
+      "bytes": 9164,
+      "source_path": "scripts/prepare_climate_statistics_sampling.py",
+      "source_sha256": "5dc57b0a133d9785299992548099ce9b92a432e5f3fa5d4350748e181524a230",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/prepare_hammondii_species_seasonal.py",
+      "public_sha256": "c2bcff41d503df7010c1818d64f77e9a30af4fb6ec9c19c451bc4101b84f554e",
+      "bytes": 11360,
+      "source_path": "scripts/prepare_hammondii_species_seasonal.py",
+      "source_sha256": "c2bcff41d503df7010c1818d64f77e9a30af4fb6ec9c19c451bc4101b84f554e",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/prepare_soft_spatial_weights.py",
+      "public_sha256": "511138bbf1189ecc97b9d9fd64cd43753e3e234b17f5419d532cffef1acf4eb1",
+      "bytes": 4490,
+      "source_path": "scripts/prepare_soft_spatial_weights.py",
+      "source_sha256": "511138bbf1189ecc97b9d9fd64cd43753e3e234b17f5419d532cffef1acf4eb1",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_climate_statistics_comparison.py",
+      "public_sha256": "0908a22d70c1486e7092df0ebd407600af061bc3a93765e76dfe4a934d68b0f3",
+      "bytes": 18801,
+      "source_path": "scripts/run_climate_statistics_comparison.py",
+      "source_sha256": "0908a22d70c1486e7092df0ebd407600af061bc3a93765e76dfe4a934d68b0f3",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_genus_environment_comparison.py",
+      "public_sha256": "aa554529b14efcd69d1848cd7ebef3be6dad28c8d10ce283b65c0b55fbaef679",
+      "bytes": 23384,
+      "source_path": "scripts/run_genus_environment_comparison.py",
+      "source_sha256": "aa554529b14efcd69d1848cd7ebef3be6dad28c8d10ce283b65c0b55fbaef679",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_genus_seasonal_comparison.py",
+      "public_sha256": "e0d2b893f8dc5337f358b098329d8ba5e501dadedccb71e8620c39c8157ca4db",
+      "bytes": 28091,
+      "source_path": "scripts/run_genus_seasonal_comparison.py",
+      "source_sha256": "e0d2b893f8dc5337f358b098329d8ba5e501dadedccb71e8620c39c8157ca4db",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_hammondii_reciprocal_transfer.py",
+      "public_sha256": "cf6f923bb7f454ae2f609a6ab411c0c4ad0825238b4a87ac13ee5062f2a8aa08",
+      "bytes": 24024,
+      "source_path": "scripts/run_hammondii_reciprocal_transfer.py",
+      "source_sha256": "cf6f923bb7f454ae2f609a6ab411c0c4ad0825238b4a87ac13ee5062f2a8aa08",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_hammondii_species_seasonal_comparison.py",
+      "public_sha256": "a9814f269ba51dff2fb245c83ae4f3c170c73d4bee1dab4ca992cd676dff3fe4",
+      "bytes": 22124,
+      "source_path": "scripts/run_hammondii_species_seasonal_comparison.py",
+      "source_sha256": "a9814f269ba51dff2fb245c83ae4f3c170c73d4bee1dab4ca992cd676dff3fe4",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_hammondii_working_comparison.py",
+      "public_sha256": "5bc00259671c202d335a7dcb94e0ea9ed7eecd37622835ef34232ea3a43e186f",
+      "bytes": 13260,
+      "source_path": "scripts/run_hammondii_working_comparison.py",
+      "source_sha256": "5bc00259671c202d335a7dcb94e0ea9ed7eecd37622835ef34232ea3a43e186f",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_seasonal_weighting_interaction.py",
+      "public_sha256": "e2412388806448d04fcfee70ec3e48603505f9d9ca95652d2604f99b745803e8",
+      "bytes": 18051,
+      "source_path": "scripts/run_seasonal_weighting_interaction.py",
+      "source_sha256": "e2412388806448d04fcfee70ec3e48603505f9d9ca95652d2604f99b745803e8",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_soft_spatial_weighting.py",
+      "public_sha256": "8e75d480733013037be1f0dd1719485b1b8a8ea8a7b4fc336604807aad862242",
+      "bytes": 13143,
+      "source_path": "scripts/run_soft_spatial_weighting.py",
+      "source_sha256": "8e75d480733013037be1f0dd1719485b1b8a8ea8a7b4fc336604807aad862242",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_south_survey_water.py",
+      "public_sha256": "1672ce0dca985b88b4f7937f1b853c3f2752b58d113088d5eaf6cd592c04aebf",
+      "bytes": 11361,
+      "source_path": "scripts/run_south_survey_water.py",
+      "source_sha256": "1672ce0dca985b88b4f7937f1b853c3f2752b58d113088d5eaf6cd592c04aebf",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/run_south_water_benchmark.py",
+      "public_sha256": "418bbf0aa33151217d473aeb11895d517b765fe8bef6d399150edced85a2ccbd",
+      "bytes": 15867,
+      "source_path": "scripts/run_south_water_benchmark.py",
+      "source_sha256": "418bbf0aa33151217d473aeb11895d517b765fe8bef6d399150edced85a2ccbd",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/scripts/summarize_seasonal_bioclim_reference.py",
+      "public_sha256": "10731af52666e7efa21ace30360b63ffc0283de63fd6c6b1b49399344c119aae",
+      "bytes": 15174,
+      "source_path": "scripts/summarize_seasonal_bioclim_reference.py",
+      "source_sha256": "10731af52666e7efa21ace30360b63ffc0283de63fd6c6b1b49399344c119aae",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/__init__.py",
+      "public_sha256": "84dc1ccb92587157de5b9ab18082381521e11e11268fd6864e03159428614403",
+      "bytes": 70,
+      "source_path": "src/spea/__init__.py",
+      "source_sha256": "84dc1ccb92587157de5b9ab18082381521e11e11268fd6864e03159428614403",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/climate_statistics.py",
+      "public_sha256": "ba914d41b7c7d4e3ef40421557fc9a3cafa48846bb50b27ac116d89679002211",
+      "bytes": 7031,
+      "source_path": "src/spea/climate_statistics.py",
+      "source_sha256": "ba914d41b7c7d4e3ef40421557fc9a3cafa48846bb50b27ac116d89679002211",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/environment_benchmark.py",
+      "public_sha256": "a2b2294261a68f20d884964c34359533a9406bb4b487bf5c121c15bac618c12b",
+      "bytes": 3020,
+      "source_path": "src/spea/environment_benchmark.py",
+      "source_sha256": "a2b2294261a68f20d884964c34359533a9406bb4b487bf5c121c15bac618c12b",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/fixed_basis_density.py",
+      "public_sha256": "ec40c77c535848c83c12259be97d7d603d0a992a1f31057c6e3af4a751b1b649",
+      "bytes": 11669,
+      "source_path": "src/spea/fixed_basis_density.py",
+      "source_sha256": "ec40c77c535848c83c12259be97d7d603d0a992a1f31057c6e3af4a751b1b649",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/genus_model.py",
+      "public_sha256": "1ef6b3c6f351209c11c375c6fae89999fa230dbd41074add65ea2a82f2e33aaa",
+      "bytes": 3805,
+      "source_path": "src/spea/genus_model.py",
+      "source_sha256": "1ef6b3c6f351209c11c375c6fae89999fa230dbd41074add65ea2a82f2e33aaa",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/genus_spatial.py",
+      "public_sha256": "6f5aeafeffe117a07a1382412767a9098269da17c4533fe63e53796a1d42165a",
+      "bytes": 6375,
+      "source_path": "src/spea/genus_spatial.py",
+      "source_sha256": "6f5aeafeffe117a07a1382412767a9098269da17c4533fe63e53796a1d42165a",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/genus_tuning.py",
+      "public_sha256": "3c5a533de99ec7c77fb4e03003cf1440b6252a5dacde6f75d5a68df12b843940",
+      "bytes": 1672,
+      "source_path": "src/spea/genus_tuning.py",
+      "source_sha256": "3c5a533de99ec7c77fb4e03003cf1440b6252a5dacde6f75d5a68df12b843940",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/native_benchmark.py",
+      "public_sha256": "6c9cef7733b5b39334103ddddb2771328aa3dea237d97afe3d08ec7e7755c674",
+      "bytes": 3718,
+      "source_path": "src/spea/native_benchmark.py",
+      "source_sha256": "6c9cef7733b5b39334103ddddb2771328aa3dea237d97afe3d08ec7e7755c674",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/native_objective_comparison.py",
+      "public_sha256": "c92200246693a8431ced82b1c4ea06860b78adbfd4088e548f32b90d3c5858d5",
+      "bytes": 13425,
+      "source_path": "src/spea/native_objective_comparison.py",
+      "source_sha256": "c92200246693a8431ced82b1c4ea06860b78adbfd4088e548f32b90d3c5858d5",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/objective_measures.py",
+      "public_sha256": "28eb76e4dc63ff39fac4fd952787dd996c6e8e84f65d9661164b92cf78b206af",
+      "bytes": 2832,
+      "source_path": "src/spea/objective_measures.py",
+      "source_sha256": "28eb76e4dc63ff39fac4fd952787dd996c6e8e84f65d9661164b92cf78b206af",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/provenance.py",
+      "public_sha256": "ea3093fbec911274856cbaf0d0703088fe83769fa7a33907e6f028ad71261c5c",
+      "bytes": 4824,
+      "source_path": "src/spea/provenance.py",
+      "source_sha256": "ea3093fbec911274856cbaf0d0703088fe83769fa7a33907e6f028ad71261c5c",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/seasonal_model.py",
+      "public_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+      "bytes": 3531,
+      "source_path": "src/spea/seasonal_model.py",
+      "source_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/smooth_density_basis.py",
+      "public_sha256": "d0be1cf1e0109dfa280a5d9edef8bca67fcc4966f4f2e63f861d851e25f5974d",
+      "bytes": 10969,
+      "source_path": "src/spea/smooth_density_basis.py",
+      "source_sha256": "d0be1cf1e0109dfa280a5d9edef8bca67fcc4966f4f2e63f861d851e25f5974d",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/spatial_thinning.py",
+      "public_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+      "bytes": 3230,
+      "source_path": "src/spea/spatial_thinning.py",
+      "source_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/spatial_weights.py",
+      "public_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+      "bytes": 1538,
+      "source_path": "src/spea/spatial_weights.py",
+      "source_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/survey_history.py",
+      "public_sha256": "0fe40f8351c248765a1964333f6caba31b1f0d25fe79a917d2201c7fb8835427",
+      "bytes": 5258,
+      "source_path": "src/spea/survey_history.py",
+      "source_sha256": "0fe40f8351c248765a1964333f6caba31b1f0d25fe79a917d2201c7fb8835427",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/src/spea/survey_water.py",
+      "public_sha256": "74cb0e174ab594df7ebbe39eef35aa7e8e9eb6d5217c51d598396552bab2ec7e",
+      "bytes": 5171,
+      "source_path": "src/spea/survey_water.py",
+      "source_sha256": "74cb0e174ab594df7ebbe39eef35aa7e8e9eb6d5217c51d598396552bab2ec7e",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/tests/test_climate_statistics.py",
+      "public_sha256": "a20b40cf43cd64f2429a01583ec5f362705e8bbd9cd8ca5728d7709599572bbd",
+      "bytes": 4504,
+      "source_path": "tests/test_climate_statistics.py",
+      "source_sha256": "a20b40cf43cd64f2429a01583ec5f362705e8bbd9cd8ca5728d7709599572bbd",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/tests/test_native_objective_comparison.py",
+      "public_sha256": "9d0d8f93d13706e0f9bd407e257645a16c6d5628595f10a2b36291a6ab56e413",
+      "bytes": 6348,
+      "source_path": "tests/test_native_objective_comparison.py",
+      "source_sha256": "9d0d8f93d13706e0f9bd407e257645a16c6d5628595f10a2b36291a6ab56e413",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/tests/test_seasonal_model.py",
+      "public_sha256": "b51a6bb97832ebebb5431b98ff964d67a89fa5bd9a7d58b7178c7c964fec3bb4",
+      "bytes": 2196,
+      "source_path": "tests/test_seasonal_model.py",
+      "source_sha256": "b51a6bb97832ebebb5431b98ff964d67a89fa5bd9a7d58b7178c7c964fec3bb4",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/tests/test_south_water_benchmark.py",
+      "public_sha256": "3c4314d8e16d1383fc9703f93b78226b3aa99dc5ae70e555ac2e4e731bfb1d1f",
+      "bytes": 3215,
+      "source_path": "tests/test_south_water_benchmark.py",
+      "source_sha256": "3c4314d8e16d1383fc9703f93b78226b3aa99dc5ae70e555ac2e4e731bfb1d1f",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/tests/test_spatial_thinning.py",
+      "public_sha256": "7b132665602da61ed2b8aec52638bce046495aed85cb92a4aa2a994ac9058dd3",
+      "bytes": 3339,
+      "source_path": "tests/test_spatial_thinning.py",
+      "source_sha256": "7b132665602da61ed2b8aec52638bce046495aed85cb92a4aa2a994ac9058dd3",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/tests/test_survey_water.py",
+      "public_sha256": "ccd7738ade1ec47919f7c2dcb03fcd4017338a527275f3d220b0b428cd56355d",
+      "bytes": 3722,
+      "source_path": "tests/test_survey_water.py",
+      "source_sha256": "ccd7738ade1ec47919f7c2dcb03fcd4017338a527275f3d220b0b428cd56355d",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "native/uv.lock",
+      "public_sha256": "6ed6b12385641aeee65e214fed4f1fcdde120fe5dd61e95a2ba6262dbf1499b8",
+      "bytes": 118810,
+      "source_path": "uv.lock",
+      "source_sha256": "6ed6b12385641aeee65e214fed4f1fcdde120fe5dd61e95a2ba6262dbf1499b8",
+      "transformation": "Exact native source copy; original guards retained"
+    },
+    {
+      "public_path": "requirements-components.txt",
+      "public_sha256": "025b0b5f021f8f59104b3c52e1c89cd7b3626c92aa1b114fd0df6698eadeba9b",
+      "bytes": 170,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "025b0b5f021f8f59104b3c52e1c89cd7b3626c92aa1b114fd0df6698eadeba9b",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "requirements-document.txt",
+      "public_sha256": "ff7b39b9b8f711d152a5e7edd89a2782af233670dfb8def834f55ef176387e13",
+      "bytes": 84,
+      "transformation": "New public release documentation, source/code inventory or verification metadata; source-specific identities are recorded in the linked inventories"
+    },
+    {
+      "public_path": "scripts/check_snapshot.py",
+      "public_sha256": "93b9aa9f087d5c9d7382e6b3930d30865c7d43bbb0e51fcfed3d4d974bce5d00",
+      "bytes": 1577,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "93b9aa9f087d5c9d7382e6b3930d30865c7d43bbb0e51fcfed3d4d974bce5d00",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "scripts/plot_results.py",
+      "public_sha256": "a27f3764fbbb8eb61cf38536eeb2c53a0fc3541b9c0a3eb59d2f07b6910547a8",
+      "bytes": 3565,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "a27f3764fbbb8eb61cf38536eeb2c53a0fc3541b9c0a3eb59d2f07b6910547a8",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "scripts/replay.py",
+      "public_sha256": "cd7aaeb79f277326cee5213580c02f995752617684804e5ffc8032a4741d41f9",
+      "bytes": 7899,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "cd7aaeb79f277326cee5213580c02f995752617684804e5ffc8032a4741d41f9",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "scripts/replay_environmental_organization.py",
+      "public_sha256": "eaa2e9d7471b7be529f10b2874d405197a6c8bb35940709c230588142084a524",
+      "bytes": 15376,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "eaa2e9d7471b7be529f10b2874d405197a6c8bb35940709c230588142084a524",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "scripts/replay_original_tables.py",
+      "public_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
+      "bytes": 9159,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "src/README.md",
+      "public_sha256": "99d18a7b3fe7d1ee832972276cbdbdbe91ceab6d8e3588819952e052b1cc5d38",
+      "bytes": 2152,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "133522750a1a086446b49e136c5fa1756f255dbd421943b76a0441c65348c495",
+      "transformation": "Public navigation, release documentation or CI update; earlier bytes preserved by v0.2.0"
+    },
+    {
+      "public_path": "src/spea_snapshot/__init__.py",
+      "public_sha256": "5139c501bd2f22a9ad911afd01f9384f600fb1158f430451b12d3916cf32d241",
+      "bytes": 69,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "5139c501bd2f22a9ad911afd01f9384f600fb1158f430451b12d3916cf32d241",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "src/spea_snapshot/climate_statistics.py",
+      "public_sha256": "c7c21a4da8903c65fb5da8dc132bd3731d5b4f039d288178f4940bec8464f29a",
+      "bytes": 7158,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c7c21a4da8903c65fb5da8dc132bd3731d5b4f039d288178f4940bec8464f29a",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "src/spea_snapshot/seasonal_model.py",
+      "public_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+      "bytes": 3531,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "src/spea_snapshot/spatial_thinning.py",
+      "public_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+      "bytes": 3230,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "src/spea_snapshot/spatial_weights.py",
+      "public_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+      "bytes": 1538,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "tests/components/test_climate_statistics.py",
+      "public_sha256": "2457cad7f7ef71223c715633af5dd45ce0d58988e928ee87a72b16d02cecd7be",
+      "bytes": 4513,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "2457cad7f7ef71223c715633af5dd45ce0d58988e928ee87a72b16d02cecd7be",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "tests/components/test_seasonal_model.py",
+      "public_sha256": "8465218f51113365d50bca9f65f1dec18f1225c0e7518a26c9f155be49dba96d",
+      "bytes": 2205,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "8465218f51113365d50bca9f65f1dec18f1225c0e7518a26c9f155be49dba96d",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "tests/components/test_spatial_thinning.py",
+      "public_sha256": "7b3d606190bdc20f784aebe0b594adfe86b821c331a199930a080cec6df2f5d2",
+      "bytes": 2481,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "7b3d606190bdc20f784aebe0b594adfe86b821c331a199930a080cec6df2f5d2",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "tests/components/test_spatial_weights.py",
+      "public_sha256": "cabf2429762ab662908f56bf56712e4724e5ffea9378b92b6875024b7ea9387f",
+      "bytes": 1233,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "cabf2429762ab662908f56bf56712e4724e5ffea9378b92b6875024b7ea9387f",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "tests/test_replay.py",
+      "public_sha256": "c1a3486d899aeec466c70d6bbde8adf0b0769b4fa81abc3d6b5c376510db3818",
+      "bytes": 1817,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "c1a3486d899aeec466c70d6bbde8adf0b0769b4fa81abc3d6b5c376510db3818",
+      "transformation": "Unchanged from v0.2.0"
+    },
+    {
+      "public_path": "tests/test_replay_environmental_organization.py",
+      "public_sha256": "4ed2da3f2936987df5fd5bdfd8761deefe67f159b244addd50becde479659703",
+      "bytes": 4487,
+      "source_public_commit": "ff421485a19a821c6b7008aad025311fb691f507",
+      "source_sha256": "4ed2da3f2936987df5fd5bdfd8761deefe67f159b244addd50becde479659703",
+      "transformation": "Unchanged from v0.2.0"
     }
   ],
-  "release_code": {
-    "scripts/replay.py": "Integrates the original, matched-seasonal and environmental-organization aggregate replays; no scientific fitting",
-    "scripts/plot_results.py": "New public overview drawn from existing aggregate fold metrics",
-    "figures/climate_representation.png": "New display of existing results; script supplied",
-    "tests/test_replay.py": "Release checks of saved aggregate arithmetic and rejection of corrupted/missing data",
-    "scripts/replay_environmental_organization.py": "Standard-library reconstruction of saved organization, envelope and association arithmetic; validates complete evidence slots and internal consistency",
-    "tests/test_replay_environmental_organization.py": "Eight checks of known saved outcomes, linear quantiles, block weighting and rejection of incomplete or corrupted evidence"
+  "historical_v0_2_0_provenance": {
+    "snapshot": "v0.2.0",
+    "release_date": "2026-10-21",
+    "source_commit": "ed18825ef273987e66172970915bc21384baafdb",
+    "scope": "Curated export; source history, raw localities, model arrays and operational records are not included",
+    "numerical_results_changed": false,
+    "copied_or_adapted_files": [
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_folds.csv",
+        "public_path": "data/original/primary_folds.csv",
+        "source_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+        "public_sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_summary.csv",
+        "public_path": "data/original/primary_summary.csv",
+        "source_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+        "public_sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/primary_contrasts.csv",
+        "public_path": "data/original/primary_contrasts.csv",
+        "source_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
+        "public_sha256": "0e7bdffb19104411d5506e19b6c10d79f222125ad5f8586fa448705cca6a5785",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/procedure_contrasts.csv",
+        "public_path": "data/original/procedure_contrasts.csv",
+        "source_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+        "public_sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/support_by_fold.csv",
+        "public_path": "data/original/support_by_fold.csv",
+        "source_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+        "public_sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/replay_spea_seasonal_tables.py",
+        "public_path": "scripts/replay_original_tables.py",
+        "source_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
+        "public_sha256": "dcbc54d4e5a23b1697b6a6212ae4daa760c07e91472f7719425cb74ed30dc9e0",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-05-seasonal-bioclim-reference/fold_metrics.csv",
+        "public_path": "data/matched/fold_metrics.csv",
+        "source_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+        "public_sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-05-seasonal-bioclim-reference/family_summary.csv",
+        "public_path": "data/matched/family_summary.csv",
+        "source_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+        "public_sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_folds.csv",
+        "public_path": "data/matched/contrast_folds.csv",
+        "source_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+        "public_sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_summary.csv",
+        "public_path": "data/matched/contrast_summary.csv",
+        "source_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+        "public_sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/fold_components.csv",
+        "public_path": "data/decomposition/fold_components.csv",
+        "source_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
+        "public_sha256": "0aa69bc08aabb4432f9f149ba5b8119541e677b864f5714c2737ff01d2e59980",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/mean_components.csv",
+        "public_path": "data/decomposition/mean_components.csv",
+        "source_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
+        "public_sha256": "5fb58d9288f40f14aa92d1b2be0ef6866460e76cc1aa39df87e24286c0a7d50e",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-intermontana-seasonal-gain-decomposition/stratum_components.csv",
+        "public_path": "data/decomposition/stratum_components.csv",
+        "source_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
+        "public_sha256": "d17876b06a55942bda6ebf1b94d810c176ee4b5246f84d24aad37d4637759f8c",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_folds.csv",
+        "public_path": "data/sensitivities/feature_folds.csv",
+        "source_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
+        "public_sha256": "af89e1c87298df0a5ec3735b9487d9e32215c6ee970946cc6cd8c199548456d1",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_summary.csv",
+        "public_path": "data/sensitivities/feature_summary.csv",
+        "source_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
+        "public_sha256": "d844e975bf250de266b6dd773fad02cb9afc009873145fc018d4d0b18b326a9e",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/sampling_summary.csv",
+        "public_path": "data/sensitivities/sampling_summary.csv",
+        "source_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
+        "public_sha256": "84565a66e9599333117a206ea5e2ecda368f6307a4999df49d170ee8776d7203",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/soft_folds.csv",
+        "public_path": "data/sensitivities/soft_folds.csv",
+        "source_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
+        "public_sha256": "a429e376f2965ad571b52ada74fb079b5ce4161e82d197491f17c7ac7d46fa31",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/soft_summary.csv",
+        "public_path": "data/sensitivities/soft_summary.csv",
+        "source_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
+        "public_sha256": "c01300a45d36c6543bc98a92d1f5ea2ea7382453bc616d1ca3df562685b71bb2",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/south_procedure.csv",
+        "public_path": "data/sensitivities/south_procedure.csv",
+        "source_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
+        "public_sha256": "c9170b2fce0554875fefe64b397db5efe0c0b143b4c4afb812137a354c8e3ecc",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_fold_coverage.png",
+        "public_path": "figures/seasonal_fold_coverage.png",
+        "source_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
+        "public_sha256": "de36103ff561492a1f0968730dd55a90318910ffc494f97cf259b95768da79eb",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_within_unit_contrasts.png",
+        "public_path": "figures/seasonal_within_unit_contrasts.png",
+        "source_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
+        "public_sha256": "4225f6867c3394f5d679e9902446603da68aa776b3a3d61f0a18ac5b3c976747",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-manuscript/feature_sampling_sensitivities.png",
+        "public_path": "figures/feature_sampling_sensitivities.png",
+        "source_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
+        "public_sha256": "c6c31ffb8a376a30936535925f92f3851f6ffb1ed0f81c4b223965c2559ef4de",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-seasonal-weighting-interaction/seasonal_weighting_interaction.png",
+        "public_path": "figures/seasonal_weighting_interaction.png",
+        "source_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
+        "public_sha256": "8fcd35761b5671693423f3df766f9b457bda88b824b31f97d0a267c187f39763",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-05-seasonal-bioclim-reference/seasonal_bioclim_reference.png",
+        "public_path": "figures/seasonal_bioclim_reference.png",
+        "source_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+        "public_sha256": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/references.bib",
+        "public_path": "metadata/references.bib",
+        "source_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
+        "public_sha256": "1ba009d60099da8f3ca2296cf94beb9a53265e512c42e6c711261af462bb3b22",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/references.json",
+        "public_path": "metadata/references.json",
+        "source_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
+        "public_sha256": "bebc2a476219fbc08c294f269a0a48bfd140564c90f7e099a01df26ea46c41da",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/mask_specification.json",
+        "public_path": "metadata/mask_specification.json",
+        "source_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
+        "public_sha256": "fe2b29b3a9358817d1d0368928e979d53d75c185fce58dbccaeac00093dcf129",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/software_snapshot.json",
+        "public_path": "metadata/software_snapshot.json",
+        "source_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
+        "public_sha256": "efe220aa61f160c25e4993793a3502e05aa3f84bef135c759261962e4c04b2fe",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "results/2026-10-04-spea-seasonal-preparation/method_specification.json",
+        "public_path": "metadata/method_specification.json",
+        "source_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+        "public_sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "reports/spea_seasonal_manuscript_weighting_revision.md",
+        "public_path": "docs/manuscript.md",
+        "source_sha256": "14a297a97df9b7eb0409db8020bc1f1ae372440ef01136d985a959e04196a8fc",
+        "public_sha256": "c4d83634a0d1ee32368c17a009500a95fb610a6ee09bb2a595e5c5dadf046f67",
+        "transformation": "Public status header, operational-unit wording, portable links, and editorial removal of internal workflow instructions; numerical results unchanged; figure numbering follows first appearance; public-only availability wording corrected; GitHub-supported math delimiters"
+      },
+      {
+        "source_path": "reports/spea_seasonal_methods_appendix.md",
+        "public_path": "docs/methods.md",
+        "source_sha256": "dc00814331dbee5e410b3adafe228d3c52cf4638a9812c5deec71fca6e8dd0d5",
+        "public_sha256": "d23a87c071ea6ed1678ae08e26263ee489ad7b44b24c2192f154acdbe1d10afd",
+        "transformation": "Public links and replay scope; later matched comparison documented; original numerical definitions retained; GitHub-supported math delimiters"
+      },
+      {
+        "source_path": "src/spea/seasonal_model.py",
+        "public_path": "src/spea_snapshot/seasonal_model.py",
+        "source_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+        "public_sha256": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "src/spea/spatial_weights.py",
+        "public_path": "src/spea_snapshot/spatial_weights.py",
+        "source_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+        "public_sha256": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "src/spea/spatial_thinning.py",
+        "public_path": "src/spea_snapshot/spatial_thinning.py",
+        "source_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+        "public_sha256": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+        "transformation": "Exact byte copy"
+      },
+      {
+        "source_path": "src/spea/climate_statistics.py",
+        "public_path": "src/spea_snapshot/climate_statistics.py",
+        "source_sha256": "ba914d41b7c7d4e3ef40421557fc9a3cafa48846bb50b27ac116d89679002211",
+        "public_sha256": "c7c21a4da8903c65fb5da8dc132bd3731d5b4f039d288178f4940bec8464f29a",
+        "transformation": "Replace the LOG_KEYS import with the identical set; all numerical functions unchanged"
+      },
+      {
+        "source_path": "tests/test_seasonal_model.py",
+        "public_path": "tests/components/test_seasonal_model.py",
+        "source_sha256": "b51a6bb97832ebebb5431b98ff964d67a89fa5bd9a7d58b7178c7c964fec3bb4",
+        "public_sha256": "8465218f51113365d50bca9f65f1dec18f1225c0e7518a26c9f155be49dba96d",
+        "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
+      },
+      {
+        "source_path": "tests/test_climate_statistics.py",
+        "public_path": "tests/components/test_climate_statistics.py",
+        "source_sha256": "a20b40cf43cd64f2429a01583ec5f362705e8bbd9cd8ca5728d7709599572bbd",
+        "public_sha256": "2457cad7f7ef71223c715633af5dd45ce0d58988e928ee87a72b16d02cecd7be",
+        "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
+      },
+      {
+        "source_path": "tests/test_spatial_weights.py",
+        "public_path": "tests/components/test_spatial_weights.py",
+        "source_sha256": "2f94343e4457045fcbb5b1e3bab0cf578f2256cd5c4a0e580742d7101fe89071",
+        "public_sha256": "cabf2429762ab662908f56bf56712e4724e5ffea9378b92b6875024b7ea9387f",
+        "transformation": "Import namespace changed to spea_snapshot; original assertions retained"
+      },
+      {
+        "source_path": "tests/test_spatial_thinning.py",
+        "public_path": "tests/components/test_spatial_thinning.py",
+        "source_sha256": "7b132665602da61ed2b8aec52638bce046495aed85cb92a4aa2a994ac9058dd3",
+        "public_sha256": "7b3d606190bdc20f784aebe0b594adfe86b821c331a199930a080cec6df2f5d2",
+        "transformation": "Import namespace changed; omit one full-model objective integration test whose dependency is outside this snapshot; distance/graph tests retained"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/organization_statistics.csv",
+        "public_path": "data/environmental_organization/organization_statistics.csv",
+        "source_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
+        "public_sha256": "f20cce0d084b66dacff6b2d6e9fb35111bee03dbfe0c281903321555c194669c",
+        "transformation": "Exact byte copy of aggregate results; no location identifiers"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/mixture_fold_scores.csv",
+        "public_path": "data/environmental_organization/mixture_fold_scores.csv",
+        "source_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
+        "public_sha256": "94c21344b97a7c6fd9059241976b093622814fbcdd8cac6039981be8d1feaeb3",
+        "transformation": "Exact byte copy of aggregate results; no location identifiers"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/envelope_summary.csv",
+        "public_path": "data/environmental_organization/envelope_summary.csv",
+        "source_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
+        "public_sha256": "b9d882a64a621037a32a9f4fc26211773183aa78daa69b71d41b1d5b4101586a",
+        "transformation": "Exact byte copy of aggregate results; no location identifiers"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/feature_variance.csv",
+        "public_path": "data/environmental_organization/feature_variance.csv",
+        "source_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
+        "public_sha256": "ad1fbd38714e6afad7254a19d2af153aa254668fef7e4e26eff476fa11109369",
+        "transformation": "Exact byte copy of aggregate results; no location identifiers"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/association_held_blocks.csv",
+        "public_path": "data/environmental_organization/association_fold_scores.csv",
+        "source_sha256": "730fd270fd4df8ee6e351a7f6e1405d7555ed6bcaca40174900a78a7982ab192",
+        "public_sha256": "664dd8a7d19b3b54f194e49ae1aadfe6d35a099309391065f1f6ad2069ea53bc",
+        "transformation": "Group by fold and model; average block scores equally and sum cell counts. Omit block IDs."
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/summary.json",
+        "public_path": "data/environmental_organization/association_summary.csv",
+        "source_sha256": "a732a1cf80a8c3478311ea17b83fe5f9d030f94838a4663e59174b2fedce1d71",
+        "public_sha256": "4de00e6f4972e0f27288c0c6b09b0d35d4da41a45bc7865b41fa93ad7d5060b6",
+        "transformation": "Export conditional_aggregate model means and held counts without changes"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/summary.json",
+        "public_path": "data/environmental_organization/cohort_summary.json",
+        "source_sha256": "a732a1cf80a8c3478311ea17b83fe5f9d030f94838a4663e59174b2fedce1d71",
+        "public_sha256": "87df9c8e06e43ddacbba046b8285b0d5d002fd5eddccb127627e9490d8d1795d",
+        "transformation": "Select aggregate cohort/support counts; omit internal source labels and all record identities"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/config.json",
+        "public_path": "metadata/environmental_organization_design.json",
+        "source_sha256": "033c1bf1db8ba16c941ca328f1cbd43359c48ac5f85f8fbc652ab18ef0fc0314",
+        "public_sha256": "e08db1961a132b28ee69a0185e1c319aa4cbc67fe50ddb87275d34eb4fa15014",
+        "transformation": "Select scientific design fields; add actual inherited grid, recorded installed versions and explicit public replay boundary"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/environmental_organization.png",
+        "public_path": "figures/environmental_organization.png",
+        "source_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
+        "public_sha256": "b765cf217a2fdb4b8bdbe2a48e747dfc4e76b284daf3f3fe3f9a85306d4eb176",
+        "transformation": "Exact copy of corrected, visually inspected coarse figure"
+      },
+      {
+        "source_path": "results/2026-10-20-intermontana-environmental-organization/environmental_organization.svg",
+        "public_path": "figures/environmental_organization.svg",
+        "source_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
+        "public_sha256": "2aa4b5b09247bcd26317c43229cf566786bbabc1bd96fa586be8f2a9e32ae04d",
+        "transformation": "Exact copy of corrected, visually inspected coarse figure"
+      },
+      {
+        "source_path": "reports/intermontana_environmental_organization.md",
+        "public_path": "docs/environmental_organization.md",
+        "source_sha256": "0d082c38366e41916ed0df2e166be514f1db2cbbd2a30814df03239b434cf31c",
+        "public_sha256": "f167feadebca41a1e5f504be78c78b1995cbfced2378872f79c31f716cd5c8c4",
+        "transformation": "Public adaptation with portable links, all observed sensitivities and explicit aggregate-replay boundary; scientific values unchanged"
+      },
+      {
+        "source_path": "reports/ecological_synthesis_and_public_update_2026-10-21.md",
+        "public_path": "docs/research_agenda.md",
+        "source_sha256": "f9352af1b85991b4dd8f2dcdbbd41d99820dda1302505a32cec2170318ce3c2f",
+        "public_sha256": "66699cba9e7da67ee679be38dc5270cf2a25ffed31f8e96b4683e64e1413c5ac",
+        "transformation": "Update existing agenda using the synthesis and completed screen; retain earlier geographical findings and distinguish ecological from ancestry evidence needs"
+      }
+    ],
+    "release_code": {
+      "scripts/replay.py": "Integrates the original, matched-seasonal and environmental-organization aggregate replays; no scientific fitting",
+      "scripts/plot_results.py": "New public overview drawn from existing aggregate fold metrics",
+      "figures/climate_representation.png": "New display of existing results; script supplied",
+      "tests/test_replay.py": "Release checks of saved aggregate arithmetic and rejection of corrupted/missing data",
+      "scripts/replay_environmental_organization.py": "Standard-library reconstruction of saved organization, envelope and association arithmetic; validates complete evidence slots and internal consistency",
+      "tests/test_replay_environmental_organization.py": "Eight checks of known saved outcomes, linear quantiles, block weighting and rejection of incomplete or corrupted evidence"
+    },
+    "previous_public_commit": "1678bcc8c3a73f60ee4db5701580adde647f47a5",
+    "source_commit_scope": "The source_commit field identifies the initial seasonal snapshot. Later analysis provenance is separately identified below by exact source-file and run hashes.",
+    "numerical_results_note": "Previously published seasonal numerical results are unchanged. This release adds saved outputs from the separate completed 20 October environmental-organization screen; public preparation reruns no scientific fits.",
+    "environmental_organization_source": {
+      "source_run": "2026-10-20-intermontana-environmental-organization-v1",
+      "source_worktree_base_commit": "bdb5b69c6a8db35c12b9aeed1880a1352ca5ac8a",
+      "source_changes_uncommitted_at_export": true,
+      "source_run_receipt_sha256": "94054bd3baf9d1deb7a182a66b453ab95e0702dc76ce9393e2a26c2cf03b2121",
+      "source_snapshot_sha256": "cea5ee268766f8c485a627976ac649e7dbbb7b4dfa25ec2692f05133ebbb3de3",
+      "frozen_config_sha256": "5a269728658388225de269d33568db3696c635ac96eb94629242bf31f714dc39",
+      "projection_clarification_sha256": "e178361f5f8fa4e847cadb0e82cab2fd6ac6b51a259a01126349d35f40a01a47",
+      "native_verification": {
+        "status": "passed",
+        "checks_passed": 1405,
+        "checks_failed": 0,
+        "receipt_sha256": "0721aab92cc8d9ad2b0be6949d04d60ea76bfda6403af43d8fa1c98a28b92de9",
+        "reproduced_by_public_ci": false
+      },
+      "additional_source_hashes": {
+        "reports/seasonal_analogue_pilot.md": "480b4c1903eaa45799138f9335e2f1d8dd96a3f1a3b1f640c0bafd286771e3f9",
+        "src/spea/genus_spatial.py": "6f5aeafeffe117a07a1382412767a9098269da17c4533fe63e53796a1d42165a",
+        "scripts/plot_intermontana_environmental_organization.py": "38b5502113f9478cf5d68a951d9a98466d4db39852c72e90f8221fbb146956a4"
+      },
+      "scope": "Aggregate exports and corrected coarse figure only. Native input identities, model arrays and private casework are not distributed."
+    }
   },
-  "previous_public_commit": "1678bcc8c3a73f60ee4db5701580adde647f47a5",
-  "source_commit_scope": "The source_commit field identifies the initial seasonal snapshot. Later analysis provenance is separately identified below by exact source-file and run hashes.",
-  "numerical_results_note": "Previously published seasonal numerical results are unchanged. This release adds saved outputs from the separate completed 20 October environmental-organization screen; public preparation reruns no scientific fits.",
-  "environmental_organization_source": {
-    "source_run": "2026-10-20-intermontana-environmental-organization-v1",
-    "source_worktree_base_commit": "bdb5b69c6a8db35c12b9aeed1880a1352ca5ac8a",
-    "source_changes_uncommitted_at_export": true,
-    "source_run_receipt_sha256": "94054bd3baf9d1deb7a182a66b453ab95e0702dc76ce9393e2a26c2cf03b2121",
-    "source_snapshot_sha256": "cea5ee268766f8c485a627976ac649e7dbbb7b4dfa25ec2692f05133ebbb3de3",
-    "frozen_config_sha256": "5a269728658388225de269d33568db3696c635ac96eb94629242bf31f714dc39",
-    "projection_clarification_sha256": "e178361f5f8fa4e847cadb0e82cab2fd6ac6b51a259a01126349d35f40a01a47",
-    "native_verification": {
-      "status": "passed",
-      "checks_passed": 1405,
-      "checks_failed": 0,
-      "receipt_sha256": "0721aab92cc8d9ad2b0be6949d04d60ea76bfda6403af43d8fa1c98a28b92de9",
-      "reproduced_by_public_ci": false
-    },
-    "additional_source_hashes": {
-      "reports/seasonal_analogue_pilot.md": "480b4c1903eaa45799138f9335e2f1d8dd96a3f1a3b1f640c0bafd286771e3f9",
-      "src/spea/genus_spatial.py": "6f5aeafeffe117a07a1382412767a9098269da17c4533fe63e53796a1d42165a",
-      "scripts/plot_intermontana_environmental_organization.py": "38b5502113f9478cf5d68a951d9a98466d4db39852c72e90f8221fbb146956a4"
-    },
-    "scope": "Aggregate exports and corrected coarse figure only. Native input identities, model arrays and private casework are not distributed."
-  }
+  "historical_provenance_note": "The nested preceding provenance describes the earlier version, including its file hashes and chronology. Current file identities are in files and CHECKSUMS.sha256. Earlier release tags are preserved."
 }

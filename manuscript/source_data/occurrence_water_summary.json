@@ -1,0 +1,76 @@
+{
+  "status": "verified_exploratory_mapped_water_comparison",
+  "source_run": "2026-10-02-south-water-benchmark-v1",
+  "source_review": "2026-10-02-south-water-review-v1",
+  "primary_record_years": [
+    1995,
+    2016
+  ],
+  "primary_records": 324,
+  "temporal_record_years": [
+    2017,
+    2020
+  ],
+  "temporal_records": 85,
+  "guarded_temporal_training_records": 170,
+  "available_public_points": 28880,
+  "coastal_points_outside_existing_native_land_mask": 51,
+  "spatial_guard_m": 5000,
+  "model_fits": 24,
+  "primary_equal_five_source_block_means": {
+    "quadratic_ridge": {
+      "climate_score": 0.16104421800259258,
+      "water_score": 0.28825447515235997,
+      "water_gain": 0.12721025714976736,
+      "positive_water_gains": 4,
+      "comparison_count": 5
+    },
+    "catboost": {
+      "climate_score": 0.23793229740563743,
+      "water_score": 0.48700954711958466,
+      "water_gain": 0.24907724971394724,
+      "positive_water_gains": 4,
+      "comparison_count": 5
+    }
+  },
+  "descriptive_omission_of_three_record_block_3": {
+    "quadratic_ridge": {
+      "climate_score": 0.11082054923875531,
+      "water_score": 0.11838782732662204,
+      "water_gain": 0.0075672780878667245,
+      "positive_water_gains": 3,
+      "comparison_count": 4
+    },
+    "catboost": {
+      "climate_score": 0.11108770289644189,
+      "water_score": 0.29124401698787383,
+      "water_gain": 0.18015631409143196,
+      "positive_water_gains": 3,
+      "comparison_count": 4
+    }
+  },
+  "secondary_guarded_temporal_record_means": {
+    "quadratic_ridge": {
+      "climate_score": 0.2721020669234349,
+      "water_score": 0.6202911984137097,
+      "water_gain": 0.3481891314902748,
+      "positive_water_gains": 1,
+      "comparison_count": 1
+    },
+    "catboost": {
+      "climate_score": 0.3702391269633687,
+      "water_score": 0.6923265289122382,
+      "water_gain": 0.32208740194886953,
+      "positive_water_gains": 1,
+      "comparison_count": 1
+    }
+  },
+  "limits": [
+    "Recorded-density prediction, not occupancy, a causal water effect or reproductive success.",
+    "Block 3 has only three early records and one late record; no precise regional claim.",
+    "Omission of block 3 is descriptive accounting, not a replacement primary statistic or refit.",
+    "Later records were used elsewhere in the project; not fresh external validation.",
+    "Water and climate can track observation effort; survey histories are not integrated.",
+    "Static water proximity with mixed source dates does not measure hydroperiod or establish Baja/LGM transfer."
+  ]
+}

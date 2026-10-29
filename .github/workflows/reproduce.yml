@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: '3.13'
       - run: python scripts/check_snapshot.py
+      - run: python manuscript/replay/replay_aggregates.py --output manuscript_replay_receipt.json
+      - run: python -m compileall -q native/scripts native/src native/tests
       - run: python scripts/replay.py --output replay_output
       - run: python -m unittest discover -s tests -p 'test_replay*.py'
   selected-components:
@@ -35,3 +37,4 @@ jobs:
         env:
           PYTHONPATH: src
       - run: python scripts/plot_results.py --output replay_figure.png
+      - run: python manuscript/replay/build_main_figures.py --output-dir manuscript_figure_replay

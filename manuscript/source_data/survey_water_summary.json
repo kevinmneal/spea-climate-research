@@ -1,0 +1,28 @@
+{
+  "primary_equal_block_joint_gain": -0.02748154502788256,
+  "secondary_pooled_cell_joint_gain": -0.015517198856225906,
+  "equal_block_any_encounter_gain": -0.027409459307073725,
+  "equal_block_conditional_pattern_gain": -7.208572080888987e-05,
+  "descriptive_equal_block_joint_gain_without_block5": -0.015424980775746389,
+  "descriptive_equal_block_joint_gain_without_blocks3and5": -0.01841708099946619,
+  "improving_blocks": 0,
+  "evaluated_blocks": 5,
+  "cells": 376,
+  "detected_cells": 68,
+  "surveyed_years": 2133,
+  "detection_years": 150,
+  "model_fits": 12,
+  "optimizer_calls": 24,
+  "tests_passed": 21,
+  "independent_checks": 350,
+  "cell_scores_replayed": 1504,
+  "refits_for_verification": 0,
+  "target": "Joint annual pitfall encounter histories in supplied blocks; not certain absences or verified occupancy.",
+  "inference": "No incremental held-block gain for these two water proxies beyond fixed terrestrial habitat and observation process.",
+  "limitations": [
+    "Static latent state across1995-2016 and conditional independence of annual encounters are assumptions.",
+    "Targeted survey locations, mixed covariate dates and incomplete water inventories limit biological inference.",
+    "Changes of data, predictors, likelihood and folds prevent attributing the contrast with presence-only solely to effort.",
+    "No source-cell coordinates, geometric-gap validation, climate extraction or hindcast correction."
+  ]
+}

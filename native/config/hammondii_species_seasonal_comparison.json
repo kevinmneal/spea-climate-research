@@ -1,0 +1,135 @@
+{
+  "status": "frozen before separate-species empirical fitting",
+  "prepared_date": "2026-09-30",
+  "preparation_run": "2026-09-27-genus-model-inputs-v3",
+  "environment_run": "2026-09-28-genus-environment-inputs-v1",
+  "species": [
+    "hammondii_north",
+    "spea_south"
+  ],
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "families": [
+    "annual",
+    "variability",
+    "monthly"
+  ],
+  "family_dimensions": [
+    2,
+    4,
+    28
+  ],
+  "features": {
+    "annual": "Equal-month mean temperature; log1p(sum monthly precipitation). Both computed from the same 24 physical layers as all other families.",
+    "variability": "Annual columns plus warmest-minus-coldest monthly mean temperature and population coefficient of variation of monthly precipitation (ratio, ddof=0). These summaries are unchanged by month permutation.",
+    "monthly": "All four previous columns plus 12 monthly temperature deviations from annual mean and 12 monthly precipitation fractions. Exact nested representations; calendar timing is retained."
+  },
+  "dtype": "Compute definitions in float64 from source physical float32, then store model columns in float32. Never standardize from held distributions.",
+  "candidate_origin": "Unchanged four settings from the frozen genus seasonal comparison; no candidate change in response to N/S empirical scores. These are developmental spatial comparisons.",
+  "model_seed": 2026093071,
+  "candidates": [
+    {
+      "id": "baseline",
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.05,
+      "leaf_damping_per_presence": 0.005
+    },
+    {
+      "id": "shallow",
+      "iterations": 150,
+      "depth": 2,
+      "learning_rate": 0.03,
+      "leaf_damping_per_presence": 0.03
+    },
+    {
+      "id": "moderate",
+      "iterations": 300,
+      "depth": 3,
+      "learning_rate": 0.05,
+      "leaf_damping_per_presence": 0.01
+    },
+    {
+      "id": "damped",
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.05,
+      "leaf_damping_per_presence": 0.05
+    }
+  ],
+  "minimum_inner_training_cells": 20,
+  "minimum_inner_validation_blocks": 3,
+  "minimum_valid_inner_folds": 2,
+  "expected_inner_folds": {
+    "hammondii_north": [
+      2,
+      2,
+      2
+    ],
+    "spea_south": [
+      2,
+      1,
+      1
+    ]
+  },
+  "objective": "Native CatBoost weighted BCE; equal total occupied-cell and area/inclusion-weighted background mass, each total n_presence.",
+  "regularization": "Effective Newton leaf damping r*n_presence; native l2_leaf_reg divided by mean object weight, as in the verified objective supplement.",
+  "quantization": "128 GreedyLogSum training-only cutoffs from all 28 columns; smaller families receive the identical cutoff prefix for their common columns.",
+  "split_policy": "Reuse the group-filtered all_1km paired N/S three-fold design exactly. Inner training presences/domains intersect outer training with another fold training; validation intersects outer training with that other fold held. Require 30 km WGS84 separation after both effective source radii (1 km for unknown only). Preserve inherited linked-source exclusions. Draw inner quadrature within each own-species intersected domain with forced training presences.",
+  "selection": "Each species/family/outer setting uses maximum equal-inner-fold occupied-50km-block mean relative-density log score. Require at least two eligible inner folds; complete all candidates. Ties within 1e-10 follow candidate order. Fixed baseline fallback when fewer than two eligible inner folds; do not relax the 20-training-cell minimum after seeing results.",
+  "selection_scope": "Freeze all 18 selections before any separate-species outer evaluation. North has [2,2,2] eligible inner folds; South [2,1,1]. Two southern inner candidates have 17 training cells and remain ineligible.",
+  "evaluation": "Both selected and matched fixed baseline for all three families on identical held cells and full physical native target areas. An identical selected baseline is an exact alias, never a repeated fit.",
+  "primary_contrasts": [
+    "variability_minus_annual",
+    "monthly_minus_variability",
+    "monthly_minus_annual"
+  ],
+  "primary_score": "Equal occupied50km-block mean held relative-recorded-density log score per fold, then equal three-fold mean within species. All paired fold differences retained. Do not rank absolute scores across different species landscapes.",
+  "secondary_scores": [
+    "equal-cell log score",
+    "area-weighted source AUC",
+    "top 5/10/20 percent physical-area capture",
+    "source AP/log loss/Brier under half-record half-landscape mixture",
+    "prediction concentration and entropy effective-area fraction"
+  ],
+  "inner_prediction_storage": "All validation-cell margins, exact full-landscape normalizer and 256 evenly spaced native-index prediction audit values; full target margins are reconstructed independently during verification rather than stored for every search candidate.",
+  "outer_prediction_storage": "All native target margins and cell scores are retained; no clipping or thinning for evaluation.",
+  "interpretation": "Predictive information from nested representations, conditional on this learner and small tuning budget; not causal seasonal effects, physiological tolerance, an effort correction or a test of genetic lineages.",
+  "budget": {
+    "maximum_inner_fits": 120,
+    "maximum_outer_fits": 36,
+    "maximum_fits": 156,
+    "cpu_minutes": 10,
+    "peak_gib": 4,
+    "output_gb": 1,
+    "threads": 2,
+    "prediction_chunk_size": 32768
+  },
+  "full_data_fits": 0,
+  "formal_significance_tests": 0,
+  "occurrence_changes": 0,
+  "scientific_gate_changes": 0,
+  "new_genetic_data_or_analysis": false,
+  "species_group_codes": {
+    "hammondii_north": 1,
+    "spea_south": -1
+  },
+  "species_labels": {
+    "hammondii_north": "S. hammondii sensu stricto (North)",
+    "spea_south": "Spea sp. (southern species; undescribed)"
+  },
+  "species_split_run": "2026-09-30-hammondii-species-seasonal-inputs-v1",
+  "parent_spatial_run": "2026-09-27-hammondii-working-comparison-v1",
+  "parent_case": "all_1km",
+  "authorization": "Kevin 30 September: take the established northern/southern species split as the main biological premise and proceed; extra N/S niche differentiation remains a separate supplementary question.",
+  "biological_units": "Northern S. hammondii sensu stricto and unnamed southern Spea species. Inherited geographic occurrence assignments stay distinct from direct genetic evidence. Source taxon strings are preserved.",
+  "quadrature": {
+    "nonpresence_per_stratum": 16,
+    "stratum_width_m": 25000,
+    "seed": 2026093079
+  },
+  "reuse_other_species": "Reuse verified intermontana, bombifrons and multiplicata seasonal comparisons from 2026-09-30-genus-seasonal-comparison-v2 without refitting. Their five-fold 50-km design differs from this three-fold 30-km design."
+}

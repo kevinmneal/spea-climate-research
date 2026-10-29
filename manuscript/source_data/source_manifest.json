@@ -1,0 +1,215 @@
+{
+  "scope": "Coordinate-free saved aggregates and metadata only; no exact occurrence tables, native rasters, models or raw survey histories. Byte copies preserve original saved evidence.",
+  "packaged_files": {
+    "structured_all_scores.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/structured_scores.csv",
+      "sha256": "27925c16ece2c10e27028dd0395fbd87ebbb28a241aebdd2e93346184e94604c",
+      "bytes": 41847
+    },
+    "structured_all_means.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/structured_means.csv",
+      "sha256": "166bccc351cee5acff535f37536635c492b355eb21256b7450435fbc93fac59d",
+      "bytes": 4649
+    },
+    "structured_all_paired_gains.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/structured_gains.csv",
+      "sha256": "dacf2476a264a880564e938a9273f5801aa9aede1b49e2792ed8311a2930a741",
+      "bytes": 53922
+    },
+    "recorded_available_climate.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/recorded_available_climate.csv",
+      "sha256": "9c0b2ff8ea65fb366582eabed0d1e721f2072f8d472ee7a1fdaebabc98fde1b5",
+      "bytes": 2871
+    },
+    "pooling_transfer_scores.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/transfer_scores.csv",
+      "sha256": "fc41cc516999b385de903034a67f4dd039ed963476e571511a1ed96aa2eacdb7",
+      "bytes": 31409
+    },
+    "pooling_transfer_means.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/transfer_means.csv",
+      "sha256": "32229fb5ac078380afb41c196d62ba7efd9f49c4c4db95e03a8c4124bd0ecd29",
+      "bytes": 3808
+    },
+    "pooling_transfer_paired_gains.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/transfer_gains.csv",
+      "sha256": "fd4eaf2e5e5f6220debb328450458c779493ef387d2833d81aa30ae1e325f14e",
+      "bytes": 17077
+    },
+    "expanded_selected_folds.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/five_species_selected_folds.csv",
+      "sha256": "b4c45ad310580c0e32f72e943f982d4716181c15c74b935c933b7ea56611625c",
+      "bytes": 11140
+    },
+    "expanded_species_summary.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/five_species_summary.csv",
+      "sha256": "89b523abf4d350fcee05129dcaed1ec144b3f7992ac85234b0157febd65d5f7d",
+      "bytes": 1458
+    },
+    "original_evidence_designs.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-manuscript-evidence/evidence_designs.csv",
+      "sha256": "48110af03a1ecf56e7c70657bc076f15b2e758105eadb25c9b2e7acdccb4357a",
+      "bytes": 9845
+    },
+    "seasonal_all_fold_metrics.csv": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/fold_metrics.csv",
+      "sha256": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+      "bytes": 87067
+    },
+    "seasonal_all_family_means.csv": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/family_summary.csv",
+      "sha256": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+      "bytes": 4574
+    },
+    "seasonal_all_fold_contrasts.csv": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_folds.csv",
+      "sha256": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+      "bytes": 22607
+    },
+    "seasonal_all_contrast_summaries.csv": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/contrast_summary.csv",
+      "sha256": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+      "bytes": 12763
+    },
+    "seasonal_source_alignment.csv": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/source_alignment.csv",
+      "sha256": "9e3795e3a50437ece1e7c6be5b6c43053abcadf136fb0290e133186a57551796",
+      "bytes": 9859
+    },
+    "seasonal_family_lineage.csv": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/family_lineage.csv",
+      "sha256": "bfe8a2bd550d6bbe9f94371f04f664ed3ead58b2976359ab634d9b8f81e07430",
+      "bytes": 6457
+    },
+    "seasonal_fixed_shallow_config.json": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/effective_config.json",
+      "sha256": "ad793e4db5b9447a6091648480da86b9ada91f5a3a85cb6bc5d2aabdddcb47dc",
+      "bytes": 3170
+    },
+    "seasonal_original_provenance.json": {
+      "original_workspace_relative_path": "results/2026-10-05-seasonal-bioclim-reference/provenance.json",
+      "sha256": "cc91460500fea6a7b8320ce438ecb010c95ce90cfecdbb1af6b3477fdf096695",
+      "bytes": 4051
+    },
+    "seasonal_original_procedure_folds.csv": {
+      "original_workspace_relative_path": "results/2026-10-04-spea-seasonal-preparation/primary_folds.csv",
+      "sha256": "98fbc5c3f63a0f37144c0d1d145cf838e47881291dc368f8b84884537c0b67a9",
+      "bytes": 67620
+    },
+    "seasonal_original_procedure_means.csv": {
+      "original_workspace_relative_path": "results/2026-10-04-spea-seasonal-preparation/primary_summary.csv",
+      "sha256": "977b8cfd0ec613e6456901a31ec3039b033e95b99141f9c8d8d9c8e121bf7649",
+      "bytes": 7802
+    },
+    "seasonal_original_procedure_contrasts.csv": {
+      "original_workspace_relative_path": "results/2026-10-04-spea-seasonal-preparation/procedure_contrasts.csv",
+      "sha256": "072ecebc922d8cfa353d45148427aaf9a3accff8987db45c3f4d8491b74e4464",
+      "bytes": 2814
+    },
+    "seasonal_support_by_fold.csv": {
+      "original_workspace_relative_path": "results/2026-10-04-spea-seasonal-manuscript/support_by_fold.csv",
+      "sha256": "5b4f64e914f7d7d34b8d4ded41662a4df9027504e79104ee38a789116e3f260e",
+      "bytes": 2400
+    },
+    "seasonal_method_specification.json": {
+      "original_workspace_relative_path": "results/2026-10-04-spea-seasonal-preparation/method_specification.json",
+      "sha256": "5f3cccd52b4416e2f8a3362b0c164b48a0571ec6a2d47676f9a7bd331a1807a4",
+      "bytes": 4458
+    },
+    "seasonal_coverage_map_provenance.json": {
+      "original_workspace_relative_path": "results/2026-10-04-spea-seasonal-manuscript/seasonal_support_provenance.json",
+      "sha256": "a04138c23676f5c296789aac0760ae1a1e5dabfe05df29fd5813b6ca03e3f585",
+      "bytes": 7513
+    },
+    "occurrence_water_block_metrics.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-south-water-benchmark/metrics.csv",
+      "sha256": "7deb4fe599c9a680d11595f268b3103efc5ff270c01b08fee741b152aba74575",
+      "bytes": 3451
+    },
+    "occurrence_water_paired_gains.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-south-water-benchmark/paired_gains.csv",
+      "sha256": "af54060d4dc8d747cfbbc035b4b194d8bad78c69c748a80d15a15e2752930714",
+      "bytes": 1125
+    },
+    "occurrence_water_summary.json": {
+      "original_workspace_relative_path": "results/2026-10-02-south-water-benchmark/summary.json",
+      "sha256": "4b61f9e655172844c8655d98ed63eaa1bfe1ab4e3dc55c79581831e79a47b184",
+      "bytes": 2570
+    },
+    "occurrence_water_provenance.json": {
+      "original_workspace_relative_path": "results/2026-10-02-south-water-benchmark/provenance.json",
+      "sha256": "8207885f1a5b964106e5d95c8a94f00634284a2c33b43c70a0758f35838c0cf8",
+      "bytes": 1602
+    },
+    "survey_water_block_metrics.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-south-survey-water/metrics.csv",
+      "sha256": "3cde4ea00c73421ed8b22526a358bb84abb2d284bf151c4e5b6add1b6ba28284",
+      "bytes": 1264
+    },
+    "survey_water_paired_gains.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-south-survey-water/paired_gains.csv",
+      "sha256": "df001714d7766930e4ad54bc2965b1000a55e9d85db0dd8e5ad340ad2b1939fd",
+      "bytes": 435
+    },
+    "survey_water_summary.json": {
+      "original_workspace_relative_path": "results/2026-10-02-south-survey-water/summary.json",
+      "sha256": "c9c14334012b688442fa376882a4e51f8f8736af263047f65f332aace7bc988a",
+      "bytes": 1445
+    },
+    "survey_water_coverage.csv": {
+      "original_workspace_relative_path": "results/2026-10-02-south-survey-water/coverage.csv",
+      "sha256": "03d9f34139c664321415a11d6162104aad9255724232bd09b1ca76c4fc6cef8e",
+      "bytes": 129
+    },
+    "survey_water_provenance.json": {
+      "original_workspace_relative_path": "results/2026-10-02-south-survey-water/provenance.json",
+      "sha256": "4a4343b30ae254011a471a676d4e986ad35cc1c39e652163a438f1a09a5795bf",
+      "bytes": 2532
+    },
+    "support_primary_structured_targets.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/support_primary_structured_targets.csv",
+      "sha256": "c51cb2c23c807fec4cd78b70c3418aa57ffb367dc1940f44455020d4a58fa896",
+      "bytes": 805
+    },
+    "table1_controlled_responses.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table1_controlled_responses.csv",
+      "sha256": "7bf0b8ab8972060465fc2f75dc0bca8d42287790852f9df0ba15322938a359fe",
+      "bytes": 734
+    },
+    "seasonal_main_figure_fold_contrasts_long.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/seasonal_main_figure_fold_contrasts_long.csv",
+      "sha256": "3824a831e0ee236ffd1481a1a9a701a91bee30ed7448aef8cc3d1e25b7345418",
+      "bytes": 14783
+    },
+    "support_seasonal_all_metric_contrasts.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/support_seasonal_all_metric_contrasts.csv",
+      "sha256": "81bf6c45e783f927ceb9aa931c3a8d05466dbc0a9a51060381321002f751bd01",
+      "bytes": 12804
+    },
+    "table3a_presence_water_density.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table3a_presence_water_density.csv",
+      "sha256": "4b8259fc527bd352be1a61dedbac5588974d99b15e478ab9eb51e42c54a263ed",
+      "bytes": 287
+    },
+    "table3b_survey_water_history.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table3b_survey_water_history.csv",
+      "sha256": "0a35a10317ea189dc0db98dcc14ea3fca11f34a8156d1a42583b24dc74219d57",
+      "bytes": 300
+    },
+    "table2_matched_representations.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/table2_matched_representations.csv",
+      "sha256": "bf6825622e54514a2e352ec4a6696b50ee33a5d257b22e20c5e03cbbea05eaa4",
+      "bytes": 2541
+    },
+    "support_nonlinear_development_history.csv": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/support_nonlinear_development_history.csv",
+      "sha256": "da45026009060e380b6edd0dd567f48378500f3ec3d8fdf5056d40ceafae1b76",
+      "bytes": 1339
+    },
+    "canonical_source_identity_receipts.json": {
+      "original_workspace_relative_path": "runs/2026-10-29-integrated-manuscript-v1/evidence_audit/source_hashes.json",
+      "sha256": "1a6ae632b296128dda425736adb48602c9b9c6dcf10e5be737567e1986c9585e",
+      "bytes": 111100
+    }
+  }
+}

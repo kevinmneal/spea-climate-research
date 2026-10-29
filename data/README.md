@@ -1,5 +1,7 @@
 # Aggregate results
 
+The integrated manuscript's complete three-strand evidence is in [manuscript/source_data](../manuscript/evidence_index.md). This directory preserves the earlier seasonal, sensitivity, decomposition and separate environmental-organization modules, with their existing replay commands.
+
 All supplied rows summarize recorded cells or fitted models. They contain no individual occurrence coordinates or reconstructable native-cell lists. Seasonal CSV source bytes are preserved, including historical column names and run identifiers. The new environmental-organization export preserves existing aggregate rows and documents its additional fold aggregation. Public document wording does not rename historical keys.
 
 ## Seasonal units and metrics

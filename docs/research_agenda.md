@@ -1,5 +1,7 @@
 # Exploratory biogeography and the next biological questions
 
+**29 October status:** the [integrated comparative manuscript](../manuscript/README.md) is now the active paper and the exploratory analysis phase is complete. The questions below remain background and conditional future research directions; this public update initiates no new analysis or acquisition.
+
 This module describes the wider research program as of 21 October 2026. It is separate from the climate-representation manuscript. The public replay now audits aggregates for the [environmental-organization screen](environmental_organization.md); it does not reproduce native geographical analyses, model fits or historical routes. No new *Spea* population division is established here.
 
 ## What has been useful so far

@@ -1,0 +1,2 @@
+# Editable manuscript builder; PDF rendering is a separate step.
+python-docx==1.2.0

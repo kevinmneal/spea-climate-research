@@ -1,0 +1,167 @@
+{
+  "definitions_document": "reports/spea_seasonal_methods_appendix.md",
+  "original_families": {
+    "annual": 2,
+    "variability": 4,
+    "monthly": 28
+  },
+  "normal_period": "1981-2010",
+  "monthly_order": "January through December",
+  "raw_monthly_units": {
+    "temperature": "degC",
+    "precipitation": "mm/month"
+  },
+  "feature_computation": "float64 arithmetic from source physical float32; model columns float32",
+  "primary_candidates": [
+    {
+      "id": "baseline",
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.05,
+      "leaf_damping_per_presence": 0.005
+    },
+    {
+      "id": "shallow",
+      "iterations": 150,
+      "depth": 2,
+      "learning_rate": 0.03,
+      "leaf_damping_per_presence": 0.03
+    },
+    {
+      "id": "moderate",
+      "iterations": 300,
+      "depth": 3,
+      "learning_rate": 0.05,
+      "leaf_damping_per_presence": 0.01
+    },
+    {
+      "id": "damped",
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.05,
+      "leaf_damping_per_presence": 0.05
+    }
+  ],
+  "primary_seed": {
+    "2026-09-30-genus-seasonal-comparison-v2": {
+      "base": 2026093051,
+      "species_order": [
+        "hammondii",
+        "intermontana",
+        "bombifrons",
+        "multiplicata"
+      ],
+      "outer": "base + 1000*original_species_index + fold",
+      "inner": "base + 1000*original_species_index + 10*outer + inner"
+    },
+    "2026-09-30-hammondii-species-seasonal-comparison-v1": {
+      "base": 2026093071,
+      "species_order": [
+        "hammondii_north",
+        "spea_south"
+      ],
+      "outer": "base + 1000*original_species_index + fold",
+      "inner": "base + 1000*original_species_index + 10*outer + inner"
+    }
+  },
+  "selection": {
+    "minimum_training_cells": 20,
+    "minimum_validation_blocks": 3,
+    "minimum_inner_folds": 2,
+    "metric": "equal-inner-fold occupied-50km-block mean log relative recording density",
+    "tie_tolerance": 1e-10,
+    "tie_order": [
+      "baseline",
+      "shallow",
+      "moderate",
+      "damped"
+    ],
+    "fallback": "baseline",
+    "eligible_inner_folds": {
+      "intermontana": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "bombifrons": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "multiplicata": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "hammondii_north": [
+        2,
+        2,
+        2
+      ],
+      "spea_south": [
+        2,
+        1,
+        1
+      ]
+    }
+  },
+  "quantization": {
+    "border_count": 128,
+    "method": "GreedyLogSum",
+    "training_object_rows_unweighted": true,
+    "primary_bank_columns": 28,
+    "sensitivity_bank_columns": 61,
+    "held_features_used": false
+  },
+  "sensitivity_families": {
+    "BIOCLIM": 19,
+    "BIOCLIM_plus_statistics": 33,
+    "compact_statistics": 18,
+    "monthly": 28,
+    "monthly_plus_statistics": 42
+  },
+  "fixed_shallow": {
+    "iterations": 150,
+    "depth": 2,
+    "learning_rate": 0.03,
+    "damping_per_presence": 0.03
+  },
+  "thinning": {
+    "distances_km": [
+      2,
+      5,
+      10
+    ],
+    "attempts_per_radius": 10,
+    "strict_conflict_distance": true,
+    "metric": "WGS84 geodesic cell-centre distance",
+    "algorithm": "remove maximum current neighbour degree; random ties",
+    "choice": "first largest-cardinality result; not globally optimal or best-scoring radius",
+    "seed_base": 2026100320,
+    "attempt_seed": "base + 1000*species_index + 20*fold + attempt",
+    "minimum_training_cells": 20,
+    "minimum_training_blocks": 3
+  },
+  "soft_weights": {
+    "support_km": 10,
+    "exponent": 1,
+    "raw": "1/(1 + sum_{j!=i} max(1 - d_ij/10km,0))",
+    "normalization": "w_i = N*u_i/sum(u)",
+    "all_presences_retained": true
+  },
+  "no_new_scientific_computations": true,
+  "source_code_hashes": {
+    "src/spea/seasonal_model.py": "17397ca3b858f1c596861356c23e4016ea0f943d92fa6b67d24f3b48af61d2d2",
+    "src/spea/climate_statistics.py": "ba914d41b7c7d4e3ef40421557fc9a3cafa48846bb50b27ac116d89679002211",
+    "src/spea/spatial_thinning.py": "de232f865020af73225295080d822450f09cc1af3a9e0bba8cedec642dfb117f",
+    "src/spea/spatial_weights.py": "4187c6aa1efd9099c09648f8c007961e03793f684c9d7435b7607839d33139f6",
+    "src/spea/native_objective_comparison.py": "c92200246693a8431ced82b1c4ea06860b78adbfd4088e548f32b90d3c5858d5",
+    "src/spea/genus_model.py": "1ef6b3c6f351209c11c375c6fae89999fa230dbd41074add65ea2a82f2e33aaa"
+  }
+}

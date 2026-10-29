@@ -1,5 +1,15 @@
 # Change log
 
+## 0.3.0 — 29 October 2026
+
+Makes *Recorded climatic differences and geographic prediction across Spea* the active manuscript, combining the completed North/South controlled response, matched climate-representation/weighting and distinct occurrence/survey water comparisons. Publishes PDF, editable Word, complete text/supporting information, all three main figure builders and a 3,664-check aggregate replay. Numerical findings are taken from completed analyses; release preparation adds no fits, predictions, occurrence admissions or new hypothesis tests.
+
+The integrated manuscript incorporates and qualifies the earlier seasonal paper. The old text remains accessible through unchanged v0.1.0 and v0.2.0 tags. The separate environmental-organization note, old aggregate tables and component code retain their scientific contents and replay commands.
+
+Publishes 51 original implementation/configuration/support files under `native/`, a project-import-complete selection whose 101 applicable source identities match saved producer receipts. The code inventory explicitly identifies 455 omitted direct native/audit dependencies and separate upstream preparation. The source/access documentation supplies exact GBIF API page and provider identities, published/author-source provenance, all 43 contemporary CHELSA objects, CEC/Natural Earth definitions and USGS table/code identities. It documents that the GBIF extract has no collective download DOI, that some accepted curation remains nonpublic/request-dependent, and that exact native fitting does not run from this clone alone.
+
+Incorporates the reviewed supplementary-methods clarification distinguishing log-transformed seasonal BIOCLIM amounts from the occurrence-water benchmark's physical BIOCLIM inputs and restricting full-native-target integration to the appropriate comparisons. No numerical result changed. Public availability/status text and document metadata replace the local-review wording; the Methods explicitly define nats as natural-log units. Native source guards remain intact; no exact locality table, raw survey history, downloaded paper or native model/array archive is added.
+
 ## 0.2.0 — 21 October 2026
 
 Adds the completed 20 October environmental-organization screen as a separate exploratory note, with the corrected coarse figure, a scientific design record and selected coordinate-free aggregates. All three precise-cohort two-component predictive gains are negative. The primary lies inside both fitted-association envelopes; an isolated sensitivity exceeds both upper envelopes while retaining a negative gain. The note preserves that discrepancy and the limited rainfall-timing information remaining after block conditioning.

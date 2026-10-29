@@ -1,0 +1,90 @@
+{
+  "status": "frozen_saved_fit_synthesis",
+  "authorization": "Kevin: Continue on then per your judgment, following the proposed full-BIOCLIM reference synthesis, 5 October 2026.",
+  "run": "2026-10-05-seasonal-bioclim-reference-v1",
+  "output": "results/2026-10-05-seasonal-bioclim-reference",
+  "matched_run": "2026-10-04-seasonal-weighting-interaction-v1",
+  "bioclim_sources": {
+    "equal_cells": "2026-10-03-climate-statistics-comparison-v1",
+    "soft_geo_10km": "2026-10-03-soft-spatial-weighting-v1"
+  },
+  "environment_registry": "runs/2026-09-28-genus-environment-inputs-v1/registry.json",
+  "species": [
+    "intermontana",
+    "bombifrons",
+    "multiplicata",
+    "hammondii_north",
+    "spea_south"
+  ],
+  "fold_counts": [
+    5,
+    5,
+    5,
+    3,
+    3
+  ],
+  "families": [
+    "annual",
+    "variability",
+    "bioclim",
+    "monthly"
+  ],
+  "family_dimensions": [
+    2,
+    4,
+    19,
+    28
+  ],
+  "sampling_arms": [
+    "equal_cells",
+    "soft_geo_10km"
+  ],
+  "model": {
+    "id": "fixed_shallow",
+    "iterations": 150,
+    "depth": 2,
+    "learning_rate": 0.03,
+    "leaf_damping_per_presence": 0.03
+  },
+  "model_seed": 2026100314,
+  "contrasts": {
+    "monthly_minus_annual": [
+      "monthly",
+      "annual"
+    ],
+    "monthly_minus_variability": [
+      "monthly",
+      "variability"
+    ],
+    "monthly_minus_bioclim": [
+      "monthly",
+      "bioclim"
+    ],
+    "bioclim_minus_variability": [
+      "bioclim",
+      "variability"
+    ]
+  },
+  "metrics": [
+    "mean_block_log_score",
+    "mean_cell_log_score",
+    "area_weighted_source_auc",
+    "source_average_precision_prior_half"
+  ],
+  "aggregation": "Compute differences within each unit, held fold and training-weight arm; then average folds equally within unit and arm. Preserve every fold and positive-fold counts. No pooling units or significance claim.",
+  "primary_metric": "mean_block_log_score",
+  "metric_limits": "Log scores evaluate area-normalized relative recording density. Source ROC AUC uses area-weighted background and occupied-block-weighted records; source AP uses artificial 1:1 source mass, not natural prevalence or occupancy.",
+  "feature_lineage": "Annual, variability and monthly are nested deterministic representations of the same twelve mean-temperature and precipitation normals. Full BIOCLIM uses the existing nineteen provider rasters, including minimum/maximum-temperature information absent from the monthly tas/pr representation; it is a non-nested reference, not a timing-only ablation.",
+  "definition_sources": [
+    "https://www.worldclim.org/data/bioclim.html",
+    "https://www.chelsa-climate.org/datasets"
+  ],
+  "developmental": true,
+  "independent_confirmation": false,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "occurrence_changes": 0,
+  "background_changes": 0,
+  "scientific_gate_changes": 0,
+  "stop": "Save the 168 matched existing family/arm/fold slots, all paired metrics, one inspected figure, feature lineage and the revised scientific interpretation/handoff. Stop without refits, predictor/sampling/learner sweeps, biological archive searches or historical projections. No representation is automatically adopted."
+}

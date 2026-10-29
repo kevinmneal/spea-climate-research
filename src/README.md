@@ -1,5 +1,7 @@
 # Selected scientific components
 
+The integrated paper's original fitting implementation is now separately available under [native/](../native/README.md). This smaller component package and its tests remain unchanged.
+
 These are small numerical components from the working research code, distributed to make the implemented methods inspectable and reusable. They are not the complete fitting pipeline or a packaged general-purpose species-distribution-modeling library.
 
 | Module | Implemented work |
@@ -13,4 +15,4 @@ The original source files and their SHA-256 values are recorded in [provenance.j
 
 The scientific tests retain the original analytic checks, including circular month windows, skew against SciPy, cutoff identity, distance behavior at high latitude/across the date line, graph separation, and weight normalization. One full-model objective integration test is excluded with its absent dependency. Passing these tests does not validate ecological assumptions or reproduce fitted predictions.
 
-See [optional commands](../REPRODUCIBILITY.md#optional-code-and-figure). Array-reader classes need user-supplied aligned arrays and registries; this repository ships neither. The [synthetic example](../examples/synthetic_components.py) needs no biological or geographic inputs and fits no model.
+See [optional commands](../REPRODUCIBILITY.md#preserve-the-earlier-replays). Array-reader classes need user-supplied aligned arrays and registries; this repository ships neither. The [synthetic example](../examples/synthetic_components.py) needs no biological or geographic inputs and fits no model.

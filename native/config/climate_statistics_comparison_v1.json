@@ -1,0 +1,118 @@
+{
+  "status": "frozen_before_new_empirical_fitting",
+  "authorization": "3 October user explicitly authorized testing monthly statistical summaries, improved spatial sampling, and their combination; all earlier models and occurrence cohorts remain preserved.",
+  "preparation_run": "2026-09-27-genus-model-inputs-v3",
+  "monthly_run": "2026-09-28-genus-environment-inputs-v1",
+  "north_south_run": "2026-09-30-hammondii-species-seasonal-inputs-v1",
+  "species": [
+    "intermontana",
+    "bombifrons",
+    "multiplicata",
+    "hammondii_north",
+    "spea_south"
+  ],
+  "families": [
+    "bioclim",
+    "bioclim_statistics",
+    "compact_summary",
+    "monthly",
+    "monthly_statistics"
+  ],
+  "family_dimensions": [
+    19,
+    33,
+    18,
+    28,
+    42
+  ],
+  "definitions": {
+    "temperature_median_minus_mean_c": "Median of12 monthly mean-temperature normals minus equal-month mean, degC.",
+    "temperature_iqr_c": "75th minus25th percentile of12 monthly temperature normals; NumPy linear quantiles, degC.",
+    "temperature_skew": "Population third standardized central moment across12 monthly temperature normals, dimensionless.",
+    "precipitation_median_over_mean": "Median of12 monthly precipitation totals divided by their mean, dimensionless.",
+    "precipitation_iqr_over_mean": "Linear75th minus25th monthly precipitation percentiles divided by monthly mean, dimensionless.",
+    "precipitation_skew": "Population third standardized central moment across12 monthly precipitation totals, dimensionless.",
+    "precipitation_normalized_entropy": "-sum(q*log(q))/log12 for monthly annual fractions q;0log0=0. One is even year-round precipitation, zero a single wet month.",
+    "wettest_circular_3month_fraction": "Largest fraction of annual precipitation in any consecutive three months, with December/January wrap.",
+    "driest_circular_3month_fraction": "Smallest fraction of annual precipitation in any consecutive three months, with December/January wrap.",
+    "precipitation_harmonic_sin": "sum(q*sin(theta)), theta=2pi*(month-1)/12, January phase0.",
+    "precipitation_harmonic_cos": "sum(q*cos(theta)), same calendar convention. Do not divide by amplitude or assign a peak date when amplitude is zero.",
+    "temperature_harmonic_sin_c": "2/12*sum((T-meanT)*sin(theta)), degC.",
+    "temperature_harmonic_cos_c": "2/12*sum((T-meanT)*cos(theta)), degC.",
+    "precipitation_temperature_offset_c": "sum(q*(T-meanT)), degC; weights warmth of precipitation-bearing months. Not measured breeding temperature."
+  },
+  "compact_baseline": "Existing annual meanT, log1p annualP, monthly meanT range and population precipitationCV plus fourteen fixed summaries.",
+  "numerics": "float64 definitions, float32 model columns, finite12months/nonnegativeP/positiveannualP required; exact constant-series skew0; no variance threshold, clipping or omitted cells.",
+  "source": "Existing aligned CHELSA2.1 1981–2010 monthly mean-temperature and precipitation-normal arrays;19 BIOCLIM physical arrays from same source/grid. Precipitation includes snow.",
+  "predictor_semantics": "Medians/skews describe the12 climate-normal months, not daily weather, interannual variation, extremes, hydroperiod or phenology. All new features are deterministic functions of the monthly input. Quarter shares overlap BIOCLIM information; no novelty claim for every formula.",
+  "model": {
+    "id": "fixed_shallow",
+    "iterations": 150,
+    "depth": 2,
+    "learning_rate": 0.03,
+    "leaf_damping_per_presence": 0.03
+  },
+  "model_seed": 2026100314,
+  "borders": "One training-only 61-column cutoff bank per outer split, built from original permitted presence rows plus unchanged background before thinning; shared across all sampling arms and remapped by feature name/index for crossed families. Dropped presence covariates already remain in background; no held data.",
+  "objective": "Existing native weighted BCE, equal occupied-cell and area/inclusion background mass; relative recorded-density evaluation, no calibrated occupancy.",
+  "sampling": "Training-only equal-cell / 5km / 10km arms; original held cells, target areas, q cells, area weights and inclusion probabilities unchanged. Thinned-out occupied cells remain area-integration locations, never newly asserted absences. BCE positive/background mass and damping recomputed from retained n.",
+  "folds": "Intermontana/bombifrons/multiplicata retain5 folds and50km guards; North/South retain3 folds and30km guards. Different available landscapes prevent ranking species by absolute scores.",
+  "selection": "No inner tuning, best-performing feature/radius choice, hyperparameter selection or full-data fits. Freeze all thinning masks and support checks before fitting. Maximum retained count among declared thinning attempts is a training-coordinate heuristic, not held-score selection or a proven optimum.",
+  "contrasts": [
+    "bioclim_statistics_minus_bioclim",
+    "monthly_statistics_minus_monthly",
+    "compact_summary_minus_bioclim",
+    "compact_summary_minus_monthly"
+  ],
+  "primary_score": "Equal occupied50km-block held mean per fold, then equal folds within species; retain paired changes and every fold.",
+  "secondary_score": "Equal recorded-cell mean per fold; prediction concentration/entropy and marginal support diagnostics retained.",
+  "inference": "Previously inspected development geography, fixed shallow learner and combined summary set. Feature gains test representation; sampling arms test procedural declustering. Neither identifies effort, causal climate effects, physiological niches, guaranteed independent sites, occupancy or hindcast validity. Without a size-matched deletion control, effects of spatial selection and smaller n are not separated.",
+  "stop": "Complete all supported slots of the 315 declared maximum fits, preserve unsupported slots and every paired fold, summarize feature/sampling/interaction contrasts and stop. No radius/seed/tuning/history sweep or automatic replacement of existing models.",
+  "budget": {
+    "maximum_fits": 315,
+    "cpu_minutes": 30,
+    "peak_gib": 4,
+    "threads": 2,
+    "output_gib": 1.5,
+    "prediction_chunk_size": 32768
+  },
+  "downloads": 0,
+  "full_data_fits": 0,
+  "scientific_gate_changes": 0,
+  "genetic_reanalyses": 0,
+  "historical_projections": 0,
+  "method_references": [
+    "https://www.worldclim.org/data/bioclim.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.skew.html",
+    "https://numpy.org/doc/stable/reference/generated/numpy.quantile.html",
+    "https://doi.org/10.1111/ecog.01132",
+    "https://doi.org/10.1371/journal.pone.0097122",
+    "https://doi.org/10.1111/j.2041-210X.2011.00172.x",
+    "https://doi.org/10.1111/j.1472-4642.2010.00725.x"
+  ],
+  "sampling_preparation_run": "2026-10-03-climate-statistics-sampling-v1",
+  "sampling_arms": {
+    "equal_cells": 0,
+    "thin_5km": 5,
+    "thin_10km": 10
+  },
+  "thinning": {
+    "algorithm": "Iterative maximum-neighbor-degree removal with seeded random ties; WGS84 geodesic distances between inherited native-cell centers.",
+    "attempts": 10,
+    "seed": 2026100320,
+    "seed_schedule": "base + species_index*1000 + fold*20 + attempt; identical seed list for each radius.",
+    "selection": "Largest retained subset among the ten declared attempts; ties select earliest attempt. Training coordinates and counts only, no held scores or precision priority.",
+    "minimum_train_cells": 20,
+    "minimum_train_blocks50": 3,
+    "unsupported": "Preserve unsupported slots and their counts; do not fit, silently reduce folds, relax thresholds or redraw data.",
+    "precision": "Cell-center separation is not source-location accuracy or proof of independent sites. Original source identity/uncertainty and 30/50 km validation guards are retained."
+  },
+  "sampling_contrasts": [
+    "thin_5km_minus_equal_cells",
+    "thin_10km_minus_equal_cells"
+  ],
+  "interaction_contrasts": [
+    "change_in_bioclim_statistics_minus_bioclim_under_thinning",
+    "change_in_monthly_statistics_minus_monthly_under_thinning"
+  ]
+}

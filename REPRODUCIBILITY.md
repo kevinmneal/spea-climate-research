@@ -1,81 +1,95 @@
-# Reproducibility of this snapshot
+# Reproducing the reported results
 
-Version 0.2.0 exposes the arithmetic behind the central seasonal comparisons and the separate environmental-organization screen, plus selected reusable methods. It is not a complete occurrence-to-model release. The numerical results were produced in the larger working archive; this snapshot does not imply that those inputs can be reconstructed exactly from today's provider downloads.
+Version 0.3.0 provides the integrated manuscript's saved numerical comparisons, portable arithmetic and main-figure builders, and the original native implementation with a source/access inventory. The immediately runnable layer checks saved results. Exact occurrence-to-fit reproduction still needs archived inputs that are not all public or redistributable.
 
-## Included levels
+## What is supplied
 
-| Level | Available here? | What the check establishes |
-|---|---|---|
-| Original table arithmetic | Yes | Reconstructs 30 family means and 126 paired fold contrasts from 126 selected/fixed family/fold slots; verifies 21 fold-support rows and 3,914 held cells |
-| Matched weighting and BIOCLIM arithmetic | Yes | Reconstructs 40 family means, 168 paired fold contrasts and 40 contrast summaries from 168 family/arm/fold slots; checks all four reported metrics |
-| Environmental-organization arithmetic | Yes | Reconstructs 897 statistics from 4,485 fold rows, nine simulation envelopes and two conditional association aggregates from ten fold rows; checks cohort/diagnostic consistency and six saved variance-percentage conversions |
-| Reusable predictor and sampling components | Yes, optional dependencies | Tests numerical transformations and geometric sampling rules on analytic or synthetic inputs |
-| Public overview figure | Yes, optional Matplotlib | Replots the primary matched comparison from supplied fold scores |
-| Other manuscript figures and sensitivity/decomposition tables | Saved outputs | Supplied for inspection; the main replay does not regenerate these figures or their underlying native predictions |
-| Occurrence preparation, native predictions and model fitting | No | Frozen record-level inputs, accepted cell assignments, native arrays, models and other assets are absent |
-| Historical routes or genetic subdivisions | No | The agenda is exploratory context; this replay tests no historical or genetic claim |
-| Seasonal analogue pilot | Working-archive summary only | Brief context in the agenda; pair matching and its native inputs are not replayed here |
+| Level | What runs from this repository | What it establishes |
+| --- | --- | --- |
+| Integrated manuscript arithmetic | Standard-library replay of 3,664 checks | Saved structured-response, pooling, matched seasonal, procedure-history, water and support identities |
+| Three main figures | NumPy/Matplotlib builder from packaged tables | Displays the saved comparisons; adds no fit or uncertainty estimate |
+| Editable manuscript | python-docx builder from Markdown and figures | Recreates document content and layout instructions; PDF rendering is separate |
+| Older seasonal and environmental arithmetic | Existing standard-library replay and tests | Preserved v0.1.0/v0.2.0 table and screen calculations |
+| Selected numerical components | Analytic/synthetic tests and example | Implemented transformations and sampling rules on controlled inputs |
+| Native fitters and settings | Supplied for inspection; syntax/import/help checks performed | Original implementation and project dependencies; not a successful native refit |
+| Figure S1 native geography or full model replay | Requires omitted native assets | Not reproduced by the portable checks or public CI |
 
-The original and matched sets reuse models and observations, and the environmental screen reuses recorded cells and developmental geography. Their slot counts must not be added as independent model experiments or biological replicates. The screen has 297 simulated datasets evaluated under three role layouts, not 891 independent biological samples. Neither a replay pass nor an input checksum validates the scientific assumptions or supplies fresh evaluation geography.
+The original and matched comparisons reuse observations, fits and geography. Their row counts must not be added as independent experiments. Passing a hash or arithmetic check does not validate the observations, model assumptions, population interpretation or novelty of the paper.
 
-## Main replay
+## Integrated manuscript replay
 
-From the repository root, with Python 3.13:
+With Python 3.13, from the repository root:
 
 ```sh
-python3 scripts/replay.py --output replay_output
-python3 -m unittest discover -s tests -p 'test_replay*.py'
+python3 manuscript/replay/replay_aggregates.py --output replay_output/manuscript_receipt.json
 ```
 
-There is no dependency installation for these commands. The script refuses an existing output directory; use a new directory for another run. It checks saved arithmetic at absolute tolerance 1e-10, and rejects missing or duplicate folds and nonfinite or inconsistent scores. The tests also deliberately remove, duplicate and alter input rows to check that those errors are caught.
+No third-party package or network access is required. The default without `--output` writes under `manuscript/rebuilt/`, preserving the released receipt. The replay verifies 42 packaged source-file hashes, structured means/contrasts, all matched climate-family and weight-arm scores, pooling diagnostics, both water comparisons, original procedure history, saved alignment counts and 3,914 displayed held cells. Floating-point comparisons use absolute and relative tolerance 1e-12. [The evidence index](manuscript/evidence_index.md) maps claims to the actual tables and specifies each score's support.
 
-Outputs include:
+Scores use natural logarithms, whose units are **nats**. The descriptive score name and averaging unit matter more than that label: relative recording-density scores and log probabilities per complete survey-cell history are different quantities and are never pooled into a single effect. Fold spread and positive-fold counts are descriptive, not confidence intervals or significance tests.
 
-- `original/table2.md` and `original/table3.md`: original selected/fallback and deeper fixed-baseline tables.
-- `matched_primary_table.md`: current matched shallow comparison against variability and full BIOCLIM.
-- `matched_family_means.csv`, `matched_fold_contrasts.csv`, `matched_contrast_summary.csv`: all four metrics, with every paired fold, means, extrema and positive-fold counts.
-- `environmental_organization/observed_table.md` and `association_table.md`: all six observed representative outcomes and the separate conditional association comparison.
-- `environmental_organization/statistics.csv`, `envelopes.csv` and `association_summary.csv`: reconstructed screen aggregates, including the isolated sensitivity discrepancy.
-- `receipt.json`, `original/replay_receipt.json` and `environmental_organization/receipt.json`: runtime, input hashes and explicit scope of each replay.
+The earlier 2,510-check native-source audit is retained as a dated receipt. The public replay does not rerun it. Likewise, saved model/array hashes identify native assets; they do not make those assets available or verify their contents anew.
 
-The portable original script is an exact copy from the research archive. The later aggregate replay is new release code that reconstructs the already saved comparisons. It performs no fitting, predictor selection or new scientific experiment. Legacy original outputs use “Southern species”; this is the same `spea_south` operational unit called southern hammondii in the public text.
+## Rebuild figures and the editable document
 
-## Environmental-organization replay boundary
-
-The [separate module](scripts/replay_environmental_organization.py) can also run alone:
-
-```sh
-python3 scripts/replay_environmental_organization.py --output environmental_replay_output
-```
-
-The organization statistic weights fold gains by their held representative counts. The association aggregate weights exported fold means by their held-block counts. Both differ from the seasonal manuscript's equal-fold averages. Linear simulation percentiles and empirical counts are recalculated from all saved statistics; those counts are not calibrated p-values.
-
-The [design](metadata/environmental_organization_design.json) and [data definitions](data/environmental_organization/README.md) specify the fixed procedure. The public replay checks saved arithmetic and internal consistency. It does not recreate representative choices, native normalizers, model coefficients, GMM fits, simulated native cells or climate-variance estimates. The six variance fractions are supplied values whose percentage conversion is checked. The working archive's 1,405-check native verification is separately recorded in provenance and is not reproduced by this public CI.
-
-## Optional code and figure
-
-In a separate Python 3.13 environment:
+Use an isolated Python 3.13 environment for optional figure/component dependencies:
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-components.txt
+.venv/bin/python manuscript/replay/build_main_figures.py --output-dir replay_output/manuscript_figures
+```
+
+The builder reconstructs Figures 1–3 from packaged aggregate scores. It preserves the different water estimands, adverse results, all retained folds and North/South labels. It adds no fits, predictions, confidence intervals or new observations. Figure S1 is supplied as an inspected image; rebuilding it needs omitted native masks, support/split arrays and coordinate-bearing display inputs.
+
+To rebuild the Word document:
+
+```sh
+.venv/bin/python -m pip install -r requirements-document.txt
+.venv/bin/python manuscript/assembly/build_document.py
+```
+
+The output is `manuscript/rebuilt/Spea_Comparative_Manuscript.docx`. Transfer author edits from Word back into the Markdown source before rebuilding. Word, LibreOffice or another compatible renderer is required to make a PDF; typography and pagination can vary with fonts and renderer. The delivered PDF was rendered and visually checked. [Public release validation](manuscript/verification/public_release_validation.json) states the actual document and image checks.
+
+## Preserve the earlier replays
+
+The former seasonal and environmental-organization modules remain runnable:
+
+```sh
+python3 scripts/replay.py --output replay_output/legacy
+python3 -m unittest discover -s tests -p 'test_replay*.py'
+```
+
+The script refuses an existing destination. It reconstructs the original selected/fallback and fixed-baseline seasonal tables, matched weighting/BIOCLIM tables, 897 environmental-organization statistics, nine simulation envelopes and two association summaries. Seasonal averages give folds equal weight; environmental statistics use their specified representative or block weighting. Its empirical simulation counts are not calibrated p-values, and it does not rerun the screen's native models or simulations.
+
+The optional selected-component checks are unchanged:
+
+```sh
 PYTHONPATH=src .venv/bin/python -m pytest tests/components -q
 PYTHONPATH=src .venv/bin/python examples/synthetic_components.py
 .venv/bin/python scripts/plot_results.py --output replay_figure.png
 ```
 
-The example is explicitly synthetic and is not a proxy for model evaluation. The selected components retain the original numerical functions; the only numerical-module adaptation replaces an imported constant with the identical literal set to avoid unrelated dependencies. Import changes and the omitted full-model integration test are recorded in [provenance.json](provenance.json).
+The example uses synthetic inputs and is not ecological validation. [Component documentation](src/README.md) records the original source, small namespace/constant adaptations and the omitted full-model integration test.
 
-The requirements file pins the installed versions used for selected-component verification. [The historical software snapshot](metadata/software_snapshot.json) separately records saved lock versions for the original fits; those locks do not establish a recovered per-fit installed-environment inventory. The environmental design record includes the installed versions captured by its own analysis receipt; its public aggregate replay needs no numerical-library dependencies.
+## Inspect the native implementation
 
-## What full reproduction would require
+Start with [native/README.md](native/README.md), which gives strand-specific entry points, an inspection environment and conditional native commands. [code_selection.json](native/code_selection.json) records 51 original files, their roles/hashes, project import closure, historical identity comparisons and 455 omitted direct native/audit dependencies. It also identifies upstream preparation that remains outside this selection.
 
-An exact native replay would require the frozen source extracts and record adjudications; source uncertainty and event relationships; accepted native-cell assignments; aligned CHELSA 2.1 arrays and physical cell areas; complete available and held masks; guard decisions and source exclusions; sampled quadrature with inclusion probabilities; training-only cutoffs; fitted models and raw margins; and run-specific software/settings. Most of those assets are not distributed in this small companion.
+The original `native/pyproject.toml` and `native/uv.lock` are inert identity evidence used by historical producer guards. Do not install the broad original project merely to inspect these scripts; the native guide provides a smaller separate inspection environment. Native commands require restored parent inputs, source snapshots and audit artifacts, with original checks left intact. A successful `--help`, syntax check or synthetic test is not a successful fit. Generated native inputs/outputs can contain exact records and locations and are ignored by the public repository.
 
-[Methods](docs/methods.md), [mask definitions](metadata/mask_specification.json), [original method settings](metadata/method_specification.json), [references](metadata/references.bib) and fold summaries document the task. They cannot substitute for the absent frozen assets. Acquiring fresh data would constitute a new preparation requiring its own provenance and validation.
+## Source access and exact restoration
 
-## Snapshot integrity and updates
+[SOURCES_AND_ACCESS.md](SOURCES_AND_ACCESS.md) and its [machine-readable inventory](metadata/public_sources.json) record the GBIF API query pages and provider datasets, published and author-source additions, all 43 CHELSA objects, CEC/Natural Earth definitions, and Rose/USGS table/code identities. Follow those provider routes for public materials. They do not retroactively create an atomic GBIF snapshot or recover unpublished accepted-record decisions.
 
-`CHECKSUMS.sha256` lists the released files. `python3 scripts/check_snapshot.py` checks their bytes. `provenance.json` connects exported artifacts to the private source checkpoint without exposing its Git history. CI verifies the public replay and selected components, not the full research pipeline.
+Exact restoration additionally requires the retained source bytes and adjudications, accepted-cell membership, physical arrays, available/held masks, guards and quadrature, training-only transformations, model artifacts and source-ID survey joins. Some inputs are request-dependent, subject to source rights and location sensitivity; this release does not promise their availability. Fresh downloads or a changed environment need their own provenance and validation. No survey coordinates are reconstructed from the released background grid.
 
-Release tags preserve dated snapshots. The main branch can evolve; cite a release or commit for comparisons. Scientific changes should update the manuscript, affected tables and scope statement together, with a correction or new analysis described in the change log.
+## Release integrity
+
+```sh
+python3 scripts/check_snapshot.py
+```
+
+`CHECKSUMS.sha256` covers released files and the checker validates their bytes and local Markdown links. `provenance.json` records the source checkpoint, exact copies and documented export adaptations. Public CI runs the aggregate replays, selected-component tests, figure builders and native syntax checks. It does not download occurrences, refit native models or establish independent ecological replication.
+
+Cite a versioned release or commit. [Version history](VERSION_HISTORY.md) links the earlier manuscript, while [CHANGELOG.md](CHANGELOG.md) describes each update. Existing release tags are preserved.

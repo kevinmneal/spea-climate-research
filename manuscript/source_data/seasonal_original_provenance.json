@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "created_utc": "2026-10-06T04:53:37.871695+00:00",
+  "config_sha256": "1840066dcf69b90164beef970b28ee820b28bedf1206e1bf2afed14b14e4d7b0",
+  "summary_script_sha256": "10731af52666e7efa21ace30360b63ffc0283de63fd6c6b1b49399344c119aae",
+  "source_runs": {
+    "2026-10-04-seasonal-weighting-interaction-v1": {
+      "run_sha256": "301d8ea52ef1f20733ab4f0b59e091fb46da022d81cf7b91e83ef0778e42c484",
+      "metrics_sha256": "bc137a84e2458209269794552daadf3d727816f124f412ba5cee9330eb8e74d0"
+    },
+    "2026-10-03-climate-statistics-comparison-v1": {
+      "run_sha256": "aeae8e69d5e115de9864f5aac947080cf4704845c84c576547642aef63da3fc5",
+      "metrics_sha256": "64321aaa115105301ccd7eefd2c4d18323635abd728fd7bf27f44fd9bb2cbd5c"
+    },
+    "2026-10-03-soft-spatial-weighting-v1": {
+      "run_sha256": "a4ce08472206a095d85765a4636cba3a6e3fd96406ebcd83b52e18ff93a61380",
+      "metrics_sha256": "8330a721b7fc025896396fbec748910a27ab0203048709e39f88efb6849ebc4e"
+    }
+  },
+  "environment_registry_sha256": "f60e3d2c7887e8d413a2b22f86ca70461268ead86e02a3c0b80ba11b2b1f1514",
+  "slots": 168,
+  "source_alignment_groups": 42,
+  "contrasts": 168,
+  "new_fits": 0,
+  "new_predictions": 0,
+  "historical_projections": 0,
+  "source_and_target_counts_match": true,
+  "saved_split_receipts_match": true,
+  "frozen_weight_vectors_match": true,
+  "fixed_procedure_matches": true,
+  "preserved_all_folds": true,
+  "evaluation_normalization": "Each saved fit's own held-area normalizer",
+  "full_bioclim_nested_in_monthly": false,
+  "independent_confirmation": false,
+  "raw_models_or_arrays_loaded": false,
+  "finished_utc": "2026-10-06T05:01:28.350760+00:00",
+  "all_slots_reused_in_this_synthesis": true,
+  "raw_input_hashes_recomputed": false,
+  "hash_scope": "Saved source metrics and small fit metadata checked against original receipts; native environmental/occurrence/genotype arrays and models not loaded or re-audited.",
+  "verification": "Source/settings/membership alignment; independent standard-library arithmetic replay; final PNG visually inspected.",
+  "targeted_astra_check": "astra_interpretation_check.md; three requested manuscript integrations completed; not a full manuscript review",
+  "interpretation": "Monthly adds information beyond simple variability controls for intermontana; full BIOCLIM has higher mean primary scores under both arms in all five units, with cell/AUC disagreements retained. Non-nested thermal inputs preclude a timing-only attribution.",
+  "representation_adopted": false,
+  "scientific_report": "reports/spea_seasonal_bioclim_reference.md",
+  "current_manuscript": "reports/spea_seasonal_manuscript_weighting_revision.md",
+  "output_hashes": {
+    "README.md": "fce64491b02d5b650a64848adf0d1ce6af8a8fbe0b80eecadee0199b625a1bf6",
+    "astra_interpretation_check.md": "369fa7c70c2781af0577c4ca57a514b52b04e31051da205e6db1b234c6aee2d3",
+    "contrast_folds.csv": "c81b5c1c197781b55a5557dd15320932cb86f256c04ab235c273146b914fc043",
+    "contrast_summary.csv": "6504a15b45050df5b20b751a4e9174914ce47c16c265b55c9d488c690e86a27d",
+    "effective_config.json": "ad793e4db5b9447a6091648480da86b9ada91f5a3a85cb6bc5d2aabdddcb47dc",
+    "family_lineage.csv": "bfe8a2bd550d6bbe9f94371f04f664ed3ead58b2976359ab634d9b8f81e07430",
+    "family_summary.csv": "2060266a16f75b143cfc31e1d9ad74ce2cd26b4205b0214134c81a9a74138a67",
+    "fold_metrics.csv": "fbeedf03173fa38baaf0e5c719576e11205d1ee0c1a901485d963fd5a1d912a3",
+    "main_table.md": "6410e42fce25230dd21d85909944cb63f14afb59d8e3213c4edf543f9f650d2c",
+    "seasonal_bioclim_reference.png": "10fea6d9bf8260bb3df2d61ff9ec7f4f8c3774dcc13aa2e75e6458698404bbc9",
+    "seasonal_bioclim_reference.svg": "4df9cb6998443cb6969231765dba79bec84d5bedc3ebf7823c04c25de751c989",
+    "secondary_table.md": "f502692edbcdcd6197de8b9e0950fb744fd8780e6e657031520769e7c567ddaa",
+    "source_alignment.csv": "9e3795e3a50437ece1e7c6be5b6c43053abcadf136fb0290e133186a57551796",
+    "verification.json": "0fb857ef94f3abdbe522b43a64652de4dd35edd48335252fb34cfed2e165df14"
+  }
+}

@@ -1,66 +1,56 @@
 # Spea climate and biogeography
 
-**How much does the way we describe climate change our predictions for spadefoot toads? And what can those predictions contribute to historical biogeography?**
+**Recorded climatic differences and geographic prediction across Spea** is a working manuscript by Kevin M. Neal, with its evidence and analysis code. Public companion **v0.3.0, 29 October 2026**, brings the completed North/South, climate-representation and mapped-water comparisons into one paper. It supersedes the earlier seasonal manuscript; [release tags preserve that text](VERSION_HISTORY.md).
 
-This is the public research companion for Kevin M. Neal's ongoing work on *Spea*. It contains a working manuscript, numerical results, figures and selected analysis code. **Version 0.2.0 is a developmental snapshot dated 21 October 2026**, adding a bounded environmental-organization study completed on 20 October. The central climate comparisons remain those completed through 5 October. It has not received independent peer review. The [change log](CHANGELOG.md) records additions and corrections, and earlier release tags preserve their snapshots.
+[Read the paper (PDF)](manuscript/Spea_Comparative_Manuscript.pdf) · [Editable Word document](manuscript/Spea_Comparative_Manuscript.docx) · [Full text](manuscript/spea_comparative_manuscript.md) · [Evidence index](manuscript/evidence_index.md)
 
-[Working manuscript](docs/manuscript.md) · [Methods](docs/methods.md) · [Reproduce the tables](REPRODUCIBILITY.md) · [Environmental organization](docs/environmental_organization.md) · [Biogeographic questions](docs/research_agenda.md)
+## What the paper finds
 
-## What we have found
+Recorded climatic differences, extra environmental detail and habitat proxies do not necessarily improve geographic prediction. The paper examines that question through three complementary analyses:
 
-We compared annual climate, annual climate plus two variability summaries, monthly profiles, and the 19 BIOCLIM variables. The five fitting units are *S. intermontana*, *S. bombifrons*, *S. multiplicata*, and northern and southern *S. hammondii* operational units informed by prior genetic evidence. These are five analysis units, not five independent species-level replications.
+- **North/South:** recorded climates differed, but adding separate climatic responses did not consistently improve prediction beyond the specified gradual geographic reference. Source and regularization sensitivity remain visible.
+- **Climate representation:** monthly profiles improved on simple annual and variability controls in some units, especially intermontana. Full BIOCLIM had the higher primary mean in all five units under both training weights; some secondary scores reversed that comparison.
+- **Mapped water:** distances improved the southern occurrence-density comparison but slightly worsened the separate survey-history comparison in every block. The designs differ in observations, controls and likelihoods, so their contrast does not isolate observation effort.
 
-The models predict **where occurrences are recorded relative to available land area**. Evaluation holds out geographical regions and asks how the model allocates relative recording density within them. These data do not measure pond occupancy, physiological tolerance, or observer effort.
+The results concern recording patterns and geographic prediction. They establish no new population boundary, physiological specialization or historical reconstruction. The five fitting units and reused development folds are not independent species-level replications. All primary folds, adverse results and consequential sensitivities remain available.
 
-- **Monthly profiles add useful information beyond simple variability summaries for intermontana.** Under matched shallow models, the mean gain is +0.082 or +0.104 nats with equal or soft spatial training weights; all five folds have positive gains in both arms.
-- **That does not make monthly profiles the best representation.** Full BIOCLIM has the higher mean primary score in every unit under both weighting arms. Its advantage over monthly for intermontana is small; secondary metrics can favour monthly. BIOCLIM also includes thermal information absent from monthly mean-temperature inputs, so this is not a pure test of compression or seasonality.
-- **Sampling and evaluation choices matter.** Bombifrons has a smaller monthly increment, multiplicata a negative mean increment, and northern/southern hammondii results depend on fitting and weighting procedures. Added statistical summaries, thinning and soft spatial weights have mixed effects.
+![Matched climate representation comparisons across the five Spea analysis units](manuscript/figures/figure_2_climate_representations.png)
 
-![Monthly profiles compared with variability summaries and full BIOCLIM](figures/climate_representation.png)
+*Monthly profiles compared with annual climate, variability summaries and full BIOCLIM under equal and soft spatial training weights. Points are retained folds and larger markers are equal-fold means; spread is descriptive. Full definitions and the other two comparisons are in the manuscript.*
 
-*Primary score changes under the matched fixed shallow comparison. Small circles are individual held folds; diamonds are equal-fold means. Positive values favour monthly profiles. The two panels use the same horizontal scale. Fold spread is descriptive, and these geographical folds were reused during development.* [All primary and secondary scores](data/README.md).
+## Run the reported arithmetic
 
-## What you can run
-
-The main table replay needs **Python 3.13 and its standard library only**. It runs offline after cloning; no climate downloads, account credentials or model packages are required.
+After cloning, the integrated replay uses Python 3.13 and its standard library only:
 
 ```sh
 git clone https://github.com/kevinmneal/spea-climate-research.git
 cd spea-climate-research
-python3 scripts/replay.py --output replay_output
+python3 manuscript/replay/replay_aggregates.py --output replay_output/manuscript_receipt.json
 ```
 
-This reconstructs the original selected/fixed tables, the later matched weighting/BIOCLIM tables, and the environmental-organization statistics and control envelopes. It checks them against the saved summaries. Start with `replay_output/matched_primary_table.md`, `replay_output/original/table2.md` and `replay_output/environmental_organization/observed_table.md`.
+It checks 3,664 aggregate arithmetic and source-identity comparisons across all three strands. The [reproduction guide](REPRODUCIBILITY.md) also provides figure/document rebuild commands and the preserved seasonal/environmental replays.
 
-**This is aggregate reproduction.** The public snapshot does not rebuild occurrences, fit the models, or recompute their native-grid predictions. [The reproducibility statement](REPRODUCIBILITY.md) specifies exactly what is and is not supplied. The optional [scientific components](src/README.md) include the actual monthly transformations, fourteen added summaries, thinning and spatial weights, with tests and a clearly synthetic example.
+The [native implementation](native/README.md) exposes original fitters, transformations, fixed configurations and their project dependencies. It requires archived record preparation, grids, masks, parent runs and audit assets that are not all distributed here. The [source and access guide](SOURCES_AND_ACCESS.md) supplies precise provider/query/version identities and explains how public retrieval differs from exact archive restoration. In particular, the GBIF input has no collective download DOI, and some accepted source records and curation remain request-dependent.
 
-## Broader research direction
-
-The wider project investigates candidate geographical structure in *S. intermontana*, contemporary environmental contrasts, and constraints on late-glacial and postglacial histories. Completed local cost comparisons and a provincial response comparison have produced useful negative or mixed results. Historical climate compatibility and sparse independent population coverage constrain stronger conclusions.
-
-A [bounded October follow-up](docs/environmental_organization.md) asked whether recorded environments in *S. intermontana* support a reproducible two-component description beyond sampled geography and specified climatic associations. Across three prespecified representative selections, the two-component approximation predicted held climates less well than the one-component reference. The primary result fell within the shared- and gradual-association simulation envelopes; one sensitivity exceeded both upper envelopes but did not recur. This screen supplies no stable new division. Because conditioning on sampled blocks removes most broad rainfall-timing variation, regional ecological differences remain unresolved.
-
-The [research agenda](docs/research_agenda.md) separates those exploratory results from the climate manuscript and identifies the biological evidence needed next. No new lineage, species boundary, dispersal rate or colonization date is established here.
-
-## Navigate the snapshot
+## Navigate the companion
 
 | Material | Contents |
-|---|---|
-| [Manuscript](docs/manuscript.md) | Full comparative argument, results, qualifications and references |
-| [Methods](docs/methods.md) | Observation units, backgrounds, folds, predictors, fitting and score definitions |
-| [Aggregate data](data/README.md) | Original/matched seasonal folds, environmental-organization statistics and envelopes, plus sensitivity and decomposition tables |
-| [Environmental organization](docs/environmental_organization.md) | Separate exploratory study with its negative result, sensitivity discrepancy and conditional-inference limit |
-| [Reproducibility](REPRODUCIBILITY.md) | Commands, verification scope and missing inputs for full native reproduction |
-| [Scientific components](src/README.md) | Selected original numerical code and its tests |
-| [Provenance](provenance.json) | Source checkpoint, original file hashes and disclosed export adaptations |
-| [Change log](CHANGELOG.md) | Versioned changes and corrections |
+| --- | --- |
+| [Manuscript package](manuscript/README.md) | PDF, Word, source, supporting information and all main figure inputs |
+| [Reproducibility](REPRODUCIBILITY.md) | Runnable aggregate checks; figure and document rebuilding; native limits |
+| [Native code](native/README.md) | Original fitting and transformation implementation, fixed configs and input inventory |
+| [Sources and access](SOURCES_AND_ACCESS.md) | Source versions, queries, file identities, retrieval routes and omitted inputs |
+| [Earlier aggregate modules](data/README.md) | Preserved seasonal sensitivities, decompositions and environmental-organization data |
+| [Environmental organization](docs/environmental_organization.md) | Separate completed exploratory screen, including its negative result and sensitivity discrepancy |
+| [Version history](VERSION_HISTORY.md) | Current manuscript and preserved predecessors |
+| [Change log](CHANGELOG.md) | Changes by release |
 
-The full working archive remains private. This repository has its own history and contains a deliberate selection of original project material, without raw localities, specimen casework, downloaded papers or large model assets. The seasonal study map uses 25-km display tiles; the environmental-organization map uses inherited 50-km block centers. Neither is a release of exact localities.
+The [broader research agenda](docs/research_agenda.md) is background to the completed paper. Historical, genetic and larval/weather investigations are not added to its main argument. Exact source records, survey-site crosswalks, downloaded papers and large native assets are outside this export. The manuscript's coverage map retains a 25-km display resolution; it is not an exact-locality release.
 
 ## Attribution and reuse
 
-Maintained by **Kevin M. Neal**. Please cite the version you use; GitHub's “Cite this repository” entry is supplied by [CITATION.cff](CITATION.cff). This is a research snapshot, not a published journal article or a DOI-registered deposit.
+Maintained by **Kevin M. Neal**. Cite the release or commit used; [CITATION.cff](CITATION.cff) supplies repository citation metadata. This working manuscript has not been submitted to bioRxiv or presented as independently peer reviewed.
 
-Code, computational review and editorial preparation used OpenAI Codex assistance. AI-assisted review and passing software checks are not independent scientific peer review. Corrections and substantive methodological discussion are welcome through repository issues; please do not post sensitive localities there.
+OpenAI Codex assisted with implementation, source triage, numerical checks, figures and drafting. Automated and AI-assisted review establish only the specific properties checked. They do not supply independent biological validation. Corrections and methodological discussion are welcome through repository issues; please keep sensitive locality information out of public discussions.
 
-Original software is available under the [MIT license](LICENSE). Original prose, figures and aggregate tables are [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Referenced third-party datasets and publications retain their own terms; [NOTICE](NOTICE.md) records the distinction and method attribution.
+Original software is [MIT licensed](LICENSE). Original research prose, figures and aggregate tables are [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party datasets and publications retain their own terms; see [NOTICE](NOTICE.md) and the source/access guide.

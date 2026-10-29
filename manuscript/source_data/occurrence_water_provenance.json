@@ -1,0 +1,37 @@
+{
+  "status": "verified_aggregate_packet_and_visually_inspected_figure",
+  "created_utc": "2026-10-02T23:40:49.503515+00:00",
+  "source_ids": [
+    "S35",
+    "S36"
+  ],
+  "frozen_config": "config/south_water_benchmark_v1.json",
+  "source_model_run": "runs/2026-10-02-south-water-benchmark-v1",
+  "source_methods_review": "runs/2026-10-02-south-water-review-v1/source_methods_review.json",
+  "independent_verification": "runs/2026-10-02-south-water-review-v1/independent_verification.json",
+  "checks_passed": 532,
+  "margins_replayed": 781852,
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "catboost": "1.2.10",
+    "pyproj": "3.8.0",
+    "rasterio": "1.5.1"
+  },
+  "figure": {
+    "file": "comparison.png",
+    "sha256": "2608f32c7201af7cce0330b357a5a6e4075ce31f0a06cbe08aacc0369cf20de6",
+    "visually_inspected": true,
+    "inspection": "Final figure inspected after moving legends away from the negative block-2 points/bars; labels, signs, sample sizes and sparse-block warning visible. Initial layout retained locally.",
+    "previous_layout": "runs/2026-10-02-south-water-review-v1/figure_layout_v1/comparison.png",
+    "numerical_tables_unchanged_after_layout_revision": true
+  },
+  "limitations": [
+    "Recorded density, not occupancy or causal habitat response.",
+    "Only three early records in source block 3.",
+    "Later records are not fresh project-external validation.",
+    "Water-layer dates, inventory completeness and observation effort limit ecological interpretation.",
+    "No Baja/LGM projection or master occurrence change."
+  ]
+}

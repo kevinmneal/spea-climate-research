@@ -1,0 +1,81 @@
+{
+  "release": "v0.3.0",
+  "date": "2026-10-29",
+  "status": "passed_local_release_verification",
+  "document": {
+    "pages": 17,
+    "visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "inspection": "Every final rendered page was opened and inspected. No clipping, overlap, missing glyphs or pagination defect was observed.",
+    "body_comparison_with_reviewed_source": "Pages 1, 5 and 9 changed for status, the natural-log unit definition and availability. Other page bodies are pixel-identical when excluding the revised footer.",
+    "docx_rebuild_identical_member_payloads": 23,
+    "zip_container_timestamps": "Whole DOCX ZIP hashes can differ across builds; all member payloads match.",
+    "delivered_docx_sha256": "98d2b286dff7a713f751585049c07a297aa219661a6604fd9ddcf79498a1140d",
+    "delivered_pdf_sha256": "4ff39dbb1b06ca530714674f269ef74bad6ed93610ece8c9789e6cec3e21ec6b",
+    "markdown_sha256": "80977cf0858f715d246f6f6cec1a877f7f9d94399a687f28b21c3ccb234150be"
+  },
+  "main_figure_replay": [
+    {
+      "figure": "figure_1_north_south",
+      "replayed_png_pixels_identical": true
+    },
+    {
+      "figure": "figure_2_climate_representations",
+      "replayed_png_pixels_identical": true
+    },
+    {
+      "figure": "figure_3_mapped_water",
+      "replayed_png_pixels_identical": true
+    }
+  ],
+  "unchanged_source_data_and_figure_files": 51,
+  "integrated_aggregate_checks": 3664,
+  "legacy_replay_tests_passed": 10,
+  "selected_component_tests_passed": 32,
+  "native_synthetic_component_tests_passed": 49,
+  "native_help_entrypoints_passed": 14,
+  "native_python_syntax_files": 37,
+  "native_original_files_hash_verified": 51,
+  "native_environment": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "affine": "3.0.1",
+    "pyproj": "3.8.0",
+    "requests": "2.34.2",
+    "urllib3": "2.8.0",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1"
+  },
+  "legacy_aggregate_replay": "Completed all original/matched seasonal and environmental-organization outputs.",
+  "legacy_figure_and_synthetic_example": "Executed successfully.",
+  "new_empirical_fits": 0,
+  "new_predictions": 0,
+  "datasets_downloaded": 0,
+  "limits": [
+    "No native occurrence-to-fit rerun.",
+    "No fresh installation of the full inspection environment.",
+    "No independent biological validation.",
+    "Figure S1 is supplied, not rebuilt from native inputs by public replay.",
+    "Public CI status is recorded by GitHub for the released commit, not anticipated here."
+  ]
+}
